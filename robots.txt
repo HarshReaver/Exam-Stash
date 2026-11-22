@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pyq.harver.in/sitemap.xml

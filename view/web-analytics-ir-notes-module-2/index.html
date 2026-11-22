@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Analytics and Information Retrieval Module 2 notes | Night Before</title>
+<meta name="description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 2 notes. readable page or the Word file · 388 KB.">
+<link rel="canonical" href="https://pyq.harver.in/view/web-analytics-ir-notes-module-2/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Night Before">
+<meta property="og:title" content="Web Analytics and Information Retrieval Module 2 notes | Night Before">
+<meta property="og:description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 2 notes. readable page or the Word file · 388 KB.">
+<meta property="og:url" content="https://pyq.harver.in/view/web-analytics-ir-notes-module-2/">
+<meta property="og:image" content="https://pyq.harver.in/og-image.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem("nb-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css?v=4">
+<script src="/assets/site.js?v=1" defer></script>
+
+</head>
+<body class="s7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/">Night Before</a>
+  <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  <form class="jump" data-jump hidden>
+    <label for="jump">Jump to subject</label>
+    <div class="jump-row"><select id="jump" name="to"><optgroup label="Semester III"><option value="/sem-3/uhv-ii/">Universal Human Values II</option><option value="/sem-3/maths-iii/">Mathematics III</option><option value="/sem-3/digital-circuit-design/">Digital Circuit Design</option><option value="/sem-3/dsa/">Data Structures and Algorithms</option><option value="/sem-3/dbms/">Database Management Systems</option></optgroup><optgroup label="Semester IV"><option value="/sem-4/maths-iv/">Mathematics IV</option><option value="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</option><option value="/sem-4/nosql/">NoSQL</option><option value="/sem-4/computer-networks/">Computer Networks</option></optgroup><optgroup label="Semester V"><option value="/sem-5/operating-system/">Operating System</option><option value="/sem-5/automata-theory/">Automata Theory</option><option value="/sem-5/web-programming/">Web Programming</option><option value="/sem-5/cns/">Cryptography and Network Security</option><option value="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</option><option value="/sem-5/full-stack-development-i/">Full Stack Development I</option><option value="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering</option><option value="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch</option><option value="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch</option></optgroup><optgroup label="Semester VI"><option value="/sem-6/wpmh/">Work Place Mental Health</option><option value="/sem-6/dmbi/">Data Mining and Business Intelligence</option><option value="/sem-6/software-engineering/">Software Engineering</option><option value="/sem-6/artificial-intelligence/">Artificial Intelligence</option><option value="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</option><option value="/sem-6/analysis-of-algorithms/">Analysis of Algorithms</option><option value="/sem-6/english-competitive-exams/">English for Competitive Exams</option></optgroup><optgroup label="Semester VII"><option value="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</option><option value="/sem-7/big-data-analytics/">Big Data Analytics</option><option value="/sem-7/devops/">DevOps</option><option value="/sem-7/web-analytics-ir/" selected>Web Analytics and Information Retrieval</option><option value="/sem-7/japanese-i/">Japanese Language I</option><option value="/sem-7/user-interaction-design/">User Interaction Design</option><option value="/sem-7/management-information-system/">Management Information System</option><option value="/sem-7/design-thinking/">Design Thinking and Problem Solving</option><option value="/sem-7/disaster-management/">Disaster Management and Mitigation Methods</option></optgroup></select><button type="submit">Go</button></div>
+  </form>
+</header>
+<div class="shell">
+<aside class="side" aria-label="Semesters and subjects">
+  <div class="side-top">
+    <a class="brand" href="/">Night Before</a>
+    <p>TCET IT papers, question banks and notes</p>
+    <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  </div>
+  <nav aria-label="Subjects"><div class="side-sem s3"><h2><a href="/#sem-3">Semester III</a></h2><ul><li><a href="/sem-3/uhv-ii/">Universal Human Values II</a></li><li><a href="/sem-3/maths-iii/">Mathematics III</a></li><li><a href="/sem-3/digital-circuit-design/">Digital Circuit Design</a></li><li><a href="/sem-3/dsa/">Data Structures and Algorithms</a></li><li><a href="/sem-3/dbms/">Database Management Systems</a></li></ul></div><div class="side-sem s4"><h2><a href="/#sem-4">Semester IV</a></h2><ul><li><a href="/sem-4/maths-iv/">Mathematics IV</a></li><li><a href="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</a></li><li><a href="/sem-4/nosql/">NoSQL</a></li><li><a href="/sem-4/computer-networks/">Computer Networks</a></li></ul></div><div class="side-sem s5"><h2><a href="/#sem-5">Semester V</a></h2><ul><li><a href="/sem-5/operating-system/">Operating System</a></li><li><a href="/sem-5/automata-theory/">Automata Theory</a></li><li><a href="/sem-5/web-programming/">Web Programming</a></li><li><a href="/sem-5/cns/">Cryptography and Network Security</a></li><li><a href="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</a></li><li><a href="/sem-5/full-stack-development-i/">Full Stack Development I <span class="side-note">other option</span></a></li><li><a href="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering <span class="side-note">other branch</span></a></li><li><a href="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch <span class="side-note">older syllabus</span></a></li><li><a href="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch <span class="side-note">older syllabus</span></a></li></ul></div><div class="side-sem s6"><h2><a href="/#sem-6">Semester VI</a></h2><ul><li><a href="/sem-6/wpmh/">Work Place Mental Health</a></li><li><a href="/sem-6/dmbi/">Data Mining and Business Intelligence</a></li><li><a href="/sem-6/software-engineering/">Software Engineering</a></li><li><a href="/sem-6/artificial-intelligence/">Artificial Intelligence</a></li><li><a href="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</a></li><li><a href="/sem-6/analysis-of-algorithms/">Analysis of Algorithms <span class="side-note">other option</span></a></li><li><a href="/sem-6/english-competitive-exams/">English for Competitive Exams <span class="side-note">other option</span></a></li></ul></div><div class="side-sem s7"><h2><a href="/#sem-7">Semester VII</a></h2><ul><li><a href="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</a></li><li><a href="/sem-7/big-data-analytics/">Big Data Analytics</a></li><li><a href="/sem-7/devops/">DevOps</a></li><li><a href="/sem-7/web-analytics-ir/" aria-current="page">Web Analytics and Information Retrieval</a></li><li><a href="/sem-7/japanese-i/">Japanese Language I</a></li><li><a href="/sem-7/user-interaction-design/">User Interaction Design <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/management-information-system/">Management Information System <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/design-thinking/">Design Thinking and Problem Solving <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/disaster-management/">Disaster Management and Mitigation Methods <span class="side-note">older syllabus</span></a></li></ul></div></nav>
+</aside>
+<div class="col">
+<main id="main" tabindex="-1">
+
+<nav class="crumb" aria-label="Breadcrumb"><a href="/#sem-7">Semester VII</a> <span aria-hidden="true">/</span> <a href="/sem-7/web-analytics-ir/">Web Analytics and Information Retrieval</a></nav>
+<h1>Web Analytics and Information Retrieval: Module 2 notes</h1>
+<p class="sub"><span class="ft docx">DOCX</span> readable page or the Word file · 388 KB</p>
+<div class="actions">
+  <a class="btn-main" href="/files/web-analytics-ir-notes-module-2.docx" download="Web Analytics and Information Retrieval - Module 2 notes.docx">Download DOCX</a>
+  <button class="btn" type="button" data-print>Print or save as PDF</button>
+  <a class="btn" href="/sem-7/web-analytics-ir/">All files for this subject</a>
+</div>
+<p class="fine">Converted from the Word file so it reads on a phone. The download is the original.</p><article class="prose"><p><b>Module 2: Web Metrics, Data Collection and Analytics Tools<br>1. Introduction to Web Analytics</b></p>
+<p><b>Definition<br></b>Web Analytics is the process of collecting, measuring, analyzing, and reporting website data to understand user behavior and improve website performance.</p>
+<h4>Objectives of Web Analytics</h4>
+<ul><li>Understand visitor behavior
+</li><li>Improve user experience
+</li><li>Increase website traffic
+</li><li>Improve conversion rates
+</li><li>Measure marketing campaign effectiveness
+</li><li>Support business decision-making
+</li></ul>
+<h4>Example</h4>
+<p>An online shopping website uses web analytics to determine:</p>
+<ul><li>Which products are viewed most frequently.
+</li><li>How users navigate through the website.
+</li><li>Why users abandon their shopping carts.
+</li></ul>
+<hr>
+<h4>2. Web Metrics</h4>
+<h4>What are Web Metrics?</h4>
+<p>Web metrics are quantitative measurements used to evaluate website performance and user engagement.</p>
+<ul><li><b>Conversion Rate:</b> <b>2% to 5%</b> is good. Anything <b>under 1%</b> is generally bad and means your traffic isn&#x27;t buying or signing up.
+</li><li><b>Bounce Rate:</b> <b>40% to 60%</b> is good. Anything <b>above 70%</b> is usually bad, indicating slow load times, confusing design, or irrelevant content.
+</li></ul>
+<hr>
+<h4>2.1 Page Views</h4>
+<h4>Definition</h4>
+<p>A Page View occurs whenever a webpage is loaded or reloaded by a visitor.</p>
+<h4>Formula</h4>
+<p>Page Views = Total Number of Pages Viewed</p>
+<h4>Example</h4>
+<div class="table-wrap"><table><tr><th><b>User</b></th><th><b>Pages Visited</b></th></tr><tr><td>User A</td><td>Home, Products, Contact</td></tr><tr><td>User B</td><td>Home, About</td></tr><tr><td>User C</td><td>Home</td></tr></table></div>
+<p>Total Page Views = 3 + 2 + 1 = 6</p>
+<h4>Importance</h4>
+<ul><li>Indicates website popularity.
+</li><li>Measures content consumption.
+</li></ul>
+<hr>
+<h4>2.2 Bounce Rate</h4>
+<h4>Definition</h4>
+<p>Bounce Rate is the percentage of visitors who leave the website after viewing only one page.</p>
+<h4>Formula</h4>
+<p>Bounce Rate=Single Page Visits/Total Visits*100</p>
+<h4>Example</h4>
+<p>Total Visitors = 100</p>
+<p>Visitors who left after one page = 40</p>
+<p>Bounce Rate=40/100×100=40%</p>
+<h4>Interpretation</h4>
+<div class="table-wrap"><table><tr><th><b>Bounce Rate</b></th><th><b>Meaning</b></th></tr><tr><td>Below 40%</td><td>Excellent</td></tr><tr><td>40%-60%</td><td>Average</td></tr><tr><td>Above 70%</td><td>Poor</td></tr></table></div>
+<h4>Causes of High Bounce Rate</h4>
+<ul><li>Slow website
+</li><li>Poor content
+</li><li>Misleading advertisements
+</li><li>Difficult navigation
+</li></ul>
+<hr>
+<h4>2.3 Conversion Rate</h4>
+<h4>Definition</h4>
+<p>Conversion Rate measures how many visitors complete a desired action.</p>
+<p>Examples:</p>
+<ul><li>Purchasing a product
+</li><li>Filling out a form
+</li><li>Downloading a file
+</li><li>Subscribing to a newsletter
+</li></ul>
+<h4>Formula</h4>
+<p>Conversion Rate=Conversions/Total Visitors</p>
+<h4>Example</h4>
+<p>Website Visitors = 1000</p>
+<p>Purchases = 50</p>
+<p>Conversion Rate=50/1000×100=5%</p>
+<h4>Importance</h4>
+<ul><li>Measures business success.
+</li><li>Evaluates marketing campaigns.
+</li></ul>
+<hr>
+<h4>2.4 Dwell Time</h4>
+<h4>Definition</h4>
+<p>Dwell Time is the amount of time a user spends on a webpage before returning to the search results.</p>
+<h4>Example</h4>
+<div class="table-wrap"><table><tr><th><b>User Action</b></th><th><b>Time</b></th></tr><tr><td>Clicks webpage from Google</td><td>10:00 AM</td></tr><tr><td>Returns to Google</td><td>10:05 AM</td></tr></table></div>
+<p>Dwell Time = 5 Minutes</p>
+<h4>Interpretation</h4>
+<div class="table-wrap"><table><tr><th><b>Dwell Time</b></th><th><b>Meaning</b></th></tr><tr><td>High</td><td>Relevant Content</td></tr><tr><td>Low</td><td>Poor Content or User Dissatisfaction</td></tr></table></div>
+<h4>Importance</h4>
+<ul><li>Indicates content quality.
+</li><li>Helps improve SEO rankings.
+</li></ul>
+<hr>
+<h4>Comparison of Major Web Metrics</h4>
+<div class="table-wrap"><table><tr><th><b>Metric</b></th><th><b>Measures</b></th></tr><tr><td>Page Views</td><td>Popularity</td></tr><tr><td>Bounce Rate</td><td>Visitor Engagement</td></tr><tr><td>Conversion Rate</td><td>Business Success</td></tr><tr><td>Dwell Time</td><td>Content Relevance</td></tr></table></div>
+<hr>
+<h4>3. Data Collection Methods</h4>
+<p>Web analytics relies on collecting user interaction data.</p>
+<hr>
+<h4>3.1 Server Logs</h4>
+<h4>Definition</h4>
+<p>Server Logs are files automatically generated by web servers that record user requests.</p>
+<h4>Information Stored</h4>
+<ul><li>IP Address
+</li><li>Date and Time
+</li><li>Requested URL
+</li><li>Browser Type
+</li><li>Operating System
+</li></ul>
+<h4>Example Log Entry</h4>
+<p>192.168.1.10 - - [10/May/2026:10:15:30]<br>&quot;GET /index.html HTTP/1.1&quot;</p>
+<h4>Advantages</h4>
+<ul><li>Automatically generated
+</li><li>No client-side script required
+</li></ul>
+<h4>Disadvantages</h4>
+<ul><li>Cannot track user behavior accurately
+</li><li>Difficult to analyze large logs
+</li></ul>
+<hr>
+<h4>3.2 Cookies</h4>
+<h4>Definition</h4>
+<p>Cookies are small text files stored in the user&#x27;s browser.</p>
+<h4>Uses</h4>
+<ul><li>Remember login information
+</li><li>Store user preferences
+</li><li>Track returning visitors
+</li></ul>
+<h4>Example</h4>
+<p>When a user logs into Amazon:</p>
+<p>Cookie:<br>UserID = 12345</p>
+<p>Next time the user visits:</p>
+<ul><li>Website recognizes the user.
+</li><li>Login remains active.
+</li></ul>
+<h4>Types</h4>
+<h4>Session Cookies</h4>
+<p>Deleted after browser closes.</p>
+<h4>Persistent Cookies</h4>
+<p>Remain stored for a specified period.</p>
+<hr>
+<h4>3.3 JavaScript Tags</h4>
+<h4>Definition</h4>
+<p>JavaScript tags are snippets of code embedded in webpages to collect visitor data.</p>
+<h4>Example</h4>
+<p>&lt;script&gt;<br>console.log(&quot;Tracking User Activity&quot;);<br>&lt;/script&gt;</p>
+<h4>Information Collected</h4>
+<ul><li>Button clicks
+</li><li>Scroll activity
+</li><li>Page views
+</li><li>Form submissions
+</li></ul>
+<h4>Advantages</h4>
+<ul><li>Real-time tracking
+</li><li>Detailed user behavior analysis
+</li></ul>
+<h4>Disadvantages</h4>
+<ul><li>Blocked by some browsers
+</li><li>Requires JavaScript enabled
+</li></ul>
+<hr>
+<h4>4. Web Analytics Tools</h4>
+<hr>
+<h4>4.1 Google Analytics</h4>
+<h4>Definition</h4>
+<p>Google Analytics is the most widely used web analytics platform.</p>
+<h4>Features</h4>
+<ul><li>Real-time monitoring
+</li><li>User demographics
+</li><li>Traffic source analysis
+</li><li>Conversion tracking
+</li><li>Campaign analysis
+</li></ul>
+<h4>Example</h4>
+<p>Google Analytics can answer:</p>
+<ul><li>How many visitors came today?
+</li><li>Which country generated the most traffic?
+</li><li>Which pages are most popular?
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Free version available
+</li><li>Easy integration
+</li></ul>
+<hr>
+<h4>4.2 Adobe Analytics</h4>
+<h4>Definition</h4>
+<p>Adobe Analytics is an enterprise-level analytics platform.</p>
+<h4>Features</h4>
+<ul><li>Advanced segmentation
+</li><li>Predictive analytics
+</li><li>Customer journey analysis
+</li><li>AI-powered insights
+</li></ul>
+<h4>Suitable For</h4>
+<ul><li>Large organizations
+</li><li>E-commerce platforms
+</li><li>Marketing agencies
+</li></ul>
+<h4>Example</h4>
+<p>An airline company analyzes:</p>
+<ul><li>Booking behavior
+</li><li>Customer journey
+</li><li>Ticket purchase patterns
+</li></ul>
+<hr>
+<h4>4.3 Matomo</h4>
+<h4>Definition</h4>
+<p>Matomo is an open-source web analytics platform.</p>
+<h4>Features</h4>
+<ul><li>Full data ownership
+</li><li>Privacy-focused
+</li><li>GDPR compliant
+</li><li>Self-hosted option
+</li></ul>
+<h4>Example</h4>
+<p>Universities and government organizations often use Matomo when data privacy is important.</p>
+<hr>
+<h4>Comparison of Analytics Tools</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>Google Analytics</b></th><th><b>Adobe Analytics</b></th><th><b>Matomo</b></th></tr><tr><td>Cost</td><td>Free/Paid</td><td>Paid</td><td>Free/Open Source</td></tr><tr><td>Ease of Use</td><td>High</td><td>Medium</td><td>Medium</td></tr><tr><td>Data Ownership</td><td>Google</td><td>Organization</td><td>Organization</td></tr><tr><td>Privacy Control</td><td>Medium</td><td>High</td><td>Very High</td></tr><tr><td>Suitable For</td><td>Small-Medium Sites</td><td>Enterprises</td><td>Privacy-focused Organizations</td></tr></table></div>
+<hr>
+<h4>5. Data Visualization and Dashboard Reporting</h4>
+<h4>Definition</h4>
+<p>Data Visualization is the graphical representation of web analytics data.</p>
+<h4>Common Visualizations</h4>
+<ul><li>Bar Charts
+</li><li>Pie Charts
+</li><li>Line Graphs
+</li><li>Dashboards
+</li><li>Heat Maps
+</li></ul>
+<hr>
+<h4>Example Dashboard</h4>
+<div class="table-wrap"><table><tr><th><b>Metric</b></th><th><b>Value</b></th></tr><tr><td>Visitors</td><td>15,000</td></tr><tr><td>Page Views</td><td>50,000</td></tr><tr><td>Bounce Rate</td><td>35%</td></tr><tr><td>Conversion Rate</td><td>4.5%</td></tr><tr><td>Avg. Dwell Time</td><td>3.8 Minutes</td></tr></table></div>
+<h4>Benefits</h4>
+<ul><li>Quick understanding
+</li><li>Better decision making
+</li><li>Easy reporting
+</li></ul>
+<hr>
+<h4>6. Applications of Web Analytics</h4>
+<hr>
+<h4>6.1 User Tracking</h4>
+<h4>Purpose</h4>
+<p>Understand visitor behavior.</p>
+<h4>Example</h4>
+<p>Tracking:</p>
+<ul><li>Pages visited
+</li><li>Time spent
+</li><li>Click patterns
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Improves website design
+</li><li>Personalizes user experience
+</li></ul>
+<hr>
+<h4>6.2 Campaign Analysis</h4>
+<h4>Purpose</h4>
+<p>Evaluate marketing campaign effectiveness.</p>
+<h4>Example</h4>
+<p>Campaign A:</p>
+<ul><li>10,000 visitors
+</li><li>500 purchases
+</li></ul>
+<p>Campaign B:</p>
+<ul><li>8,000 visitors
+</li><li>600 purchases
+</li></ul>
+<p>Campaign B performs better because of a higher conversion rate.</p>
+<hr>
+<h4>6.3 Performance Monitoring</h4>
+<h4>Purpose</h4>
+<p>Monitor website health and performance.</p>
+<h4>Metrics Used</h4>
+<ul><li>Page load time
+</li><li>Bounce rate
+</li><li>Error rates
+</li><li>User engagement
+</li></ul>
+<h4>Example</h4>
+<p>If page load time increases from 2 seconds to 8 seconds:</p>
+<ul><li>Bounce rate may increase.
+</li><li>User satisfaction may decrease.
+</li></ul>
+<hr>
+<h4>Real-Life Case Study</h4>
+<h4>E-Commerce Website Analysis</h4>
+<p>Monthly Data:</p>
+<div class="table-wrap"><table><tr><th><b>Metric</b></th><th><b>Value</b></th></tr><tr><td>Visitors</td><td>20,000</td></tr><tr><td>Page Views</td><td>75,000</td></tr><tr><td>Bounce Rate</td><td>30%</td></tr><tr><td>Conversion Rate</td><td>5%</td></tr><tr><td>Avg. Dwell Time</td><td>4 Minutes</td></tr></table></div>
+<h4>Interpretation</h4>
+<ul><li>High page views indicate user interest.
+</li><li>Low bounce rate indicates good engagement.
+</li><li>High dwell time suggests useful content.
+</li><li>Good conversion rate indicates successful sales strategy.
+</li></ul>
+<hr>
+<h4>Important University Examination Questions</h4>
+<h4>Short Questions (2-3 Marks)</h4>
+<ol><li>Define Web Analytics.
+</li><li>What is Bounce Rate?
+</li><li>Define Dwell Time.
+</li><li>What are Cookies?
+</li><li>List any two web analytics tools.
+</li><li>What is Conversion Rate?
+</li><li>What are Server Logs?
+</li><li>State the purpose of JavaScript Tags.
+</li></ol>
+<h4>Long Questions (5-10 Marks)</h4>
+<ol><li>Explain major web metrics with suitable examples.
+</li><li>Compare Server Logs, Cookies and JavaScript Tags.
+</li><li>Explain Google Analytics, Adobe Analytics and Matomo.
+</li><li>Discuss the role of data visualization in web analytics.
+</li><li>Explain applications of web analytics in campaign analysis and user tracking.
+</li><li>Describe the process of web data collection with suitable examples.
+</li></ol>
+<hr>
+<h4>Key Takeaways</h4>
+<ul><li><b>Page Views</b> measure website popularity.
+</li><li><b>Bounce Rate</b> indicates visitor engagement.
+</li><li><b>Conversion Rate</b> measures business success.
+</li><li><b>Dwell Time</b> reflects content relevance.
+</li><li><b>Server Logs, Cookies, and JavaScript Tags</b> are major data collection methods.
+</li><li><b>Google Analytics, Adobe Analytics, and Matomo</b> are popular analytics tools.
+</li><li><b>Dashboards and visualizations</b> help interpret web data efficiently.
+</li><li>Web analytics supports <b>user tracking, campaign optimization, and performance monitoring</b>.
+</li></ul>
+<h4>Short Questions (2–3 Marks)</h4>
+<h4>1. Define Web Analytics.</h4>
+<p><b>Answer:</b><br>Web Analytics is the process of collecting, measuring, analyzing, and reporting website data to understand user behavior and improve website performance. It helps organizations make data-driven decisions to enhance user experience and achieve business goals.</p>
+<hr>
+<h4>2. What is Bounce Rate?</h4>
+<p><b>Answer:</b><br>Bounce Rate is the percentage of visitors who leave a website after viewing only one page without performing any further interaction.</p>
+<h4>Formula:</h4>
+<p>Bounce Rate=Single Page VisitsTotal Visits×100\text{Bounce Rate} = \frac{\text{Single Page Visits}}{\text{Total Visits}} \times 100Bounce Rate=Total VisitsSingle Page Visits​×100</p>
+<hr>
+<h4>3. Define Dwell Time.</h4>
+<p><b>Answer:</b><br>Dwell Time is the amount of time a user spends on a webpage after clicking a search result and before returning to the search engine results page. It indicates the relevance and usefulness of the webpage content.</p>
+<hr>
+<h4>4. What are Cookies?</h4>
+<p><b>Answer:</b><br>Cookies are small text files stored on a user&#x27;s browser by websites to remember user information, preferences, and browsing activities. They help in user authentication, session management, and visitor tracking.</p>
+<hr>
+<h4>5. List any two web analytics tools.</h4>
+<h4>Answer:</h4>
+<ol><li>Google Analytics
+</li><li>Adobe Analytics
+</li></ol>
+<p>(Other examples: Matomo, Mixpanel)</p>
+<hr>
+<p><b>6. What is Conversion Rate?</b><br>Conversion Rate is the percentage of website visitors who complete a desired action such as making a purchase, filling out a form, or subscribing to a newsletter.</p>
+<p><b>Formula:</b><br>Conversion Rate= (Number of Conversions / Total Visitors) ×100</p>
+<hr>
+<p><b>7. What are Server Logs?</b><br>Server Logs are files automatically maintained by web servers that record details about requests made to a website, such as IP address, date and time, requested pages, browser type, and operating system.</p>
+<hr>
+<h4>8. State the purpose of JavaScript Tags.</h4>
+<p>JavaScript Tags are used to collect detailed information about user interactions on a website, such as page views, clicks, scrolling behavior, and form submissions. They enable real-time tracking and analytics.</p>
+<hr>
+<h4>Long Questions (5–10 Marks)</h4>
+<h4>1. Explain Major Web Metrics with Suitable Examples.</h4>
+<h4>Answer:</h4>
+<p>Web metrics are measurements used to evaluate website performance and user behavior.</p>
+<h4>a) Page Views</h4>
+<p>A page view occurs whenever a webpage is loaded or reloaded.</p>
+<p><b>Example:</b><br>A visitor views Home, Products, and Contact pages.</p>
+<p>Total Page Views = 3</p>
+<h4>b) Bounce Rate</h4>
+<p>The percentage of visitors who leave the website after viewing only one page.</p>
+<h4>Example:</h4>
+<p>Total Visitors = 100</p>
+<p>Single-page Visits = 40</p>
+<p>BounceRate=40100×100=40%Bounce Rate = \frac{40}{100}\times100 = 40\%BounceRate=10040​×100=40%</p>
+<p><b>c) Conversion Rate<br></b>Measures the percentage of visitors who complete a desired action.<b><br></b><b>Example:</b><br>Visitors = 1000<br>Purchases = 50<br>Conversion Rate=50/1000 x 100=5%</p>
+<p><b>d) Dwell Time<br></b>The amount of time a visitor spends on a webpage before returning to search results.<br><b>Example:</b><br>User clicks a webpage at 10:00 AM and returns at 10:05 AM.<br>Dwell Time = 5 minutes</p>
+<p><b>Conclusion<br></b>These metrics help organizations understand website popularity, engagement, content quality, and business performance.</p>
+<hr>
+<h4>2. Compare Server Logs, Cookies and JavaScript Tags.</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>Server Logs</b></th><th><b>Cookies</b></th><th><b>JavaScript Tags</b></th></tr><tr><td>Definition</td><td>Records server requests</td><td>Small files stored in browser</td><td>Scripts used for tracking</td></tr><tr><td>Location</td><td>Server-side</td><td>Client-side</td><td>Client-side</td></tr><tr><td>Data Collected</td><td>IP address, URL, browser</td><td>User preferences, session data</td><td>Clicks, scrolls, page views</td></tr><tr><td>Real-Time Tracking</td><td>Limited</td><td>Moderate</td><td>High</td></tr><tr><td>User Identification</td><td>Difficult</td><td>Easy</td><td>Easy</td></tr><tr><td>Storage</td><td>Web server</td><td>User browser</td><td>Analytics server</td></tr><tr><td>Advantages</td><td>Automatically generated</td><td>Remembers users</td><td>Detailed behavioral tracking</td></tr><tr><td>Disadvantages</td><td>Limited user behavior analysis</td><td>Can be deleted by users</td><td>Requires JavaScript enabled</td></tr></table></div>
+<p><b>Conclusion<br></b>All three methods are used together to collect comprehensive website analytics data.</p>
+<hr>
+<h4>3. Explain Google Analytics, Adobe Analytics and Matomo.</h4>
+<h4>Google Analytics</h4>
+<p>Google Analytics is a web analytics service that tracks website traffic and user behavior.</p>
+<h4>Features:</h4>
+<ul><li>Real-time monitoring
+</li><li>Traffic source analysis
+</li><li>Conversion tracking
+</li><li>Audience reports
+</li></ul>
+<p><b>Example:</b><br>A business tracks daily website visitors and sales conversions.</p>
+<hr>
+<h4>Adobe Analytics</h4>
+<p>Adobe Analytics is an enterprise-level analytics platform providing advanced reporting and predictive insights.</p>
+<h4>Features:</h4>
+<ul><li>Customer journey analysis
+</li><li>Advanced segmentation
+</li><li>Predictive analytics
+</li><li>AI-powered reports
+</li></ul>
+<p><b>Example:</b><br>An airline analyzes customer booking behavior across multiple devices.</p>
+<hr>
+<h4>Matomo</h4>
+<p>Matomo is an open-source web analytics platform that offers complete control over data.</p>
+<h4>Features:</h4>
+<ul><li>Self-hosted deployment
+</li><li>Data privacy
+</li><li>GDPR compliance
+</li><li>Customizable reports
+</li></ul>
+<p><b>Example:</b><br>Government organizations use Matomo to maintain data ownership and privacy.</p>
+<h4>Conclusion</h4>
+<p>Google Analytics is suitable for most websites, Adobe Analytics is ideal for large enterprises, and Matomo is preferred for privacy-focused organizations.</p>
+<hr>
+<h4>4. Discuss the Role of Data Visualization in Web Analytics.</h4>
+<p>Data Visualization is the graphical representation of web analytics data using charts, graphs, dashboards, and reports.</p>
+<h4>Importance:</h4>
+<ol><li>Simplifies complex data.
+</li><li>Helps identify trends and patterns.
+</li><li>Supports quick decision-making.
+</li><li>Improves communication of insights.
+</li><li>Enables real-time monitoring.
+</li></ol>
+<h4>Common Visualization Methods:</h4>
+<ul><li>Bar Charts
+</li><li>Pie Charts
+</li><li>Line Graphs
+</li><li>Dashboards
+</li><li>Heat Maps
+</li></ul>
+<h4>Example:</h4>
+<p>A dashboard displays:</p>
+<ul><li>Visitors: 10,000
+</li><li>Bounce Rate: 35%
+</li><li>Conversion Rate: 4%
+</li><li>Page Views: 50,000
+</li></ul>
+<p>Managers can instantly evaluate website performance.</p>
+<p><b>Conclusion:<br></b>Data visualization transforms raw data into meaningful insights, making analytics easier to understand and act upon.</p>
+<hr>
+<h4>5. Explain Applications of Web Analytics in Campaign Analysis and User Tracking.</h4>
+<p><b>A) User Tracking<br></b>User tracking involves monitoring visitor behavior on a website.</p>
+<h4>Information Tracked:</h4>
+<ul><li>Pages visited
+</li><li>Time spent
+</li><li>Click patterns
+</li><li>Navigation paths
+</li></ul>
+<h4>Benefits:</h4>
+<ul><li>Improves website design
+</li><li>Enhances user experience
+</li><li>Supports personalization
+</li></ul>
+<p><b>Example:</b><br>An e-commerce website tracks products viewed by users and recommends similar products.</p>
+<hr>
+<h4>B) Campaign Analysis</h4>
+<p>Campaign analysis measures the effectiveness of marketing campaigns.</p>
+<h4>Metrics Used:</h4>
+<ul><li>Traffic generated
+</li><li>Conversion rate
+</li><li>Cost per acquisition
+</li><li>Return on investment (ROI)
+</li></ul>
+<h4>Example:</h4>
+<div class="table-wrap"><table><tr><th><b>Campaign</b></th><th><b>Visitors</b></th><th><b>Purchases</b></th></tr><tr><td>A</td><td>10,000</td><td>500</td></tr><tr><td>B</td><td>8,000</td><td>600</td></tr></table></div>
+<p>Campaign B is more effective because it has a higher conversion rate.</p>
+<p><b>Conclusion:<br></b>Web analytics helps organizations optimize marketing efforts and improve customer engagement.</p>
+<hr>
+<p><b>6. Describe the Process of Web Data Collection with Suitable Examples.</b><b><br></b>Web data collection is the process of gathering information about website visitors and their activities.</p>
+<p><b>Step 1: User Visits Website<br></b>A visitor opens a webpage.</p>
+<h4>Step 2: Data Capture</h4>
+<p>Information is collected through:</p>
+<ul><li>Server Logs
+</li><li>Cookies
+</li><li>JavaScript Tags
+</li></ul>
+<p><b>Step 3: Data Storage<br></b>Collected data is stored in databases or analytics platforms.</p>
+<p><b>Step 4: Data Processing<br></b>Analytics tools process and organize the collected data.</p>
+<p><b>Step 5: Report Generation<br></b>Reports and dashboards are generated for analysis.</p>
+<p><b>Example:<br></b>A user visits an online shopping website:</p>
+<ul><li>Server Log records the page request.
+</li><li>Cookie stores user session information.
+</li><li>JavaScript Tag records clicks and scrolling activity.
+</li><li>Google Analytics generates reports showing user behavior.
+</li></ul>
+<p><b>Data Collection Flow:<br></b>User Visit<br>     ↓<br>Data Collection<br>(Server Logs/Cookies/JS Tags)<br>     ↓<br>Data Storage<br>     ↓<br>Data Processing<br>     ↓<br>Analytics Reports &amp; Dashboards</p>
+<h4>Conclusion:</h4>
+<p>Web data collection enables organizations to understand visitor behavior, improve website performance, and make informed business decisions.</p></article>
+</main>
+<footer class="foot">
+  <p>Shared by Harsh, IT Batch 2027, so juniors have last year's papers the night before. Not an official TCET site. <a href="https://harver.in">harver.in</a></p>
+  <p data-contact hidden>Wrong label, broken page or a paper to add? <a href="#" data-email>Email Harsh</a>.</p>
+  <p data-cookie-row hidden><button class="linklike" type="button" data-cookie-settings>Cookie settings</button></p>
+</footer>
+</div>
+</div>
+<div class="cookie" data-cookie-banner hidden role="region" aria-label="Cookie preferences">
+  <p><b>Cookies.</b> Night Before can use Google Analytics cookies to see which subjects people open. Accept all to allow them, or Essential only to browse without them. Change this any time under Cookie settings.</p>
+  <div class="cookie-btns"><button class="btn-main" type="button" data-cookie-accept>Accept all</button><button class="btn" type="button" data-cookie-essential>Essential only</button></div>
+</div>
+</body>
+</html>

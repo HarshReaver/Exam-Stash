@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Analytics and Information Retrieval Module 1 notes | Night Before</title>
+<meta name="description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 1 notes. readable page or the Word file · 915 KB.">
+<link rel="canonical" href="https://pyq.harver.in/view/web-analytics-ir-notes-module-1/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Night Before">
+<meta property="og:title" content="Web Analytics and Information Retrieval Module 1 notes | Night Before">
+<meta property="og:description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 1 notes. readable page or the Word file · 915 KB.">
+<meta property="og:url" content="https://pyq.harver.in/view/web-analytics-ir-notes-module-1/">
+<meta property="og:image" content="https://pyq.harver.in/og-image.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem("nb-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css?v=4">
+<script src="/assets/site.js?v=1" defer></script>
+
+</head>
+<body class="s7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/">Night Before</a>
+  <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  <form class="jump" data-jump hidden>
+    <label for="jump">Jump to subject</label>
+    <div class="jump-row"><select id="jump" name="to"><optgroup label="Semester III"><option value="/sem-3/uhv-ii/">Universal Human Values II</option><option value="/sem-3/maths-iii/">Mathematics III</option><option value="/sem-3/digital-circuit-design/">Digital Circuit Design</option><option value="/sem-3/dsa/">Data Structures and Algorithms</option><option value="/sem-3/dbms/">Database Management Systems</option></optgroup><optgroup label="Semester IV"><option value="/sem-4/maths-iv/">Mathematics IV</option><option value="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</option><option value="/sem-4/nosql/">NoSQL</option><option value="/sem-4/computer-networks/">Computer Networks</option></optgroup><optgroup label="Semester V"><option value="/sem-5/operating-system/">Operating System</option><option value="/sem-5/automata-theory/">Automata Theory</option><option value="/sem-5/web-programming/">Web Programming</option><option value="/sem-5/cns/">Cryptography and Network Security</option><option value="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</option><option value="/sem-5/full-stack-development-i/">Full Stack Development I</option><option value="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering</option><option value="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch</option><option value="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch</option></optgroup><optgroup label="Semester VI"><option value="/sem-6/wpmh/">Work Place Mental Health</option><option value="/sem-6/dmbi/">Data Mining and Business Intelligence</option><option value="/sem-6/software-engineering/">Software Engineering</option><option value="/sem-6/artificial-intelligence/">Artificial Intelligence</option><option value="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</option><option value="/sem-6/analysis-of-algorithms/">Analysis of Algorithms</option><option value="/sem-6/english-competitive-exams/">English for Competitive Exams</option></optgroup><optgroup label="Semester VII"><option value="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</option><option value="/sem-7/big-data-analytics/">Big Data Analytics</option><option value="/sem-7/devops/">DevOps</option><option value="/sem-7/web-analytics-ir/" selected>Web Analytics and Information Retrieval</option><option value="/sem-7/japanese-i/">Japanese Language I</option><option value="/sem-7/user-interaction-design/">User Interaction Design</option><option value="/sem-7/management-information-system/">Management Information System</option><option value="/sem-7/design-thinking/">Design Thinking and Problem Solving</option><option value="/sem-7/disaster-management/">Disaster Management and Mitigation Methods</option></optgroup></select><button type="submit">Go</button></div>
+  </form>
+</header>
+<div class="shell">
+<aside class="side" aria-label="Semesters and subjects">
+  <div class="side-top">
+    <a class="brand" href="/">Night Before</a>
+    <p>TCET IT papers, question banks and notes</p>
+    <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  </div>
+  <nav aria-label="Subjects"><div class="side-sem s3"><h2><a href="/#sem-3">Semester III</a></h2><ul><li><a href="/sem-3/uhv-ii/">Universal Human Values II</a></li><li><a href="/sem-3/maths-iii/">Mathematics III</a></li><li><a href="/sem-3/digital-circuit-design/">Digital Circuit Design</a></li><li><a href="/sem-3/dsa/">Data Structures and Algorithms</a></li><li><a href="/sem-3/dbms/">Database Management Systems</a></li></ul></div><div class="side-sem s4"><h2><a href="/#sem-4">Semester IV</a></h2><ul><li><a href="/sem-4/maths-iv/">Mathematics IV</a></li><li><a href="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</a></li><li><a href="/sem-4/nosql/">NoSQL</a></li><li><a href="/sem-4/computer-networks/">Computer Networks</a></li></ul></div><div class="side-sem s5"><h2><a href="/#sem-5">Semester V</a></h2><ul><li><a href="/sem-5/operating-system/">Operating System</a></li><li><a href="/sem-5/automata-theory/">Automata Theory</a></li><li><a href="/sem-5/web-programming/">Web Programming</a></li><li><a href="/sem-5/cns/">Cryptography and Network Security</a></li><li><a href="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</a></li><li><a href="/sem-5/full-stack-development-i/">Full Stack Development I <span class="side-note">other option</span></a></li><li><a href="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering <span class="side-note">other branch</span></a></li><li><a href="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch <span class="side-note">older syllabus</span></a></li><li><a href="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch <span class="side-note">older syllabus</span></a></li></ul></div><div class="side-sem s6"><h2><a href="/#sem-6">Semester VI</a></h2><ul><li><a href="/sem-6/wpmh/">Work Place Mental Health</a></li><li><a href="/sem-6/dmbi/">Data Mining and Business Intelligence</a></li><li><a href="/sem-6/software-engineering/">Software Engineering</a></li><li><a href="/sem-6/artificial-intelligence/">Artificial Intelligence</a></li><li><a href="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</a></li><li><a href="/sem-6/analysis-of-algorithms/">Analysis of Algorithms <span class="side-note">other option</span></a></li><li><a href="/sem-6/english-competitive-exams/">English for Competitive Exams <span class="side-note">other option</span></a></li></ul></div><div class="side-sem s7"><h2><a href="/#sem-7">Semester VII</a></h2><ul><li><a href="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</a></li><li><a href="/sem-7/big-data-analytics/">Big Data Analytics</a></li><li><a href="/sem-7/devops/">DevOps</a></li><li><a href="/sem-7/web-analytics-ir/" aria-current="page">Web Analytics and Information Retrieval</a></li><li><a href="/sem-7/japanese-i/">Japanese Language I</a></li><li><a href="/sem-7/user-interaction-design/">User Interaction Design <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/management-information-system/">Management Information System <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/design-thinking/">Design Thinking and Problem Solving <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/disaster-management/">Disaster Management and Mitigation Methods <span class="side-note">older syllabus</span></a></li></ul></div></nav>
+</aside>
+<div class="col">
+<main id="main" tabindex="-1">
+
+<nav class="crumb" aria-label="Breadcrumb"><a href="/#sem-7">Semester VII</a> <span aria-hidden="true">/</span> <a href="/sem-7/web-analytics-ir/">Web Analytics and Information Retrieval</a></nav>
+<h1>Web Analytics and Information Retrieval: Module 1 notes</h1>
+<p class="sub"><span class="ft docx">DOCX</span> readable page or the Word file · 915 KB</p>
+<div class="actions">
+  <a class="btn-main" href="/files/web-analytics-ir-notes-module-1.docx" download="Web Analytics and Information Retrieval - Module 1 notes.docx">Download DOCX</a>
+  <button class="btn" type="button" data-print>Print or save as PDF</button>
+  <a class="btn" href="/sem-7/web-analytics-ir/">All files for this subject</a>
+</div>
+<p class="fine">Converted from the Word file so it reads on a phone. The download is the original.</p><article class="prose"><h4>Web Analytics and Information Retrieval (IR)</h4>
+<p>This unit covers:</p>
+<ol><li>Web Analytics
+<ul><li>Metrics
+</li><li>KPIs
+</li><li>User Behaviour Analysis
+</li></ul>
+</li><li>Information Retrieval (IR)
+<ul><li>Indexing
+</li><li>Querying
+</li><li>Ranking
+</li></ul>
+</li><li>Web Data Sources
+<ul><li>Server Logs
+</li><li>APIs
+</li><li>Clickstreams
+</li></ul>
+</li><li>Components of IR Systems
+<ul><li>Document Representation
+</li><li>Retrieval Models
+</li></ul>
+</li><li>Applications of IR
+<ul><li>Search Engines
+</li><li>Digital Marketing
+</li><li>User Behaviour Analysis
+</li></ul>
+</li></ol>
+<hr>
+<p><b>1. WEB ANALYTICS</b><b><br></b>Web Analytics is the process of collecting, measuring, analyzing, and reporting website data to understand user behavior and improve website performance.</p>
+<p><b>Real-Life Example<br></b>An online shopping website wants to know:</p>
+<ul><li>How many visitors visit daily?
+</li><li>Which products are viewed most?
+</li><li>Why customers leave without purchasing?
+</li></ul>
+<p>Web analytics helps answer these questions.</p>
+<hr>
+<p><b>A. Metrics</b><b><br></b>Metrics are measurable quantities used to track website performance.</p>
+<h4>Common Web Analytics Metrics</h4>
+<div class="table-wrap"><table><tr><th><b>Metric</b></th><th><b>Meaning</b></th></tr><tr><td>Page Views</td><td>Number of pages viewed</td></tr><tr><td>Users</td><td>Number of unique visitors</td></tr><tr><td>Sessions</td><td>Number of visits</td></tr><tr><td>Bounce Rate</td><td>Percentage leaving after one page</td></tr><tr><td>Average Session Duration</td><td>Average time spent on website</td></tr><tr><td>Conversion Rate</td><td>Percentage completing desired action</td></tr></table></div>
+<hr>
+<p><b>Example<br></b>Suppose a website receives:</p>
+<ul><li>1000 visitors
+</li><li>2000 page views
+</li></ul>
+<p>Average Pages per Visitor:</p>
+<p>2000/1000=2</p>
+<p>Each visitor viewed 2 pages on average.</p>
+<hr>
+<p><b>B. KPIs (Key Performance Indicators)<br></b>KPIs are strategic metrics used to evaluate business goals.</p>
+<h4>Examples</h4>
+<div class="table-wrap"><table><tr><th><b>Business Goal</b></th><th><b>KPI</b></th></tr><tr><td>Increase Sales</td><td>Conversion Rate</td></tr><tr><td>Improve Engagement</td><td>Average Session Duration</td></tr><tr><td>Grow Audience</td><td>New Users</td></tr><tr><td>Reduce Exits</td><td>Bounce Rate</td></tr></table></div>
+<hr>
+<h4>Example</h4>
+<p>An e-commerce website goal:<br>Increase online sales by 20%.</p>
+<p>Relevant KPI:<br>Conversion Rate</p>
+<p>If: 1000 visitors and 50 purchases</p>
+<p>Conversion Rate=50/1000×100 = 5%</p>
+<hr>
+<p><b>C. User Behaviour Analysis<br></b>Study of how users interact with a website.</p>
+<h4>Questions Answered</h4>
+<ul><li>Which pages are visited most?
+</li><li>Where do users leave?
+</li><li>Which products attract attention?
+</li><li>What path do users follow?
+</li></ul>
+<hr>
+<h4>Example User Journey</h4>
+<p>Home Page</p>
+<p>↓</p>
+<p>Product Page</p>
+<p>↓</p>
+<p>Cart</p>
+<p>↓</p>
+<p>Checkout</p>
+<p>↓</p>
+<p>Purchase</p>
+<p>This sequence helps understand customer behaviour.</p>
+<hr>
+<h4>Benefits</h4>
+<p>✔ Improve website design</p>
+<p>✔ Increase conversions</p>
+<p>✔ Personalize content</p>
+<p>✔ Improve user experience</p>
+<hr>
+<p><b>2. BASICS OF INFORMATION RETRIEVAL (IR)</b><br>Information Retrieval (IR) is the process of finding relevant information from a large collection of data.</p>
+<p><b>Example<br></b>When a user searches:<br>&quot;Best smartphone under ₹20,000&quot;<br>Google retrieves relevant web pages.</p>
+<hr>
+<p><b>IR Process<br></b>User Query<br>↓<br>Search System<br>↓<br>Document Matching<br>↓<br>Ranking<br>↓<br>Results Displayed</p>
+<hr>
+<p><b>A. Indexing</b><br>Indexing is the process of organizing documents so they can be searched efficiently.</p>
+<p><b>Library Example<br></b>Instead of searching every book manually, a library catalogue stores:</p>
+<ul><li>Title
+</li><li>Author
+</li><li>Subject
+</li></ul>
+<p>Similarly, search engines create indexes.</p>
+<hr>
+<p><b>Example</b><br>Document:<br>&quot;Machine learning improves search engines.&quot;</p>
+<p>Index:</p>
+<div class="table-wrap"><table><tr><th><b>Term</b></th><th><b>Document</b></th></tr><tr><td>Machine</td><td>D1</td></tr><tr><td>Learning</td><td>D1</td></tr><tr><td>Search</td><td>D1</td></tr><tr><td>Engines</td><td>D1</td></tr></table></div>
+<hr>
+<h4>Advantages</h4>
+<ul><li>Faster search
+</li><li>Efficient retrieval
+</li><li>Reduced processing time
+</li></ul>
+<hr>
+<p><b>B. Querying</b><br>A query is the user&#x27;s search request.</p>
+<h4>Examples</h4>
+<ul><li>&quot;Data Science Books&quot;
+</li><li>&quot;Weather in Mumbai&quot;
+</li><li>&quot;Best laptop 2025&quot;
+</li></ul>
+<hr>
+<h4>Types of Queries</h4>
+<p><b>Informational<br></b>Example:<b><br></b>&quot;What is Artificial Intelligence?&quot;</p>
+<p><b>Navigational<br></b>Example:<b><br></b>&quot;Facebook Login&quot;</p>
+<p><b>Transactional<br></b>Example:<b><br></b>&quot;Buy iPhone 16&quot;</p>
+<hr>
+<p><b>C. Ranking</b><b><br></b>Ranking determines the order of search results based on relevance.</p>
+<p><b>Example<br></b>Query:<b><br></b>&quot;Python Programming&quot;</p>
+<p>Result A:<br>Python Tutorial</p>
+<p>Result B:<br>Python snake</p>
+<p>Result A receives higher rank because it is more relevant.</p>
+<hr>
+<h4>Factors Affecting Ranking</h4>
+<ul><li>Keyword relevance
+</li><li>Page quality
+</li><li>Popularity
+</li><li>User behaviour
+</li><li>Freshness of content
+</li></ul>
+<hr>
+<h4>3. WEB DATA SOURCES</h4>
+<p>Web analytics and IR systems collect data from multiple sources.</p>
+<hr>
+<h4>A. Server Logs</h4>
+<p>Files automatically generated by web servers recording user activities.</p>
+<h4>Sample Log Entry</h4>
+<p>192.168.1.10<br>12/06/2025<br>10:15 AM<br>GET /index.html</p>
+<hr>
+<h4>Information Collected</h4>
+<ul><li>IP Address
+</li><li>Date &amp; Time
+</li><li>Requested Page
+</li><li>Browser Information
+</li></ul>
+<hr>
+<h4>Uses</h4>
+<ul><li>Traffic analysis
+</li><li>Security monitoring
+</li><li>User behaviour tracking
+</li></ul>
+<hr>
+<p><b>B. APIs (Application Programming Interfaces)</b><br>APIs allow systems to exchange data automatically.</p>
+<p><b>Example<br></b>Weather Application</p>
+<p>Weather App</p>
+<p>↓</p>
+<p>Weather API</p>
+<p>↓</p>
+<p>Weather Data</p>
+<hr>
+<p><b>Real Example</b><br>A travel website uses weather APIs to show current weather for destinations.</p>
+<hr>
+<h4><br>Advantages</h4>
+<ul><li>Real-time data
+</li><li>Automation
+</li><li>Integration between systems
+</li></ul>
+<hr>
+<p><b>C. Clickstream Data</b><br>Clickstream is the sequence of clicks made by a user during a browsing session.</p>
+<h4>Example</h4>
+<p>Home</p>
+<p>↓</p>
+<p>Products</p>
+<p>↓</p>
+<p>Mobile Phones</p>
+<p>↓</p>
+<p>Samsung Galaxy</p>
+<p>↓</p>
+<p>Cart</p>
+<p>↓</p>
+<p>Checkout</p>
+<hr>
+<h4>Importance</h4>
+<ul><li>Understand navigation patterns
+</li><li>Improve website layout
+</li><li>Recommend products
+</li></ul>
+<hr>
+<h4>4. COMPONENTS OF INFORMATION RETRIEVAL SYSTEMS</h4>
+<hr>
+<p><b>A. Document Representation</b><br>Converting documents into machine-understandable formats.</p>
+<hr>
+<p><b>Example: Document</b><br>&quot;Artificial Intelligence enables smart systems.&quot;</p>
+<p>After processing:</p>
+<div class="table-wrap"><table><tr><th><b>Term</b></th><th><b>Frequency</b></th></tr><tr><td>Artificial</td><td>1</td></tr><tr><td>Intelligence</td><td>1</td></tr><tr><td>Smart</td><td>1</td></tr><tr><td>Systems</td><td>1</td></tr></table></div>
+<hr>
+<h4>Techniques</h4>
+<ul><li>Tokenization
+</li><li>Stop-word removal
+</li><li>Stemming
+</li><li>Vector representation
+</li></ul>
+<hr>
+<h4>Example</h4>
+<p>Sentence:<br>&quot;The computer is computing data.&quot;</p>
+<p>After stemming:<br>computer<br>compute<br>data</p>
+<hr>
+<p><b>B. Retrieval Models<br></b>Methods used to determine relevance between query and documents.</p>
+<hr>
+<h4>1. Boolean Model</h4>
+<p>Uses:</p>
+<ul><li>AND
+</li><li>OR
+</li><li>NOT
+</li></ul>
+<p>Example:</p>
+<p>Data AND Mining<br>Returns documents containing both words.</p>
+<hr>
+<h4>2. Vector Space Model</h4>
+<p>Represents documents as vectors.<br>Measures similarity using mathematical calculations.</p>
+<p>Example: Query: &quot;Machine Learning&quot;</p>
+<p>Documents with more matching terms receive higher scores.</p>
+<hr>
+<h4>3. Probabilistic Model</h4>
+<p>Calculates probability that a document is relevant.<br>Higher probability = Higher rank.</p>
+<hr>
+<h4>5. APPLICATIONS OF INFORMATION RETRIEVAL</h4>
+<hr>
+<h4>A. Search Engines</h4>
+<h4>Examples</h4>
+<ul><li>Google
+</li><li>Bing
+</li><li>Yahoo
+</li></ul>
+<hr>
+<h4>Working</h4>
+<p>User Query</p>
+<p>↓</p>
+<p>Index Search</p>
+<p>↓</p>
+<p>Ranking</p>
+<p>↓</p>
+<p>Results</p>
+<hr>
+<h4>Example</h4>
+<p>Search:<br>&quot;Digital Marketing Course&quot;<br>Search engine returns the most relevant pages.</p>
+<hr>
+<p><b>B. Digital Marketing<br></b>IR helps marketers:</p>
+<ul><li>Improve SEO
+</li><li>Analyse keywords
+</li><li>Understand customer interests
+</li><li>Optimize advertisements
+</li></ul>
+<hr>
+<h4>Example</h4>
+<p>A company selling laptops identifies popular search terms:</p>
+<ul><li>Best laptop for students
+</li><li>Affordable laptops
+</li></ul>
+<p>The company optimizes content using these keywords.</p>
+<hr>
+<h4>C. User Behaviour Analysis</h4>
+<p>IR techniques help analyse:</p>
+<ul><li>Search patterns
+</li><li>Click patterns
+</li><li>Purchase patterns
+</li></ul>
+<hr>
+<h4>Example</h4>
+<p>An e-commerce website discovers:</p>
+<p>Users searching:<br>&quot;Wireless Earbuds&quot;</p>
+<p>often purchase:<br>&quot;Phone Covers&quot;<br>This information helps create product recommendations.</p>
+<hr>
+<h4>Classroom Activity</h4>
+<h4>Activity 1: Metrics Calculation</h4>
+<p>Website Data:</p>
+<ul><li>Users = 500
+</li><li>Purchases = 25
+</li></ul>
+<p>Calculate Conversion Rate. 25/500×100 = 5%</p>
+<hr>
+<h4>Activity 2: Identify Query Type</h4>
+<div class="table-wrap"><table><tr><th><b>Query</b></th><th><b>Type</b></th></tr><tr><td>What is Cloud Computing?</td><td>Informational</td></tr><tr><td>Instagram Login</td><td>Navigational</td></tr><tr><td>Buy Smart TV Online</td><td>Transactional</td></tr></table></div>
+<hr>
+<h4>Activity 3: Clickstream Analysis</h4>
+<p>User Path:</p>
+<p>Home</p>
+<p>↓</p>
+<p>Products</p>
+<p>↓</p>
+<p>Cart</p>
+<p>↓</p>
+<p>Exit</p>
+<p>Question: Where is the user dropping off?<br>Answer: Cart Page</p>
+<hr>
+<h4>Quick Revision Notes<br>Web Analytics</h4>
+<ul><li>Measures website performance.
+</li><li>Uses metrics and KPIs.
+</li><li>Studies user behavior.
+</li></ul>
+<h4>Metrics</h4>
+<ul><li>Page Views
+</li><li>Sessions
+</li><li>Users
+</li><li>Bounce Rate
+</li></ul>
+<h4>KPIs</h4>
+<ul><li>Goal-oriented performance indicators.
+</li></ul>
+<h4>Information Retrieval</h4>
+<ul><li>Finds relevant information.
+</li><li>Includes indexing, querying, ranking.
+</li></ul>
+<h4>Web Data Sources</h4>
+<ul><li>Server Logs
+</li><li>APIs
+</li><li>Clickstreams
+</li></ul>
+<h4>IR Components</h4>
+<ul><li>Document Representation
+</li><li>Retrieval Models
+</li></ul>
+<h4>Applications</h4>
+<ul><li>Search Engines
+</li><li>Digital Marketing
+</li><li>User Behaviour Analysis
+</li></ul>
+<hr>
+<h4>Exam-Oriented Questions<br>Short Answer Questions</h4>
+<ol><li>Define Web Analytics.
+</li><li>What is a KPI?
+</li><li>Explain indexing in IR.
+</li><li>What is clickstream data?
+</li><li>Define retrieval model.
+</li></ol>
+<h4>Long Answer Questions</h4>
+<ol><li>Explain metrics and KPIs with examples.
+</li><li>Describe indexing, querying, and ranking in Information Retrieval.
+</li><li>Explain various web data sources.
+</li><li>Discuss components of an Information Retrieval System.
+</li><li>Explain applications of Information Retrieval in digital marketing and search engines.
+</li></ol>
+<h4>Short Answer Questions</h4>
+<h4>1. Define Web Analytics.</h4>
+<p>Web Analytics is the process of collecting, measuring, analyzing, and reporting website data to understand user behavior and improve website performance. It helps organizations make data-driven decisions to enhance user experience and achieve business goals.</p>
+<p><b>Example:</b> An online shopping website analyzes visitor data to identify why customers leave without making purchases.</p>
+<hr>
+<h4>2. What is a KPI?</h4>
+<p>A <b>Key Performance Indicator (KPI)</b> is a measurable value used to evaluate how effectively an organization is achieving its objectives and goals.</p>
+<h4>Examples:</h4>
+<ul><li>Conversion Rate
+</li><li>Bounce Rate
+</li><li>Revenue Growth
+</li><li>Customer Retention Rate
+</li></ul>
+<p><b>Example:</b> If an e-commerce website aims to increase sales, its KPI may be the conversion rate.</p>
+<hr>
+<h4>3. Explain Indexing in Information Retrieval.</h4>
+<p>Indexing is the process of organizing and storing information from documents in a structured format so that relevant documents can be retrieved quickly when a user submits a query.<br>Instead of searching every document individually, the system searches the index.</p>
+<p><b>Example:</b><br>Document:<br>&quot;Machine Learning improves search engines.&quot;</p>
+<p>Index:</p>
+<div class="table-wrap"><table><tr><th><b>Term</b></th><th><b>Document</b></th></tr><tr><td>Machine</td><td>D1</td></tr><tr><td>Learning</td><td>D1</td></tr><tr><td>Search</td><td>D1</td></tr><tr><td>Engines</td><td>D1</td></tr></table></div>
+<p>This allows faster searching.</p>
+<hr>
+<p><b>4. What is Clickstream Data?<br></b>Clickstream data is the sequence of clicks and pages visited by a user during a browsing session on a website.<br>It records the path followed by users and helps analyze navigation behavior.</p>
+<h4>Example:</h4>
+<p>Home Page</p>
+<p>↓</p>
+<p>Products Page</p>
+<p>↓</p>
+<p>Mobile Phones</p>
+<p>↓</p>
+<p>Cart</p>
+<p>↓</p>
+<p>Checkout</p>
+<p>Businesses use clickstream data to understand user preferences and improve website design.</p>
+<hr>
+<h4>5. Define Retrieval Model.</h4>
+<p>A retrieval model is a mathematical framework used in Information Retrieval systems to determine the relevance of documents to a user&#x27;s query.</p>
+<p>It helps rank documents according to how well they match the search request.</p>
+<h4>Examples:</h4>
+<ul><li>Boolean Model
+</li><li>Vector Space Model
+</li><li>Probabilistic Model
+</li></ul>
+<hr>
+<h4>Long Answer Questions</h4>
+<h4>1. Explain Metrics and KPIs with Examples.</h4>
+<p><b>Metrics<br></b>Metrics are measurable values used to monitor and evaluate website performance.</p>
+<h4>Common Metrics</h4>
+<div class="table-wrap"><table><tr><th><b>Metric</b></th><th><b>Description</b></th></tr><tr><td>Users</td><td>Number of visitors</td></tr><tr><td>Sessions</td><td>Number of visits</td></tr><tr><td>Page Views</td><td>Total pages viewed</td></tr><tr><td>Bounce Rate</td><td>Percentage leaving after one page</td></tr><tr><td>Session Duration</td><td>Time spent on site</td></tr></table></div>
+<p><b>Example<br></b>A website receives:</p>
+<ul><li>1000 visitors
+</li><li>2500 page views
+</li></ul>
+<p>Average pages viewed per visitor: 2500/1000 = 2.5 pages <br>Each visitor viewed 2.5 pages on average.</p>
+<hr>
+<p><b>KPIs</b><br>KPIs are important metrics directly linked to business objectives.</p>
+<h4>Examples</h4>
+<div class="table-wrap"><table><tr><th><b>Goal</b></th><th><b>KPI</b></th></tr><tr><td>Increase Sales</td><td>Conversion Rate</td></tr><tr><td>Improve Engagement</td><td>Session Duration</td></tr><tr><td>Increase Visitors</td><td>New Users</td></tr><tr><td>Reduce Exits</td><td>Bounce Rate</td></tr></table></div>
+<p><b>Example<br></b>Website Visitors = 1000<br>Purchases = 50</p>
+<p>Conversion Rate: (50/1000) x 100= 5%</p>
+<p>Thus, the website&#x27;s KPI (Conversion Rate) is 5%.</p>
+<h4>Difference Between Metrics and KPIs</h4>
+<div class="table-wrap"><table><tr><th><b>Metrics</b></th><th><b>KPIs</b></th></tr><tr><td>Measure activities</td><td>Measure goal achievement</td></tr><tr><td>General indicators</td><td>Strategic indicators</td></tr><tr><td>Many can exist</td><td>Few critical measures</td></tr></table></div>
+<hr>
+<h4>2. Describe Indexing, Querying, and Ranking in Information Retrieval.</h4>
+<p>Information Retrieval (IR) is the process of locating relevant information from a collection of documents based on a user&#x27;s query.</p>
+<hr>
+<h4>A. Indexing</h4>
+<p>Indexing organizes documents into a searchable structure.</p>
+<p><b>Example<br></b>Document:<b><br></b>&quot;Data Mining extracts useful information.&quot;</p>
+<p>Index:</p>
+<div class="table-wrap"><table><tr><th><b>Term</b></th><th><b>Document</b></th></tr><tr><td>Data</td><td>D1</td></tr><tr><td>Mining</td><td>D1</td></tr><tr><td>Information</td><td>D1</td></tr></table></div>
+<h4>Benefits:</h4>
+<ul><li>Fast search
+</li><li>Reduced processing time
+</li><li>Efficient retrieval
+</li></ul>
+<hr>
+<p><b>B. Querying<br></b>A query is the search request submitted by a user.</p>
+<h4>Examples</h4>
+<ul><li>&quot;Machine Learning&quot;
+</li><li>&quot;Best smartphone under ₹20,000&quot;
+</li><li>&quot;Weather forecast&quot;
+</li></ul>
+<h4>Types of Queries</h4>
+<ol><li>Informational
+<ul><li>&quot;What is AI?&quot;
+</li></ul>
+</li><li>Navigational
+<ul><li>&quot;Facebook Login&quot;
+</li></ul>
+</li><li>Transactional
+<ul><li>&quot;Buy Laptop Online&quot;
+</li></ul>
+</li></ol>
+<hr>
+<p><b>C. Ranking</b><br>Ranking arranges search results according to relevance.</p>
+<p><b>Example<br></b>Query:<br>&quot;Python Programming&quot;</p>
+<p>Results:</p>
+<ol><li>Python Tutorial
+</li><li>Python Course
+</li><li>Cooking Recipes <br>The first two documents rank higher because they are more relevant.
+</li></ol>
+<h4>Factors Affecting Ranking</h4>
+<ul><li>Keyword matching
+</li><li>Content quality
+</li><li>Popularity
+</li><li>User engagement
+</li><li>Freshness of information
+</li></ul>
+<hr>
+<h4>3. Explain Various Web Data Sources.</h4>
+<p>Web data sources provide information for analytics and Information Retrieval systems.</p>
+<hr>
+<p><b>A. Server Logs</b><br>Server logs are files generated automatically by web servers that record user activities.</p>
+<h4>Information Stored</h4>
+<ul><li>IP address
+</li><li>Date and time
+</li><li>Requested page
+</li><li>Browser information
+</li></ul>
+<h4>Example</h4>
+<p>IP: 192.168.1.10<br>Date: 12-06-2025<br>Page: /home.html</p>
+<h4>Uses</h4>
+<ul><li>Traffic analysis
+</li><li>Security monitoring
+</li><li>User tracking
+</li></ul>
+<hr>
+<p><b>B. APIs (Application Programming Interfaces)</b><br>APIs enable communication and data exchange between applications.</p>
+<p><b>Example<br></b>A weather application retrieves live weather information through a weather API.</p>
+<h4>Advantages</h4>
+<ul><li>Real-time data
+</li><li>Automation
+</li><li>Easy integration
+</li></ul>
+<hr>
+<p><b>C. Clickstream Data</b><br>Clickstream records the sequence of pages visited by users.</p>
+<h4>Example</h4>
+<p>Home</p>
+<p>↓</p>
+<p>Products</p>
+<p>↓</p>
+<p>Laptop</p>
+<p>↓</p>
+<p>Cart</p>
+<p>↓</p>
+<p>Checkout</p>
+<h4>Uses</h4>
+<ul><li>User behavior analysis
+</li><li>Product recommendations
+</li><li>Website optimization
+</li></ul>
+<hr>
+<h4>Importance of Web Data Sources</h4>
+<ul><li>Improve decision-making
+</li><li>Understand user behavior
+</li><li>Enhance website performance
+</li><li>Support business strategies
+</li></ul>
+<hr>
+<h4>4. Discuss Components of an Information Retrieval System.</h4>
+<p>An Information Retrieval System consists of components that help store, organize, search, and retrieve relevant information.</p>
+<hr>
+<h4>A. Document Collection</h4>
+<p>A set of documents stored in the system.</p>
+<p><b>Example:</b> Web pages, PDFs, articles, books.</p>
+<hr>
+<p><b>B. Document Representation<br></b>Documents are converted into machine-readable formats.</p>
+<h4>Steps</h4>
+<ol><li>Tokenization
+</li><li>Stop-word Removal
+</li><li>Stemming
+</li></ol>
+<p><b>Example<br></b>Sentence:</p>
+<p>&quot;The computer is computing data.&quot;</p>
+<p>After processing:</p>
+<p>computer</p>
+<p>compute</p>
+<p>data</p>
+<hr>
+<p><b>C. Indexing Module<br></b>Creates indexes for quick searching.</p>
+<h4>Example</h4>
+<div class="table-wrap"><table><tr><th><b>Word</b></th><th><b>Document</b></th></tr><tr><td>AI</td><td>D1</td></tr><tr><td>Data</td><td>D2</td></tr></table></div>
+<hr>
+<p><b>D. Query Processing<br></b>Processes user search requests.</p>
+<h4>Example</h4>
+<p>Query:<br>&quot;Artificial Intelligence&quot;<br>The system identifies important keywords and searches the index.</p>
+<hr>
+<p><b>E. Retrieval Model<br></b>Determines relevance between query and documents.</p>
+<h4>Types</h4>
+<ol><li>Boolean Model
+</li><li>Vector Space Model
+</li><li>Probabilistic Model
+</li></ol>
+<hr>
+<p><b>F. Ranking Module</b><br>Ranks retrieved documents according to relevance.</p>
+<hr>
+<h4>Working of IR System</h4>
+<p>User Query</p>
+<p>↓</p>
+<p>Query Processing</p>
+<p>↓</p>
+<p>Index Search</p>
+<p>↓</p>
+<p>Retrieval Model</p>
+<p>↓</p>
+<p>Ranking</p>
+<p>↓</p>
+<p>Relevant Results</p>
+<hr>
+<h4>5. Explain Applications of Information Retrieval in Digital Marketing and Search Engines.</h4>
+<p>Information Retrieval techniques are widely used to locate, organize, and rank relevant information from large data collections.</p>
+<hr>
+<p><b>A. Applications in Search Engines<br></b>Search engines use IR techniques to provide relevant search results.</p>
+<h4>Working</h4>
+<ol><li>Crawl web pages.
+</li><li>Create indexes.
+</li><li>Process user queries.
+</li><li>Retrieve matching pages.
+</li><li>Rank results.
+</li></ol>
+<p><b>Example<br></b>Search Query:<b><br></b>&quot;Digital Marketing Course&quot;<b><br></b>The search engine retrieves and ranks relevant web pages.</p>
+<h4>Benefits</h4>
+<ul><li>Fast information access
+</li><li>Accurate search results
+</li><li>Improved user experience
+</li></ul>
+<hr>
+<p><b>B. Applications in Digital Marketing<br></b>Digital marketers use IR techniques to understand customer interests and improve online visibility.</p>
+<p><b>Uses<br></b><b>1. Search Engine Optimization (SEO)<br></b>Businesses optimize content using popular keywords.</p>
+<p><b>Example:</b><br>A laptop company targets keywords such as:</p>
+<ul><li>Best laptop for students
+</li><li>Affordable laptops
+</li></ul>
+<hr>
+<p><b>2. Keyword Analysis</b><br>Marketers identify frequently searched terms.</p>
+<h4>Benefits:</h4>
+<ul><li>Better content creation
+</li><li>Improved website traffic
+</li></ul>
+<hr>
+<p><b>3. Online Advertising<br></b>Advertisements are displayed based on user searches and interests.</p>
+<p><b>Example:</b><br>A user searching for &quot;running shoes&quot; may see sports shoe advertisements.</p>
+<hr>
+<p><b>C. Applications in User Behaviour Analysis</b><br>IR systems analyze:</p>
+<ul><li>Search patterns
+</li><li>Browsing history
+</li><li>Clickstream data
+</li><li>Purchase behavior
+</li></ul>
+<h4>Example</h4>
+<p>Users searching for &quot;Wireless Earbuds&quot; frequently buy &quot;Phone Covers.&quot;</p>
+<p>The website recommends phone covers to similar users.<br><b>Conclusion</b><br>Information Retrieval plays a crucial role in:</p>
+<ul><li>Search engines
+</li><li>Digital marketing
+</li><li>User behavior analysis
+</li></ul>
+<p>It helps organizations deliver relevant information, improve customer experiences, and make informed business decisions.</p></article>
+</main>
+<footer class="foot">
+  <p>Shared by Harsh, IT Batch 2027, so juniors have last year's papers the night before. Not an official TCET site. <a href="https://harver.in">harver.in</a></p>
+  <p data-contact hidden>Wrong label, broken page or a paper to add? <a href="#" data-email>Email Harsh</a>.</p>
+  <p data-cookie-row hidden><button class="linklike" type="button" data-cookie-settings>Cookie settings</button></p>
+</footer>
+</div>
+</div>
+<div class="cookie" data-cookie-banner hidden role="region" aria-label="Cookie preferences">
+  <p><b>Cookies.</b> Night Before can use Google Analytics cookies to see which subjects people open. Accept all to allow them, or Essential only to browse without them. Change this any time under Cookie settings.</p>
+  <div class="cookie-btns"><button class="btn-main" type="button" data-cookie-accept>Accept all</button><button class="btn" type="button" data-cookie-essential>Essential only</button></div>
+</div>
+</body>
+</html>

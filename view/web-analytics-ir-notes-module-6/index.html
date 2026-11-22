@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Analytics and Information Retrieval Module 6 notes | Night Before</title>
+<meta name="description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 6 notes. readable page or the Word file · 42 KB.">
+<link rel="canonical" href="https://pyq.harver.in/view/web-analytics-ir-notes-module-6/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Night Before">
+<meta property="og:title" content="Web Analytics and Information Retrieval Module 6 notes | Night Before">
+<meta property="og:description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 6 notes. readable page or the Word file · 42 KB.">
+<meta property="og:url" content="https://pyq.harver.in/view/web-analytics-ir-notes-module-6/">
+<meta property="og:image" content="https://pyq.harver.in/og-image.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem("nb-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css?v=4">
+<script src="/assets/site.js?v=1" defer></script>
+
+</head>
+<body class="s7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/">Night Before</a>
+  <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  <form class="jump" data-jump hidden>
+    <label for="jump">Jump to subject</label>
+    <div class="jump-row"><select id="jump" name="to"><optgroup label="Semester III"><option value="/sem-3/uhv-ii/">Universal Human Values II</option><option value="/sem-3/maths-iii/">Mathematics III</option><option value="/sem-3/digital-circuit-design/">Digital Circuit Design</option><option value="/sem-3/dsa/">Data Structures and Algorithms</option><option value="/sem-3/dbms/">Database Management Systems</option></optgroup><optgroup label="Semester IV"><option value="/sem-4/maths-iv/">Mathematics IV</option><option value="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</option><option value="/sem-4/nosql/">NoSQL</option><option value="/sem-4/computer-networks/">Computer Networks</option></optgroup><optgroup label="Semester V"><option value="/sem-5/operating-system/">Operating System</option><option value="/sem-5/automata-theory/">Automata Theory</option><option value="/sem-5/web-programming/">Web Programming</option><option value="/sem-5/cns/">Cryptography and Network Security</option><option value="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</option><option value="/sem-5/full-stack-development-i/">Full Stack Development I</option><option value="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering</option><option value="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch</option><option value="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch</option></optgroup><optgroup label="Semester VI"><option value="/sem-6/wpmh/">Work Place Mental Health</option><option value="/sem-6/dmbi/">Data Mining and Business Intelligence</option><option value="/sem-6/software-engineering/">Software Engineering</option><option value="/sem-6/artificial-intelligence/">Artificial Intelligence</option><option value="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</option><option value="/sem-6/analysis-of-algorithms/">Analysis of Algorithms</option><option value="/sem-6/english-competitive-exams/">English for Competitive Exams</option></optgroup><optgroup label="Semester VII"><option value="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</option><option value="/sem-7/big-data-analytics/">Big Data Analytics</option><option value="/sem-7/devops/">DevOps</option><option value="/sem-7/web-analytics-ir/" selected>Web Analytics and Information Retrieval</option><option value="/sem-7/japanese-i/">Japanese Language I</option><option value="/sem-7/user-interaction-design/">User Interaction Design</option><option value="/sem-7/management-information-system/">Management Information System</option><option value="/sem-7/design-thinking/">Design Thinking and Problem Solving</option><option value="/sem-7/disaster-management/">Disaster Management and Mitigation Methods</option></optgroup></select><button type="submit">Go</button></div>
+  </form>
+</header>
+<div class="shell">
+<aside class="side" aria-label="Semesters and subjects">
+  <div class="side-top">
+    <a class="brand" href="/">Night Before</a>
+    <p>TCET IT papers, question banks and notes</p>
+    <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  </div>
+  <nav aria-label="Subjects"><div class="side-sem s3"><h2><a href="/#sem-3">Semester III</a></h2><ul><li><a href="/sem-3/uhv-ii/">Universal Human Values II</a></li><li><a href="/sem-3/maths-iii/">Mathematics III</a></li><li><a href="/sem-3/digital-circuit-design/">Digital Circuit Design</a></li><li><a href="/sem-3/dsa/">Data Structures and Algorithms</a></li><li><a href="/sem-3/dbms/">Database Management Systems</a></li></ul></div><div class="side-sem s4"><h2><a href="/#sem-4">Semester IV</a></h2><ul><li><a href="/sem-4/maths-iv/">Mathematics IV</a></li><li><a href="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</a></li><li><a href="/sem-4/nosql/">NoSQL</a></li><li><a href="/sem-4/computer-networks/">Computer Networks</a></li></ul></div><div class="side-sem s5"><h2><a href="/#sem-5">Semester V</a></h2><ul><li><a href="/sem-5/operating-system/">Operating System</a></li><li><a href="/sem-5/automata-theory/">Automata Theory</a></li><li><a href="/sem-5/web-programming/">Web Programming</a></li><li><a href="/sem-5/cns/">Cryptography and Network Security</a></li><li><a href="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</a></li><li><a href="/sem-5/full-stack-development-i/">Full Stack Development I <span class="side-note">other option</span></a></li><li><a href="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering <span class="side-note">other branch</span></a></li><li><a href="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch <span class="side-note">older syllabus</span></a></li><li><a href="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch <span class="side-note">older syllabus</span></a></li></ul></div><div class="side-sem s6"><h2><a href="/#sem-6">Semester VI</a></h2><ul><li><a href="/sem-6/wpmh/">Work Place Mental Health</a></li><li><a href="/sem-6/dmbi/">Data Mining and Business Intelligence</a></li><li><a href="/sem-6/software-engineering/">Software Engineering</a></li><li><a href="/sem-6/artificial-intelligence/">Artificial Intelligence</a></li><li><a href="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</a></li><li><a href="/sem-6/analysis-of-algorithms/">Analysis of Algorithms <span class="side-note">other option</span></a></li><li><a href="/sem-6/english-competitive-exams/">English for Competitive Exams <span class="side-note">other option</span></a></li></ul></div><div class="side-sem s7"><h2><a href="/#sem-7">Semester VII</a></h2><ul><li><a href="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</a></li><li><a href="/sem-7/big-data-analytics/">Big Data Analytics</a></li><li><a href="/sem-7/devops/">DevOps</a></li><li><a href="/sem-7/web-analytics-ir/" aria-current="page">Web Analytics and Information Retrieval</a></li><li><a href="/sem-7/japanese-i/">Japanese Language I</a></li><li><a href="/sem-7/user-interaction-design/">User Interaction Design <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/management-information-system/">Management Information System <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/design-thinking/">Design Thinking and Problem Solving <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/disaster-management/">Disaster Management and Mitigation Methods <span class="side-note">older syllabus</span></a></li></ul></div></nav>
+</aside>
+<div class="col">
+<main id="main" tabindex="-1">
+
+<nav class="crumb" aria-label="Breadcrumb"><a href="/#sem-7">Semester VII</a> <span aria-hidden="true">/</span> <a href="/sem-7/web-analytics-ir/">Web Analytics and Information Retrieval</a></nav>
+<h1>Web Analytics and Information Retrieval: Module 6 notes</h1>
+<p class="sub"><span class="ft docx">DOCX</span> readable page or the Word file · 42 KB</p>
+<div class="actions">
+  <a class="btn-main" href="/files/web-analytics-ir-notes-module-6.docx" download="Web Analytics and Information Retrieval - Module 6 notes.docx">Download DOCX</a>
+  <button class="btn" type="button" data-print>Print or save as PDF</button>
+  <a class="btn" href="/sem-7/web-analytics-ir/">All files for this subject</a>
+</div>
+<p class="fine">Converted from the Word file so it reads on a phone. The download is the original.</p><article class="prose"><h4>Module 6: Real-Time Web Analytics and Intelligent Systems</h4>
+<h4>Subject: Web Analytics and Information Retrieval</h4>
+<hr>
+<h4>1. Introduction to Real-Time Web Analytics</h4>
+<p><b>Definition</b><b><br></b>Real-Time Web Analytics refers to the collection, processing, analysis, and visualization of web data as it is generated, enabling immediate insights and decision-making.</p>
+<h4>Objectives</h4>
+<ul><li>Monitor website performance instantly.
+</li><li>Detect user behavior in real time.
+</li><li>Support rapid business decisions.
+</li><li>Improve user engagement and conversions.
+</li></ul>
+<h4>Examples</h4>
+<ul><li>Monitoring live website traffic.
+</li><li>Real-time fraud detection.
+</li><li>Tracking ongoing marketing campaigns.
+</li></ul>
+<hr>
+<h4>2. Real-Time Analytics and Stream Processing</h4>
+<h4>Definition</h4>
+<p>Real-Time Analytics is the analysis of data immediately after it is generated, while Stream Processing continuously processes incoming data streams.</p>
+<h4>Architecture</h4>
+<p>Data Sources<br>      ↓<br>Data Stream<br>      ↓<br>Stream Processing Engine<br>      ↓<br>Analytics Dashboard<br>      ↓<br>Decision Making</p>
+<h4>Examples</h4>
+<ul><li>Live stock market analysis.
+</li><li>Real-time website monitoring.
+</li><li>Social media trend analysis.
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Faster decision-making.
+</li><li>Immediate anomaly detection.
+</li><li>Improved customer experience.
+</li></ul>
+<hr>
+<h4>3. Web Data Streams and Clickstream Data</h4>
+<p><b>Web Data Streams</b><b><br></b>Continuous flow of web-generated data.</p>
+<h4>Examples</h4>
+<ul><li>Page views
+</li><li>Clicks
+</li><li>Searches
+</li><li>Purchases
+</li></ul>
+<hr>
+<h4>Clickstream Data</h4>
+<p><b>Definition</b><b><br></b>A sequence of pages and actions performed by a user during a browsing session.</p>
+<h4>Example</h4>
+<p>Homepage<br>    ↓<br>Product Page<br>    ↓<br>Add to Cart<br>    ↓<br>Checkout</p>
+<h4>Applications</h4>
+<ul><li>User journey analysis
+</li><li>Personalization
+</li><li>Recommendation systems
+</li></ul>
+<hr>
+<h4>4. Stream Processing Concepts</h4>
+<h4>Definition</h4>
+<p>Stream processing involves processing data continuously as it arrives.</p>
+<h4>Key Concepts</h4>
+<h4>Event Streams</h4>
+<p>Continuous sequence of events.</p>
+<h4>Window Processing</h4>
+<p>Processes data over fixed time intervals.</p>
+<h4>Event Time</h4>
+<p>Actual time when an event occurred.</p>
+<h4>Real-Time Computation</h4>
+<p>Instant processing without storing data first.</p>
+<h4>Example</h4>
+<p>A website calculates the number of active users every minute.</p>
+<hr>
+<h4>5. Real-Time KPI Monitoring and Performance Analysis</h4>
+<p><b>Definition</b><b><br></b>Continuous tracking of Key Performance Indicators (KPIs) to evaluate website and business performance.</p>
+<h4>Important Real-Time KPIs</h4>
+<ul><li>Active Users
+</li><li>Page Views per Minute
+</li><li>Conversion Rate
+</li><li>Revenue per Hour
+</li><li>Bounce Rate
+</li><li>Session Duration
+</li></ul>
+<h4>Example Dashboard</h4>
+<div class="table-wrap"><table><tr><th><b>KPI</b></th><th><b>Current Value</b></th></tr><tr><td>Active Users</td><td>1500</td></tr><tr><td>Conversion Rate</td><td>4.8%</td></tr><tr><td>Revenue</td><td>₹75,000</td></tr></table></div>
+<h4>Benefits</h4>
+<ul><li>Immediate issue detection
+</li><li>Campaign monitoring
+</li><li>Performance optimization
+</li></ul>
+<hr>
+<h4>6. Funnel Analysis and User Journey Tracking</h4>
+<h4>Funnel Analysis</h4>
+<h4>Definition</h4>
+<p>Tracks users through various stages of a process and identifies drop-off points.</p>
+<h4>Example</h4>
+<p>Visit Website<br>      ↓<br>View Product<br>      ↓<br>Add to Cart<br>      ↓<br>Purchase</p>
+<h4>Benefits</h4>
+<ul><li>Identifies bottlenecks
+</li><li>Improves conversion rates
+</li></ul>
+<hr>
+<h4>User Journey Tracking</h4>
+<p><b>Definition</b><b><br></b>Monitoring the path users follow while interacting with a website.</p>
+<h4>Example</h4>
+<p>Google Search<br>      ↓<br>Homepage<br>      ↓<br>Category Page<br>      ↓<br>Product Page<br>      ↓<br>Purchase</p>
+<h4>Applications</h4>
+<ul><li>UX optimization
+</li><li>Personalization
+</li><li>Customer behavior analysis
+</li></ul>
+<hr>
+<h4>7. Social Media Analytics</h4>
+<p><b>Definition</b><b><br></b>Analysis of user interactions and engagement across social media platforms.</p>
+<h4>Metrics</h4>
+<ul><li>Likes
+</li><li>Shares
+</li><li>Comments
+</li><li>Reach
+</li><li>Engagement Rate
+</li></ul>
+<h4>Applications</h4>
+<ul><li>Brand monitoring
+</li><li>Sentiment analysis
+</li><li>Campaign evaluation
+</li></ul>
+<h4>Example</h4>
+<p>A company tracks Twitter engagement during a product launch.</p>
+<hr>
+<h4>8. Mobile Analytics</h4>
+<h4>Definition</h4>
+<p>Monitoring and analyzing user interactions within mobile applications.</p>
+<h4>Metrics</h4>
+<ul><li>App Downloads
+</li><li>Active Users
+</li><li>Retention Rate
+</li><li>Session Length
+</li><li>In-App Purchases
+</li></ul>
+<h4>Applications</h4>
+<ul><li>App optimization
+</li><li>User retention
+</li><li>Churn prediction
+</li></ul>
+<h4>Example</h4>
+<p>Analyzing user activity within a shopping app.</p>
+<hr>
+<h4>9. Introduction to Semantic Search</h4>
+<h4>Definition</h4>
+<p>Semantic Search aims to understand the meaning and intent behind search queries rather than matching exact keywords.</p>
+<h4>Traditional Search</h4>
+<p>Query:</p>
+<p>Best phone under ₹20,000</p>
+<p>Matches exact keywords.</p>
+<hr>
+<h4>Semantic Search</h4>
+<p>Understands that:</p>
+<ul><li>Smartphone
+</li><li>Mobile phone
+</li><li>Cell phone
+</li></ul>
+<p>have similar meanings.</p>
+<h4>Benefits</h4>
+<ul><li>Better search accuracy
+</li><li>Improved user satisfaction
+</li><li>Context-aware results
+</li></ul>
+<hr>
+<h4>10. Embeddings in Semantic Search</h4>
+<p><b>Definition</b><b><br></b>Embeddings are numerical vector representations of words, sentences, or documents that capture semantic meaning.</p>
+<h4>Example</h4>
+<p>Words with similar meanings have similar vectors.</p>
+<p>King ≈ Queen<br>Doctor ≈ Physician</p>
+<h4>Applications</h4>
+<ul><li>Semantic search
+</li><li>Recommendation systems
+</li><li>Chatbots
+</li><li>Question answering systems
+</li></ul>
+<hr>
+<h4>11. Word2Vec</h4>
+<h4>Definition</h4>
+<p>Word2Vec is a neural network-based technique that converts words into dense vector representations.</p>
+<h4>Features</h4>
+<ul><li>Captures word relationships
+</li><li>Learns semantic similarity
+</li><li>Reduces dimensionality
+</li></ul>
+<h4>Example</h4>
+<p>King - Man + Woman ≈ Queen</p>
+<h4>Applications</h4>
+<ul><li>NLP
+</li><li>Search engines
+</li><li>Text classification
+</li></ul>
+<hr>
+<h4>12. BERT (Bidirectional Encoder Representations from Transformers)</h4>
+<p><b>Definition</b><b><br></b>BERT is a deep learning language model developed by Google that understands context by analyzing words in both directions.</p>
+<h4>Features</h4>
+<ul><li>Context-aware understanding
+</li><li>Bidirectional processing
+</li><li>High search accuracy
+</li></ul>
+<h4>Example</h4>
+<p>Query:</p>
+<p>Apple</p>
+<p>BERT determines whether &quot;Apple&quot; refers to:</p>
+<ul><li>Fruit
+</li><li>Technology company
+</li></ul>
+<p>based on context.</p>
+<h4>Applications</h4>
+<ul><li>Google Search
+</li><li>Chatbots
+</li><li>Question Answering
+</li><li>Semantic Search
+</li></ul>
+<hr>
+<h4>13. Ethical and Privacy Issues in Web Analytics</h4>
+<p><b>Definition</b><b><br></b>Ethical and privacy issues arise when collecting, storing, and analyzing user data.</p>
+<hr>
+<p><b>A) Data Privacy</b><b><br></b>Protecting personal information from unauthorized access.</p>
+<h4>Examples</h4>
+<ul><li>Email addresses
+</li><li>Phone numbers
+</li><li>Location data
+</li></ul>
+<hr>
+<h4>B) User Consent</h4>
+<p>Users must be informed and agree before data collection.</p>
+<h4>Example</h4>
+<p>Cookie consent banners.</p>
+<hr>
+<h4>C) Cookie Policies</h4>
+<p>Organizations must disclose:</p>
+<ul><li>Types of cookies used
+</li><li>Purpose of data collection
+</li><li>Data retention policies
+</li></ul>
+<hr>
+<h4>14. GDPR Compliance</h4>
+<h4>Definition</h4>
+<p>General Data Protection Regulation (GDPR) is a European Union regulation that protects personal data and privacy.</p>
+<h4>Key Principles</h4>
+<ul><li>User Consent
+</li><li>Data Transparency
+</li><li>Right to Access Data
+</li><li>Right to Erasure (&quot;Right to be Forgotten&quot;)
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Increased user trust
+</li><li>Better privacy protection
+</li></ul>
+<hr>
+<h4>15. CCPA Compliance</h4>
+<h4>Definition</h4>
+<p>California Consumer Privacy Act (CCPA) protects privacy rights of California residents.</p>
+<h4>User Rights</h4>
+<ul><li>Know what data is collected
+</li><li>Request data deletion
+</li><li>Opt-out of data selling
+</li></ul>
+<h4>Importance</h4>
+<p>Improves transparency and user control over personal data.</p>
+<hr>
+<h4>Applications of Real-Time Web Analytics and Intelligent Systems</h4>
+<h4>A) Real-Time Web Analytics</h4>
+<p>Monitoring website activity instantly.</p>
+<p><b>Example:</b> Live visitor tracking.</p>
+<hr>
+<h4>B) Clickstream Analysis</h4>
+<p>Analyzing user navigation paths.</p>
+<p><b>Example:</b> Studying customer journeys in e-commerce.</p>
+<hr>
+<h4>C) Social Media Monitoring</h4>
+<p>Tracking brand mentions and engagement.</p>
+<p><b>Example:</b> Monitoring campaign hashtags.</p>
+<hr>
+<h4>D) Real-Time Decision Support</h4>
+<p>Supporting immediate business decisions.</p>
+<p><b>Example:</b> Detecting sudden traffic spikes and adjusting resources.</p>
+<hr>
+<h4>Important University Examination Questions</h4>
+<h4>Short Questions (2–3 Marks)</h4>
+<ol><li>Define Real-Time Web Analytics.
+</li><li>What is Stream Processing?
+</li><li>Define Clickstream Data.
+</li><li>What is Funnel Analysis?
+</li><li>Define User Journey Tracking.
+</li><li>What is Social Media Analytics?
+</li><li>What is Mobile Analytics?
+</li><li>Define Semantic Search.
+</li><li>What are Embeddings?
+</li><li>What is Word2Vec?
+</li><li>Define BERT.
+</li><li>What is User Consent?
+</li><li>What is GDPR?
+</li><li>What is CCPA?
+</li><li>State any two applications of real-time web analytics.
+</li></ol>
+<hr>
+<h4>Long Questions (5–10 Marks)</h4>
+<ol><li>Explain real-time analytics and stream processing with suitable examples.
+</li><li>Discuss web data streams and clickstream data.
+</li><li>Explain stream processing concepts used in real-time analytics.
+</li><li>Describe real-time KPI monitoring and performance analysis.
+</li><li>Explain funnel analysis and user journey tracking with examples.
+</li><li>Discuss social media analytics and mobile analytics.
+</li><li>Explain semantic search and its advantages over traditional search.
+</li><li>Describe embeddings, Word2Vec, and BERT with suitable examples.
+</li><li>Discuss ethical and privacy issues in web analytics.
+</li><li>Explain GDPR and CCPA compliance requirements.
+</li><li>Discuss applications of real-time web analytics, clickstream analysis, social media monitoring, and decision support systems.
+</li></ol>
+<hr>
+<h4>Key Takeaways</h4>
+<ul><li><b>Real-Time Analytics</b> processes data instantly for immediate insights.
+</li><li><b>Clickstream Data</b> captures user navigation behavior.
+</li><li><b>Stream Processing</b> enables continuous data analysis.
+</li><li><b>Real-Time KPIs</b> support instant performance monitoring.
+</li><li><b>Funnel Analysis</b> and <b>User Journey Tracking</b> help optimize conversions.
+</li><li><b>Social Media</b> and <b>Mobile Analytics</b> provide engagement insights.
+</li><li><b>Semantic Search</b> understands meaning rather than exact keywords.
+</li><li><b>Word2Vec</b> and <b>BERT</b> are powerful techniques used in modern search systems.
+</li><li><b>GDPR</b> and <b>CCPA</b> ensure responsible and legal handling of user data.
+</li><li>Real-time analytics supports <b>web personalization, monitoring, decision-making, and intelligent systems</b>.
+</li></ul>
+<h4>Module 6: Real-Time Web Analytics and Intelligent Systems</h4>
+<h4>Answers to Short Questions (2–3 Marks)</h4>
+<hr>
+<h4>1. Define Real-Time Web Analytics.</h4>
+<p><b>Answer:</b><br>Real-Time Web Analytics is the process of collecting, analyzing, and monitoring website data as it is generated, allowing organizations to make immediate decisions based on current user activities.</p>
+<hr>
+<h4>2. What is Stream Processing?</h4>
+<p><b>Answer:</b><br>Stream Processing is the continuous processing and analysis of data as it arrives from various sources without waiting for the complete dataset.</p>
+<p><b>Example:</b> Monitoring website visitors in real time.</p>
+<hr>
+<h4>3. Define Clickstream Data.</h4>
+<p><b>Answer:</b><br>Clickstream Data is the sequence of clicks and pages visited by a user during a browsing session on a website.</p>
+<h4>Example:</h4>
+<p>Homepage → Product Page → Cart → Checkout</p>
+<hr>
+<h4>4. What is Funnel Analysis?</h4>
+<p><b>Answer:</b><br>Funnel Analysis is a technique used to track users through different stages of a process and identify where users drop out before completing a desired action.</p>
+<hr>
+<h4>5. Define User Journey Tracking.</h4>
+<p><b>Answer:</b><br>User Journey Tracking is the process of monitoring and analyzing the path users follow while interacting with a website or application.</p>
+<hr>
+<h4>6. What is Social Media Analytics?</h4>
+<p><b>Answer:</b><br>Social Media Analytics involves collecting and analyzing data from social media platforms to measure engagement, reach, sentiment, and campaign performance.</p>
+<hr>
+<h4>7. What is Mobile Analytics?</h4>
+<p><b>Answer:</b><br>Mobile Analytics is the measurement and analysis of user behavior and interactions within mobile applications and mobile websites.</p>
+<hr>
+<h4>8. Define Semantic Search.</h4>
+<p><b>Answer:</b><br>Semantic Search is a search technique that understands the meaning and context of a query rather than relying only on exact keyword matching.</p>
+<hr>
+<h4>9. What are Embeddings?</h4>
+<p><b>Answer:</b><br>Embeddings are numerical vector representations of words, sentences, or documents that capture semantic relationships and meanings.</p>
+<hr>
+<h4>10. What is Word2Vec?</h4>
+<p><b>Answer:</b><br>Word2Vec is a neural network-based technique that converts words into vector representations, allowing machines to understand semantic similarities between words.</p>
+<hr>
+<h4>11. Define BERT.</h4>
+<p><b>Answer:</b><br>BERT (Bidirectional Encoder Representations from Transformers) is a deep learning language model developed by Google that understands the context of words by analyzing text in both directions.</p>
+<hr>
+<h4>12. What is User Consent?</h4>
+<p><b>Answer:</b><br>User Consent is the permission granted by users before collecting, storing, or processing their personal data.</p>
+<hr>
+<h4>13. What is GDPR?</h4>
+<p><b>Answer:</b><br>GDPR (General Data Protection Regulation) is a European Union privacy law that protects personal data and gives users greater control over their information.</p>
+<hr>
+<h4>14. What is CCPA?</h4>
+<p><b>Answer:</b><br>CCPA (California Consumer Privacy Act) is a privacy regulation that gives California residents rights regarding the collection and use of their personal information.</p>
+<hr>
+<h4>15. State Any Two Applications of Real-Time Web Analytics.</h4>
+<h4>Answer:</h4>
+<ol><li>Real-time website performance monitoring.
+</li><li>Clickstream analysis for user behavior tracking.
+</li></ol>
+<hr>
+<h4>Answers to Long Questions (5–10 Marks)</h4>
+<hr>
+<h4>1. Explain Real-Time Analytics and Stream Processing with Suitable Examples.</h4>
+<h4>Answer:</h4>
+<h4>Real-Time Analytics</h4>
+<p>Real-Time Analytics refers to analyzing data immediately after it is generated.</p>
+<h4>Example</h4>
+<p>An e-commerce website monitors:</p>
+<ul><li>Active users
+</li><li>Current purchases
+</li><li>Revenue generated per minute
+</li></ul>
+<p>and updates dashboards instantly.</p>
+<hr>
+<h4>Stream Processing</h4>
+<p>Stream Processing continuously processes incoming data streams.</p>
+<h4>Architecture</h4>
+<p>Data Source<br>     ↓<br>Data Stream<br>     ↓<br>Processing Engine<br>     ↓<br>Dashboard</p>
+<h4>Examples</h4>
+<ul><li>Live website traffic monitoring
+</li><li>Online fraud detection
+</li><li>Social media trend analysis
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Faster decision-making
+</li><li>Immediate problem detection
+</li><li>Improved customer experience
+</li></ul>
+<h4>Conclusion</h4>
+<p>Real-time analytics and stream processing enable organizations to react quickly to changing situations.</p>
+<hr>
+<h4>2. Discuss Web Data Streams and Clickstream Data.</h4>
+<h4>Answer:</h4>
+<h4>Web Data Streams</h4>
+<p>Web data streams are continuous flows of data generated by website users.</p>
+<h4>Examples</h4>
+<ul><li>Page Views
+</li><li>Clicks
+</li><li>Searches
+</li><li>Purchases
+</li><li>Form Submissions
+</li></ul>
+<hr>
+<h4>Clickstream Data</h4>
+<p>Clickstream data records the sequence of user actions during a browsing session.</p>
+<h4>Example</h4>
+<p>Homepage<br>   ↓<br>Category Page<br>   ↓<br>Product Page<br>   ↓<br>Cart<br>   ↓<br>Checkout</p>
+<h4>Applications</h4>
+<ul><li>Recommendation systems
+</li><li>User behavior analysis
+</li><li>Website optimization
+</li><li>Personalized marketing
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Understand user behavior
+</li><li>Improve website design
+</li><li>Increase conversions
+</li></ul>
+<h4>Conclusion</h4>
+<p>Clickstream analysis helps businesses understand how users interact with websites.</p>
+<hr>
+<h4>3. Explain Stream Processing Concepts Used in Real-Time Analytics.</h4>
+<h4>Answer:</h4>
+<p>Stream processing enables continuous data analysis.</p>
+<h4>Important Concepts</h4>
+<h4>A) Event Streams</h4>
+<p>A continuous sequence of events generated by users.</p>
+<p><b>Example:</b> Website clicks.</p>
+<hr>
+<h4>B) Window Processing</h4>
+<p>Processes data over fixed time intervals.</p>
+<p><b>Example:</b> Number of visitors every 5 minutes.</p>
+<hr>
+<h4>C) Event Time</h4>
+<p>The actual time when an event occurs.</p>
+<hr>
+<h4>D) Real-Time Computation</h4>
+<p>Immediate processing of incoming data.</p>
+<hr>
+<h4>Benefits</h4>
+<ul><li>Instant insights
+</li><li>Continuous monitoring
+</li><li>Real-time alerts
+</li></ul>
+<h4>Conclusion</h4>
+<p>Stream processing forms the foundation of modern real-time analytics systems.</p>
+<hr>
+<h4>4. Describe Real-Time KPI Monitoring and Performance Analysis.</h4>
+<h4>Answer:</h4>
+<h4>Real-Time KPI Monitoring</h4>
+<p>Continuously tracks important business metrics.</p>
+<h4>Important KPIs</h4>
+<ul><li>Active Users
+</li><li>Conversion Rate
+</li><li>Revenue
+</li><li>Page Views
+</li><li>Bounce Rate
+</li></ul>
+<h4>Example Dashboard</h4>
+<div class="table-wrap"><table><tr><th><b>KPI</b></th><th><b>Value</b></th></tr><tr><td>Active Users</td><td>1200</td></tr><tr><td>Conversion Rate</td><td>5%</td></tr><tr><td>Revenue</td><td>₹60,000</td></tr></table></div>
+<hr>
+<h4>Performance Analysis</h4>
+<p>Evaluates website performance based on KPI values.</p>
+<h4>Benefits</h4>
+<ul><li>Detects performance issues
+</li><li>Supports quick decisions
+</li><li>Improves customer experience
+</li></ul>
+<h4>Conclusion</h4>
+<p>Real-time KPI monitoring allows organizations to optimize website performance continuously.</p>
+<hr>
+<h4>5. Explain Funnel Analysis and User Journey Tracking with Examples.</h4>
+<h4>Answer:</h4>
+<p><b>Funnel Analysis</b><b><br></b>Tracks users through multiple stages and identifies drop-off points.</p>
+<h4>Example</h4>
+<p>Visit Website<br>      ↓<br>Product View<br>      ↓<br>Add to Cart<br>      ↓<br>Purchase</p>
+<h4>Sample Data</h4>
+<div class="table-wrap"><table><tr><th><b>Stage</b></th><th><b>Users</b></th></tr><tr><td>Visit</td><td>1000</td></tr><tr><td>Product View</td><td>700</td></tr><tr><td>Cart</td><td>300</td></tr><tr><td>Purchase</td><td>150</td></tr></table></div>
+<p>Most users drop off before purchasing.</p>
+<hr>
+<p><b>User Journey Tracking</b><b><br></b>Monitors the complete path followed by users.</p>
+<h4>Example</h4>
+<p>Google Search<br>      ↓<br>Homepage<br>      ↓<br>Product Page<br>      ↓<br>Checkout<br>      ↓<br>Purchase</p>
+<h4>Benefits</h4>
+<ul><li>Improves user experience
+</li><li>Identifies navigation issues
+</li><li>Supports personalization
+</li></ul>
+<p><b>Conclusion</b><b><br></b>Both techniques help optimize conversion rates and customer satisfaction.</p>
+<hr>
+<h4>6. Discuss Social Media Analytics and Mobile Analytics.</h4>
+<h4>Answer:</h4>
+<h4>Social Media Analytics</h4>
+<p><b>Definition</b><b><br></b>Analyzing social media interactions and engagement.</p>
+<h4>Metrics</h4>
+<ul><li>Likes
+</li><li>Comments
+</li><li>Shares
+</li><li>Reach
+</li><li>Engagement Rate
+</li></ul>
+<h4>Applications</h4>
+<ul><li>Brand monitoring
+</li><li>Campaign evaluation
+</li><li>Sentiment analysis
+</li></ul>
+<hr>
+<h4>Mobile Analytics</h4>
+<p><b>Definition</b><b><br></b>Analyzing user interactions within mobile apps.</p>
+<h4>Metrics</h4>
+<ul><li>Downloads
+</li><li>Active Users
+</li><li>Retention Rate
+</li><li>Session Length
+</li></ul>
+<h4>Applications</h4>
+<ul><li>App optimization
+</li><li>User retention
+</li><li>Churn analysis
+</li></ul>
+<p><b>Conclusion</b><b><br></b>Both analytics techniques help organizations understand user engagement across digital platforms.</p>
+<hr>
+<h4>7. Explain Semantic Search and Its Advantages Over Traditional Search.</h4>
+<h4>Answer:</h4>
+<p><b>Semantic Search</b><b><br></b>Semantic Search understands user intent and contextual meaning rather than exact keywords.</p>
+<h4>Example</h4>
+<p>Query:</p>
+<p>&quot;Best smartphone under ₹20,000&quot;<br>The search engine understands:</p>
+<ul><li>Smartphone = Mobile Phone
+</li><li>Price constraints
+</li><li>User intent
+</li></ul>
+<hr>
+<p><b>Traditional Search</b><br>Relies mainly on keyword matching.</p>
+<hr>
+<h4>Advantages of Semantic Search</h4>
+<div class="table-wrap"><table><tr><th><b>Semantic Search</b></th><th><b>Traditional Search</b></th></tr><tr><td>Understands intent</td><td>Matches keywords</td></tr><tr><td>Context-aware</td><td>Limited context</td></tr><tr><td>Better relevance</td><td>Less relevance</td></tr><tr><td>Improved user satisfaction</td><td>Lower accuracy</td></tr></table></div>
+<p><b>Conclusion</b><b><br></b>Semantic search provides more accurate and meaningful search results.</p>
+<hr>
+<h4>8. Describe Embeddings, Word2Vec, and BERT with Suitable Examples.</h4>
+<h4>Answer:</h4>
+<p><b>Embeddings</b><b><br></b>Embeddings convert text into numerical vectors.</p>
+<h4>Example</h4>
+<p>Doctor ≈ Physician<br>King ≈ Queen</p>
+<p>Words with similar meanings have similar vector representations.</p>
+<hr>
+<p><b>Word2Vec</b><br>A neural network model that learns word embeddings.</p>
+<h4>Example</h4>
+<p>King - Man + Woman ≈ Queen</p>
+<h4>Applications</h4>
+<ul><li>Search engines
+</li><li>Text classification
+</li><li>Recommendation systems
+</li></ul>
+<hr>
+<h4>BERT</h4>
+<ul><li>A deep learning language model developed by Google.
+</li></ul>
+<h4>Features</h4>
+<ul><li>Context understanding
+</li><li>Bidirectional processing
+</li><li>High search accuracy
+</li></ul>
+<h4>Example</h4>
+<p>The word &quot;Apple&quot; can mean:<br>Fruit <br>Technology company <br>BERT determines the correct meaning using context.</p>
+<h4>Conclusion</h4>
+<p>Embeddings, Word2Vec, and BERT enable intelligent search and language understanding.</p>
+<hr>
+<h4>9. Discuss Ethical and Privacy Issues in Web Analytics.</h4>
+<p><b>Answer:</b><b><br></b>Web analytics involves collecting user data, raising privacy concerns.</p>
+<h4>Major Issues</h4>
+<p><b>A) Data Privacy</b><b><br></b>Protecting personal information.</p>
+<h4>Examples</h4>
+<ul><li>Email addresses
+</li><li>Phone numbers
+</li><li>Location data
+</li></ul>
+<hr>
+<p><b>B) User Consent</b><br>Users must agree before data collection.</p>
+<p><b>Example</b><b><br></b>Cookie consent banners.</p>
+<hr>
+<p><b>C) Data Security</b><b><br></b>Preventing unauthorized access.</p>
+<hr>
+<p><b>D) Transparency</b><b><br></b>Organizations must explain how data is collected and used.</p>
+<h4>Benefits of Ethical Practices</h4>
+<ul><li>User trust
+</li><li>Legal compliance
+</li><li>Better reputation
+</li></ul>
+<p><b>Conclusion</b><b><br></b>Ethical data collection is essential for responsible web analytics.</p>
+<hr>
+<h4>10. Explain GDPR and CCPA Compliance Requirements.</h4>
+<h4>Answer:</h4>
+<h4>GDPR (General Data Protection Regulation)</h4>
+<p><b>Objectives</b><b><br></b>Protect personal data of EU citizens.</p>
+<p><b>Key Requirements</b><b><br></b>User consent <b><br></b>Data transparency <b><br></b>Right to access data <b><br></b>Right to delete data</p>
+<hr>
+<h4>CCPA (California Consumer Privacy Act)</h4>
+<p><b>Objectives</b><b><br></b>Protect privacy rights of California residents.</p>
+<h4>User Rights</h4>
+<ul><li>Know collected data
+</li><li>Request deletion
+</li><li>Opt out of data selling
+</li></ul>
+<hr>
+<h4>Comparison</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>GDPR</b></th><th><b>CCPA</b></th></tr><tr><td>Region</td><td>European Union</td><td>California, USA</td></tr><tr><td>Consent Required</td><td>Yes</td><td>Partial</td></tr><tr><td>Right to Delete</td><td>Yes</td><td>Yes</td></tr><tr><td>Data Access Rights</td><td>Yes</td><td>Yes</td></tr></table></div>
+<h4>Conclusion</h4>
+<p>Both regulations promote transparency and user privacy.</p>
+<hr>
+<p><b>11. Discuss Applications of Real-Time Web Analytics, Clickstream Analysis, Social Media Monitoring, and Decision Support Systems.</b></p>
+<h4>Answer:<br>A) Real-Time Web Analytics</h4>
+<p>Tracks website activity instantly.</p>
+<p><b>Example:</b> Monitoring active users during a sale.</p>
+<hr>
+<h4>B) Clickstream Analysis</h4>
+<p>Analyzes user navigation patterns.</p>
+<p><b>Example:</b> Studying customer journeys in e-commerce</p>
+<hr>
+<h4>C) Social Media Monitoring</h4>
+<p>Tracks brand mentions and engagement.</p>
+<p><b>Example:</b> Monitoring reactions to a marketing campaign.</p>
+<hr>
+<h4>D) Real-Time Decision Support</h4>
+<p>Provides immediate insights for business decisions.</p>
+<p><b>Examples:</b><b><br></b>Fraud detection <br>Dynamic pricing <br>Traffic management</p>
+<p><b>Benefits</b><b><br></b>Faster responses <b><br></b>Improved customer experience <br>Better operational efficiency</p>
+<p><b>Conclusion</b><b><br></b>Real-time analytics enables organizations to monitor activities continuously, understand user behavior, and make informed decisions quickly.</p></article>
+</main>
+<footer class="foot">
+  <p>Shared by Harsh, IT Batch 2027, so juniors have last year's papers the night before. Not an official TCET site. <a href="https://harver.in">harver.in</a></p>
+  <p data-contact hidden>Wrong label, broken page or a paper to add? <a href="#" data-email>Email Harsh</a>.</p>
+  <p data-cookie-row hidden><button class="linklike" type="button" data-cookie-settings>Cookie settings</button></p>
+</footer>
+</div>
+</div>
+<div class="cookie" data-cookie-banner hidden role="region" aria-label="Cookie preferences">
+  <p><b>Cookies.</b> Night Before can use Google Analytics cookies to see which subjects people open. Accept all to allow them, or Essential only to browse without them. Change this any time under Cookie settings.</p>
+  <div class="cookie-btns"><button class="btn-main" type="button" data-cookie-accept>Accept all</button><button class="btn" type="button" data-cookie-essential>Essential only</button></div>
+</div>
+</body>
+</html>

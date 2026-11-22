@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Analytics and Information Retrieval Module 3 notes | Night Before</title>
+<meta name="description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 3 notes. readable page or the Word file · 2.6 MB.">
+<link rel="canonical" href="https://pyq.harver.in/view/web-analytics-ir-notes-module-3/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Night Before">
+<meta property="og:title" content="Web Analytics and Information Retrieval Module 3 notes | Night Before">
+<meta property="og:description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 3 notes. readable page or the Word file · 2.6 MB.">
+<meta property="og:url" content="https://pyq.harver.in/view/web-analytics-ir-notes-module-3/">
+<meta property="og:image" content="https://pyq.harver.in/og-image.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem("nb-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css?v=4">
+<script src="/assets/site.js?v=1" defer></script>
+
+</head>
+<body class="s7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/">Night Before</a>
+  <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  <form class="jump" data-jump hidden>
+    <label for="jump">Jump to subject</label>
+    <div class="jump-row"><select id="jump" name="to"><optgroup label="Semester III"><option value="/sem-3/uhv-ii/">Universal Human Values II</option><option value="/sem-3/maths-iii/">Mathematics III</option><option value="/sem-3/digital-circuit-design/">Digital Circuit Design</option><option value="/sem-3/dsa/">Data Structures and Algorithms</option><option value="/sem-3/dbms/">Database Management Systems</option></optgroup><optgroup label="Semester IV"><option value="/sem-4/maths-iv/">Mathematics IV</option><option value="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</option><option value="/sem-4/nosql/">NoSQL</option><option value="/sem-4/computer-networks/">Computer Networks</option></optgroup><optgroup label="Semester V"><option value="/sem-5/operating-system/">Operating System</option><option value="/sem-5/automata-theory/">Automata Theory</option><option value="/sem-5/web-programming/">Web Programming</option><option value="/sem-5/cns/">Cryptography and Network Security</option><option value="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</option><option value="/sem-5/full-stack-development-i/">Full Stack Development I</option><option value="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering</option><option value="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch</option><option value="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch</option></optgroup><optgroup label="Semester VI"><option value="/sem-6/wpmh/">Work Place Mental Health</option><option value="/sem-6/dmbi/">Data Mining and Business Intelligence</option><option value="/sem-6/software-engineering/">Software Engineering</option><option value="/sem-6/artificial-intelligence/">Artificial Intelligence</option><option value="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</option><option value="/sem-6/analysis-of-algorithms/">Analysis of Algorithms</option><option value="/sem-6/english-competitive-exams/">English for Competitive Exams</option></optgroup><optgroup label="Semester VII"><option value="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</option><option value="/sem-7/big-data-analytics/">Big Data Analytics</option><option value="/sem-7/devops/">DevOps</option><option value="/sem-7/web-analytics-ir/" selected>Web Analytics and Information Retrieval</option><option value="/sem-7/japanese-i/">Japanese Language I</option><option value="/sem-7/user-interaction-design/">User Interaction Design</option><option value="/sem-7/management-information-system/">Management Information System</option><option value="/sem-7/design-thinking/">Design Thinking and Problem Solving</option><option value="/sem-7/disaster-management/">Disaster Management and Mitigation Methods</option></optgroup></select><button type="submit">Go</button></div>
+  </form>
+</header>
+<div class="shell">
+<aside class="side" aria-label="Semesters and subjects">
+  <div class="side-top">
+    <a class="brand" href="/">Night Before</a>
+    <p>TCET IT papers, question banks and notes</p>
+    <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  </div>
+  <nav aria-label="Subjects"><div class="side-sem s3"><h2><a href="/#sem-3">Semester III</a></h2><ul><li><a href="/sem-3/uhv-ii/">Universal Human Values II</a></li><li><a href="/sem-3/maths-iii/">Mathematics III</a></li><li><a href="/sem-3/digital-circuit-design/">Digital Circuit Design</a></li><li><a href="/sem-3/dsa/">Data Structures and Algorithms</a></li><li><a href="/sem-3/dbms/">Database Management Systems</a></li></ul></div><div class="side-sem s4"><h2><a href="/#sem-4">Semester IV</a></h2><ul><li><a href="/sem-4/maths-iv/">Mathematics IV</a></li><li><a href="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</a></li><li><a href="/sem-4/nosql/">NoSQL</a></li><li><a href="/sem-4/computer-networks/">Computer Networks</a></li></ul></div><div class="side-sem s5"><h2><a href="/#sem-5">Semester V</a></h2><ul><li><a href="/sem-5/operating-system/">Operating System</a></li><li><a href="/sem-5/automata-theory/">Automata Theory</a></li><li><a href="/sem-5/web-programming/">Web Programming</a></li><li><a href="/sem-5/cns/">Cryptography and Network Security</a></li><li><a href="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</a></li><li><a href="/sem-5/full-stack-development-i/">Full Stack Development I <span class="side-note">other option</span></a></li><li><a href="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering <span class="side-note">other branch</span></a></li><li><a href="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch <span class="side-note">older syllabus</span></a></li><li><a href="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch <span class="side-note">older syllabus</span></a></li></ul></div><div class="side-sem s6"><h2><a href="/#sem-6">Semester VI</a></h2><ul><li><a href="/sem-6/wpmh/">Work Place Mental Health</a></li><li><a href="/sem-6/dmbi/">Data Mining and Business Intelligence</a></li><li><a href="/sem-6/software-engineering/">Software Engineering</a></li><li><a href="/sem-6/artificial-intelligence/">Artificial Intelligence</a></li><li><a href="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</a></li><li><a href="/sem-6/analysis-of-algorithms/">Analysis of Algorithms <span class="side-note">other option</span></a></li><li><a href="/sem-6/english-competitive-exams/">English for Competitive Exams <span class="side-note">other option</span></a></li></ul></div><div class="side-sem s7"><h2><a href="/#sem-7">Semester VII</a></h2><ul><li><a href="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</a></li><li><a href="/sem-7/big-data-analytics/">Big Data Analytics</a></li><li><a href="/sem-7/devops/">DevOps</a></li><li><a href="/sem-7/web-analytics-ir/" aria-current="page">Web Analytics and Information Retrieval</a></li><li><a href="/sem-7/japanese-i/">Japanese Language I</a></li><li><a href="/sem-7/user-interaction-design/">User Interaction Design <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/management-information-system/">Management Information System <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/design-thinking/">Design Thinking and Problem Solving <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/disaster-management/">Disaster Management and Mitigation Methods <span class="side-note">older syllabus</span></a></li></ul></div></nav>
+</aside>
+<div class="col">
+<main id="main" tabindex="-1">
+
+<nav class="crumb" aria-label="Breadcrumb"><a href="/#sem-7">Semester VII</a> <span aria-hidden="true">/</span> <a href="/sem-7/web-analytics-ir/">Web Analytics and Information Retrieval</a></nav>
+<h1>Web Analytics and Information Retrieval: Module 3 notes</h1>
+<p class="sub"><span class="ft docx">DOCX</span> readable page or the Word file · 2.6 MB</p>
+<div class="actions">
+  <a class="btn-main" href="/files/web-analytics-ir-notes-module-3.docx" download="Web Analytics and Information Retrieval - Module 3 notes.docx">Download DOCX</a>
+  <button class="btn" type="button" data-print>Print or save as PDF</button>
+  <a class="btn" href="/sem-7/web-analytics-ir/">All files for this subject</a>
+</div>
+<p class="fine">Converted from the Word file so it reads on a phone. The download is the original.</p><article class="prose"><h4>Module 3: SEO, User Segmentation and Journey Analysis</h4>
+<h4>1. Introduction to Search Engine Optimization (SEO)</h4>
+<p>Search Engine Optimization (SEO) is the process of improving a website&#x27;s visibility and ranking in search engine results pages (SERPs) to attract more organic (unpaid) traffic.</p>
+<h4>Objectives of SEO</h4>
+<ul><li>Increase website visibility
+</li><li>Improve search engine rankings
+</li><li>Drive organic traffic
+</li><li>Enhance user experience
+</li><li>Increase conversions and engagement
+</li></ul>
+<p><b>Example</b><b><br></b>When a user searches <b>&quot;best laptops for students&quot;</b> on Google, websites optimized for SEO are more likely to appear on the first page of search results.</p>
+<hr>
+<p><b>2. Types of SEO</b><b><br></b>SEO is broadly classified into:</p>
+<ol><li>On-Page SEO
+</li><li>Off-Page SEO
+</li><li>Technical SEO
+</li></ol>
+<hr>
+<p><b>2.1 On-Page SEO</b><br>On-Page SEO refers to optimization activities performed directly on website pages to improve rankings and user experience.</p>
+<h4>Key Factors</h4>
+<p><b>a) Title Tag</b><b><br></b>The title displayed in search results.</p>
+<p><b>Example:</b><br>&lt;title&gt;Best Smartphones in 2026&lt;/title&gt;<br></p>
+<p><b>b) Meta Description</b><br>Provides a summary of webpage content.</p>
+<h4>Example:</h4>
+<p>&lt;meta name=&quot;description&quot;<br>content=&quot;Top smartphones with latest features and reviews.&quot;&gt;</p>
+<p><b>c) Heading Tags</b><b><br></b>&lt;h1&gt;Digital Marketing Guide&lt;/h1&gt;<br>&lt;h2&gt;SEO Techniques&lt;/h2&gt;<b><br></b><b><br></b><b>d) Keyword Optimization</b></p>
+<p>Using relevant keywords naturally within content.</p>
+<p><b>Example:</b><br>Keyword: <i>Web Analytics</i></p>
+<p>Sentence:<br>&quot;Web Analytics helps businesses understand user behavior.&quot;</p>
+<p><b>e) Internal Linking</b><b><br></b>Connecting pages within the same website.</p>
+<p><b>Example:</b><br>Home → Products → Product Details</p>
+<h4>Advantages</h4>
+<ul><li>Better rankings
+</li><li>Improved readability
+</li><li>Enhanced user experience
+</li></ul>
+<hr>
+<h4>2.2 Off-Page SEO</h4>
+<p>Off-Page SEO involves activities performed outside the website to improve authority and ranking.</p>
+<h4>Techniques</h4>
+<p><b>a) Backlink Building</b><b><br></b>Links from other websites pointing to your site.</p>
+<p><b>Example:</b><br>A technology blog links to your article.</p>
+<p><b>b) Social Media Marketing</b><b><br></b>Promoting content through:</p>
+<ul><li>Facebook
+</li><li>Instagram
+</li><li>LinkedIn
+</li><li>Twitter/X
+</li></ul>
+<p><b>c) Guest Blogging</b><b><br></b>Writing articles for other websites.</p>
+<p><b>d) Influencer Marketing</b><b><br></b>Promoting content through influencers.</p>
+<h4>Benefits</h4>
+<ul><li>Increases website authority
+</li><li>Improves trustworthiness
+</li><li>Enhances brand visibility
+</li></ul>
+<hr>
+<p><b>2.3 Technical SEO</b><br>Technical SEO focuses on improving the technical aspects of a website for better crawling and indexing.</p>
+<h4>Important Elements</h4>
+<h4>a) Website Speed</h4>
+<p>Fast websites rank better.</p>
+<h4>Example</h4>
+<div class="table-wrap"><table><tr><th><b>Load Time</b></th><th><b>User Experience</b></th></tr><tr><td>2 sec</td><td>Excellent</td></tr><tr><td>5 sec</td><td>Average</td></tr><tr><td>10 sec</td><td>Poor</td></tr></table></div>
+<h4>b) Mobile Friendliness</h4>
+<p>Website should work properly on smartphones and tablets.</p>
+<h4>c) XML Sitemap</h4>
+<p>Helps search engines discover webpages.</p>
+<p><b>Example</b><b><br></b>www.website.com/sitemap.xml</p>
+<p><b>d) Secure Website (HTTPS)</b><b><br></b>Websites using HTTPS are considered more secure.</p>
+<p><b>e) Crawlability</b><b><br></b>Search engines should easily access website pages.</p>
+<hr>
+<h4>Comparison of SEO Types</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>On-Page SEO</b></th><th><b>Off-Page SEO</b></th><th><b>Technical SEO</b></th></tr><tr><td>Focus</td><td>Content Optimization</td><td>Website Authority</td><td>Technical Performance</td></tr><tr><td>Performed On</td><td>Website Pages</td><td>External Platforms</td><td>Website Infrastructure</td></tr><tr><td>Example</td><td>Keywords</td><td>Backlinks</td><td>Page Speed</td></tr><tr><td>Goal</td><td>Relevance</td><td>Trust</td><td>Accessibility</td></tr></table></div>
+<hr>
+<h4>3. SEO Metrics</h4>
+<p>SEO metrics help evaluate the effectiveness of optimization efforts.</p>
+<hr>
+<p><b>3.1 Organic Traffic</b><br>Visitors arriving through unpaid search engine results.</p>
+<h4>Example</h4>
+<p>A website receives 5000 monthly visitors from Google search results.</p>
+<h4>Importance</h4>
+<ul><li>Indicates SEO success
+</li><li>Measures search visibility
+</li></ul>
+<hr>
+<p><b>3.2 Bounce Rate</b><b><br></b>Percentage of visitors leaving after viewing only one page.</p>
+<p><b>Formula</b><b><br></b>Bounce Rate= (Single Page Visits/ Total Visits) x 100  <b><br></b><b>Example</b><b><br></b>50 out of 100 visitors leave immediately.<b><br></b>Bounce Rate = 50%</p>
+<hr>
+<h4>3.3 Click Through Rate (CTR)</h4>
+<p>Percentage of users who click a search result after seeing it.</p>
+<p><b>Formula</b><b><br></b>CTR= (Clicks / Impressions) ×100  <b><br></b><b>Example</b><b><br></b>Impressions = 1000<b><br></b>Clicks = 100<b><br></b>CTR= (100/ 1000) x 100 = 10% <b><br></b><b><br></b><b>Importance</b><b><br></b>Higher CTR indicates attractive titles and descriptions.</p>
+<hr>
+<p><b>3.4 Keyword Ranking</b><b><br></b>Position of a webpage in search engine results.</p>
+<p><b>Example</b><b><br></b>Keyword:<br>&quot;Web Analytics Course&quot;</p>
+<p>Website Ranking:<br>Position #3 on Google.</p>
+<hr>
+<p><b>4. Content Optimization</b><br>Content Optimization is the process of improving webpage content to increase relevance, readability, and search engine rankings.</p>
+<hr>
+<p><b>Best Practices</b><br><b>Keyword Placement</b><br>Include keywords in:</p>
+<ul><li>Title
+</li><li>Headings
+</li><li>URL
+</li><li>Content
+</li></ul>
+<h4>Quality Content</h4>
+<p>Content should be:</p>
+<ul><li>Informative
+</li><li>Original
+</li><li>Updated regularly
+</li></ul>
+<h4>Readability</h4>
+<p>Use:</p>
+<ul><li>Short paragraphs
+</li><li>Bullet points
+</li><li>Clear headings
+</li></ul>
+<h4>Multimedia Usage</h4>
+<p>Include:</p>
+<ul><li>Images
+</li><li>Videos
+</li><li>Infographics
+</li></ul>
+<hr>
+<h4>Example</h4>
+<p><b>Poor Content</b><b><br></b>&quot;SEO SEO SEO SEO SEO SEO&quot;</p>
+<p><b>Optimized Content</b><b><br></b>&quot;SEO helps websites improve search visibility and attract organic visitors.&quot;</p>
+<hr>
+<h4>5. Keyword Research and Competitor Analysis</h4>
+<hr>
+<h4>5.1 Keyword Research</h4>
+<p>The process of identifying words and phrases users search for.</p>
+<h4>Types of Keywords<br>Short-Tail Keywords</h4>
+<p>Example:</p>
+<ul><li>SEO
+</li><li>Marketing
+</li></ul>
+<p><b>Long-Tail Keywords</b><b><br></b>Example:</p>
+<ul><li>Best SEO tools for beginners
+</li><li>Free web analytics software
+</li></ul>
+<h4>Benefits</h4>
+<ul><li>Improves targeting
+</li><li>Increases traffic
+</li><li>Supports content strategy
+</li></ul>
+<hr>
+<p><b>5.2 Competitor Analysis</b><br>Studying competitors&#x27; websites and SEO strategies.</p>
+<h4>Analyze</h4>
+<ul><li>Keywords used
+</li><li>Backlinks
+</li><li>Content quality
+</li><li>Traffic sources
+</li></ul>
+<h4>Example</h4>
+<p>If a competitor ranks for &quot;Digital Marketing Course,&quot; analyze their content and optimization techniques.</p>
+<hr>
+<h4>6. SEO Tools</h4>
+<hr>
+<h4>6.1 Google Search Console</h4>
+<p><b>Purpose</b><b><br></b>Free Google tool for monitoring website performance.</p>
+<h4>Features</h4>
+<ul><li>Keyword performance
+</li><li>Indexing status
+</li><li>Sitemap submission
+</li><li>Error detection
+</li></ul>
+<p><b>Example</b><b><br></b>Find pages with indexing errors.</p>
+<hr>
+<h4>6.2 Ahrefs</h4>
+<p><b>Purpose</b><b><br></b>Comprehensive SEO and backlink analysis tool.</p>
+<h4>Features</h4>
+<ul><li>Backlink analysis
+</li><li>Keyword research
+</li><li>Competitor analysis
+</li><li>Site audit
+</li></ul>
+<p><b>Example</b><b><br></b>Identify websites linking to competitors.</p>
+<hr>
+<h4>6.3 SEMrush</h4>
+<p><b>Purpose</b><b><br></b>Digital marketing and SEO analysis platform.</p>
+<h4>Features</h4>
+<ul><li>SEO auditing
+</li><li>Keyword tracking
+</li><li>Competitor research
+</li><li>PPC analysis
+</li></ul>
+<h4>Example</h4>
+<p>Track keyword rankings over time.</p>
+<hr>
+<h4>Comparison of SEO Tools</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>Google Search Console</b></th><th><b>Ahrefs</b></th><th><b>SEMrush</b></th></tr><tr><td>Cost</td><td>Free</td><td>Paid</td><td>Paid</td></tr><tr><td>Keyword Tracking</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Backlink Analysis</td><td>Limited</td><td>Excellent</td><td>Excellent</td></tr><tr><td>Competitor Analysis</td><td>Limited</td><td>Strong</td><td>Strong</td></tr><tr><td>Site Audit</td><td>Basic</td><td>Advanced</td><td>Advanced</td></tr></table></div>
+<hr>
+<p><b>7. User Segmentation</b><b><br></b>User Segmentation is the process of dividing website visitors into groups based on common characteristics.</p>
+<hr>
+<h4>Types of Segmentation</h4>
+<h4>A) Demographic Segmentation</h4>
+<p>Based on:</p>
+<ul><li>Age
+</li><li>Gender
+</li><li>Education
+</li><li>Occupation
+</li></ul>
+<p><b>Example</b><b><br></b>Students aged 18–25.</p>
+<hr>
+<h4>B) Geographic Segmentation</h4>
+<p>Based on location:</p>
+<ul><li>Country
+</li><li>State
+</li><li>City
+</li></ul>
+<p><b>Example</b><b><br></b>Visitors from Mumbai, Delhi, and Pune.</p>
+<hr>
+<h4>C) Behavioural Segmentation</h4>
+<p>Based on actions:</p>
+<ul><li>Pages viewed
+</li><li>Purchase history
+</li><li>Session duration
+</li></ul>
+<p><b>Example</b><b><br></b>Users who purchased products in the last month.</p>
+<hr>
+<h4>Benefits</h4>
+<ul><li>Personalized marketing
+</li><li>Better targeting
+</li><li>Improved conversions
+</li></ul>
+<hr>
+<p><b>8. Funnel Analysis</b><b><br></b>Funnel Analysis tracks users through stages of a process to identify where they drop off.</p>
+<hr>
+<h4>E-Commerce Funnel Example</h4>
+<p>Website Visit<br>      ↓<br>Product View<br>      ↓<br>Add to Cart<br>      ↓<br>Checkout<br>      ↓<br>Purchase</p>
+<h4>Example Data</h4>
+<div class="table-wrap"><table><tr><th><b>Stage</b></th><th><b>Users</b></th></tr><tr><td>Visit</td><td>1000</td></tr><tr><td>Product View</td><td>700</td></tr><tr><td>Add to Cart</td><td>300</td></tr><tr><td>Checkout</td><td>200</td></tr><tr><td>Purchase</td><td>150</td></tr></table></div>
+<h4>Observation</h4>
+<p>Major drop-off occurs between Product View and Add to Cart.</p>
+<hr>
+<p><b>9. User Journey Mapping</b><br>User Journey Mapping visualizes the complete path a user follows while interacting with a website.</p>
+<hr>
+<h4>Example Journey</h4>
+<p>Google Search<br>      ↓<br>Homepage<br>      ↓<br>Product Page<br>      ↓<br>Cart<br>      ↓<br>Checkout<br>      ↓<br>Purchase</p>
+<h4>Benefits</h4>
+<ul><li>Identifies pain points
+</li><li>Improves user experience
+</li><li>Optimizes conversion paths
+</li></ul>
+<hr>
+<h4>10. Applications of SEO and Web Analytics</h4>
+<hr>
+<h4>A) Website Visibility</h4>
+<p><b>Purpose</b><b><br></b>Increase website presence in search engines.</p>
+<p><b>Example</b><b><br></b>A website ranking on Google&#x27;s first page receives significantly more traffic than a website on the second page.</p>
+<h4>Benefits</h4>
+<ul><li>More visitors
+</li><li>Better brand awareness
+</li><li>Increased organic traffic
+</li></ul>
+<hr>
+<h4>B) Engagement Optimization</h4>
+<p><b>Purpose</b><b><br></b>Improve how users interact with website content.</p>
+<h4>Methods</h4>
+<ul><li>Better page design
+</li><li>Faster loading speed
+</li><li>Personalized recommendations
+</li><li>Relevant content
+</li></ul>
+<p><b>Example</b><b><br></b>Adding related article suggestions increases page views and session duration.</p>
+<h4>Benefits</h4>
+<ul><li>Lower bounce rate
+</li><li>Higher dwell time
+</li><li>Better user satisfaction
+</li><li>Increased conversions
+</li></ul>
+<hr>
+<h4>Important University Examination Questions</h4>
+<h4>Short Questions (2–3 Marks)</h4>
+<ol><li>Define SEO.
+</li><li>Differentiate between On-Page and Off-Page SEO.
+</li><li>What is Technical SEO?
+</li><li>Define Organic Traffic.
+</li><li>What is CTR?
+</li><li>What is Keyword Research?
+</li><li>List any two SEO tools.
+</li><li>Define User Segmentation.
+</li><li>What is Funnel Analysis?
+</li><li>What is User Journey Mapping?
+</li></ol>
+<hr>
+<h4>Long Questions (5–10 Marks)</h4>
+<ol><li>Explain On-Page, Off-Page and Technical SEO with examples.
+</li><li>Discuss various SEO metrics used to evaluate website performance.
+</li><li>Explain content optimization and keyword research techniques.
+</li><li>Compare Google Search Console, Ahrefs and SEMrush.
+</li><li>Explain demographic, geographic and behavioural user segmentation.
+</li><li>Describe Funnel Analysis and User Journey Mapping with suitable examples.
+</li><li>Discuss the applications of SEO in website visibility and engagement optimization.
+</li></ol>
+<hr>
+<h4>Key Takeaways</h4>
+<ul><li><b>SEO</b> improves website visibility in search engine results.
+</li><li><b>On-Page, Off-Page, and Technical SEO</b> are the three major SEO categories.
+</li><li><b>Organic Traffic, CTR, Bounce Rate, and Keyword Ranking</b> are important SEO metrics.
+</li><li><b>Keyword Research and Competitor Analysis</b> help improve search rankings.
+</li><li><b>Google Search Console, </b><b>Ahrefs</b><b>, and SEMrush</b> are widely used SEO tools.
+</li><li><b>User Segmentation</b> helps target specific audiences.
+</li><li><b>Funnel Analysis</b> identifies conversion drop-off points.
+</li><li><b>User Journey Mapping</b> improves user experience and engagement.
+</li><li>SEO and analytics together help increase <b>website visibility, engagement, and conversions</b>.
+</li></ul>
+<p><b>1. Define SEO.</b><b> </b><br>Search Engine Optimization (SEO) is the process of improving a website&#x27;s visibility and ranking in search engine results pages (SERPs) to increase organic traffic and attract more visitors.</p>
+<hr>
+<h4>2. Differentiate between On-Page and Off-Page SEO.</h4>
+<div class="table-wrap"><table><tr><th><b>On-Page SEO</b></th><th><b>Off-Page SEO</b></th></tr><tr><td>Performed within the website.</td><td>Performed outside the website.</td></tr><tr><td>Focuses on content, keywords, and meta tags.</td><td>Focuses on backlinks and social signals.</td></tr><tr><td>Improves relevance.</td><td>Improves authority and trust.</td></tr><tr><td>Example: Content optimization.</td><td>Example: Link building.</td></tr></table></div>
+<hr>
+<p><b>3. What is Technical SEO?</b><br>Technical SEO refers to the optimization of a website&#x27;s technical aspects, such as website speed, mobile-friendliness, sitemap, HTTPS security, and crawlability, to help search engines effectively crawl and index web pages.</p>
+<hr>
+<p><b>4. Define Organic Traffic.</b><br>Organic traffic refers to visitors who arrive at a website through unpaid search engine results rather than through paid advertisements.</p>
+<hr>
+<p><b>5. What is CTR?</b><br>CTR (Click Through Rate) is the percentage of users who click on a webpage link after viewing it in search results.</p>
+<p><b>Formula:</b> CTR=Clicks/Impressions x 100</p>
+<hr>
+<p><b>6. What is Keyword Research?</b><br>Keyword research is the process of identifying and analyzing search terms that users enter into search engines to optimize website content and improve search rankings.</p>
+<hr>
+<h4>7. List any two SEO tools.</h4>
+<ol><li>Google Search Console
+</li><li>Ahrefs
+</li></ol>
+<p>(Other examples: SEMrush, Moz)</p>
+<hr>
+<p><b>8. Define User Segmentation.</b><br>User segmentation is the process of dividing website visitors into groups based on common characteristics such as demographics, geography, or behavior to improve targeting and personalization.</p>
+<hr>
+<p><b>9. What is Funnel Analysis?</b><br>Funnel Analysis is a technique used to track users through different stages of a process and identify where users drop out before completing a desired action.</p>
+<hr>
+<p><b>10. What is User Journey Mapping?</b><br>User Journey Mapping is the visual representation of the path a user follows while interacting with a website or application from entry to goal completion.</p>
+<hr>
+<h4>Answers to Long Questions (5–10 Marks)</h4>
+<p><b>1. Explain On-Page, Off-Page and Technical SEO with Examples.</b><b><br></b>SEO can be categorized into three major types:</p>
+<p><b>A) On-Page SEO</b><b><br></b>On-Page SEO involves optimizing webpage elements to improve rankings and user experience.</p>
+<h4>Techniques:</h4>
+<ul><li>Title Tags
+</li><li>Meta Descriptions
+</li><li>Keyword Optimization
+</li><li>Internal Linking
+</li><li>Heading Tags
+</li></ul>
+<p><b>Example:</b><br>Using the keyword &quot;Web Analytics&quot; in page titles and content.</p>
+<hr>
+<h4>B) Off-Page SEO</h4>
+<p>Off-Page SEO involves activities outside the website that improve website authority.</p>
+<h4>Techniques:</h4>
+<ul><li>Backlink Building
+</li><li>Social Media Marketing
+</li><li>Guest Blogging
+</li><li>Influencer Marketing
+</li></ul>
+<p><b>Example:</b><br>A popular blog linking to your website.</p>
+<hr>
+<p><b>C) Technical SEO</b><br>Technical SEO improves the technical performance of a website.</p>
+<h4>Techniques:</h4>
+<ul><li>Website Speed Optimization
+</li><li>Mobile Friendliness
+</li><li>XML Sitemap
+</li><li>HTTPS Security
+</li></ul>
+<p><b>Example:</b><br>Reducing page load time from 8 seconds to 2 seconds.</p>
+<p><b>Conclusion</b><b><br></b>All three SEO types work together to improve search rankings, user experience, and website performance.</p>
+<hr>
+<h4>2. Discuss Various SEO Metrics Used to Evaluate Website Performance.</h4>
+<p>SEO metrics help measure the effectiveness of SEO efforts.</p>
+<h4>1. Organic Traffic</h4>
+<p>Number of visitors arriving through search engines.</p>
+<p><b>Example:</b> 5000 monthly visitors from Google Search.</p>
+<hr>
+<h4>2. Bounce Rate</h4>
+<p>Percentage of visitors leaving after viewing one page.</p>
+<p><b>Formula:</b> Bounce Rate= (Single Page Visits/Total Visits) ×100</p>
+<hr>
+<p><b>3. Click Through Rate (CTR)</b><br>Measures how often users click a search result.</p>
+<p><b>Formula:</b> CTR= (Clicks / Impressions) x 100 <br><b>Example:</b><br>100 clicks from 1000 impressions = 10%.</p>
+<hr>
+<p><b>4. Keyword Ranking</b><br>Position of a webpage for a specific keyword.</p>
+<p><b>Example:</b><br>&quot;SEO Tutorial&quot; ranking at Position #2.</p>
+<p><b>Conclusion</b><b>-</b><b><br></b>These metrics help organizations monitor visibility, engagement, and search performance.</p>
+<hr>
+<h4>3. Explain Content Optimization and Keyword Research Techniques.</h4>
+<p><b>Content Optimization</b><b><br></b>Content optimization improves webpage quality and relevance for users and search engines.</p>
+<h4>Techniques:</h4>
+<ul><li>Use relevant keywords naturally.
+</li><li>Create unique and informative content.
+</li><li>Use headings and subheadings.
+</li><li>Add images and videos.
+</li><li>Improve readability.
+</li></ul>
+<h4>Example:</h4>
+<p>Optimized Title:<br>&quot;Best SEO Tools for Beginners in 2026&quot;</p>
+<hr>
+<p><b>Keyword Research</b><br>Keyword research identifies search terms used by users.</p>
+<h4>Steps:</h4>
+<ol><li>Identify target audience.
+</li><li>Generate keyword ideas.
+</li><li>Analyze search volume.
+</li><li>Evaluate competition.
+</li><li>Select relevant keywords.
+</li></ol>
+<h4>Types of Keywords:</h4>
+<h4>Short-Tail Keywords</h4>
+<ul><li>SEO
+</li><li>Marketing
+</li></ul>
+<h4>Long-Tail Keywords</h4>
+<ul><li>Best SEO tools for beginners
+</li><li>Free web analytics software
+</li></ul>
+<p><b>Conclusion</b><b><br></b>Content optimization and keyword research improve search visibility and attract relevant traffic.</p>
+<hr>
+<h4>4. Compare Google Search Console, Ahrefs and SEMrush.</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>Google Search Console</b></th><th><b>Ahrefs</b></th><th><b>SEMrush</b></th></tr><tr><td>Cost</td><td>Free</td><td>Paid</td><td>Paid</td></tr><tr><td>Keyword Tracking</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Backlink Analysis</td><td>Limited</td><td>Excellent</td><td>Excellent</td></tr><tr><td>Site Audit</td><td>Basic</td><td>Advanced</td><td>Advanced</td></tr><tr><td>Competitor Analysis</td><td>Limited</td><td>Strong</td><td>Strong</td></tr><tr><td>Best For</td><td>Website Monitoring</td><td>SEO &amp; Backlinks</td><td>SEO &amp; Marketing</td></tr></table></div>
+<h4>Google Search Console</h4>
+<ul><li>Monitors website performance.
+</li><li>Detects indexing issues.
+</li><li>Submits sitemaps.
+</li></ul>
+<h4>Ahrefs</h4>
+<ul><li>Strong backlink analysis.
+</li><li>Competitor research.
+</li><li>Keyword explorer.
+</li></ul>
+<h4>SEMrush</h4>
+<ul><li>SEO and PPC analysis.
+</li><li>Marketing insights.
+</li><li>Competitive intelligence.
+</li></ul>
+<p><b>Conclusion</b><br>User segmentation helps divide visitors into meaningful groups.</p>
+<h4>A) Demographic Segmentation</h4>
+<p>Groups users based on:</p>
+<ul><li>Age
+</li><li>Gender
+</li><li>Education
+</li><li>Occupation
+</li></ul>
+<p><b>Example:</b><br>Students aged 18–25.</p>
+<hr>
+<h4>B) Geographic Segmentation</h4>
+<p>Groups users according to location.</p>
+<p><b>Example:</b><br>Visitors from Mumbai, Delhi, and Pune.</p>
+<hr>
+<p><b>C) Behavioural Segmentation</b><b><br></b>Groups users based on actions and interactions.</p>
+<h4>Examples:</h4>
+<ul><li>Frequent buyers
+</li><li>Returning visitors
+</li><li>Users who abandoned carts
+</li></ul>
+<h4>Benefits:</h4>
+<ul><li>Personalized marketing
+</li><li>Better customer targeting
+</li><li>Increased conversions
+</li></ul>
+<p><b>Conclusion</b><b><br></b>Segmentation helps organizations deliver customized experiences to different user groups.</p>
+<hr>
+<h4>6. Describe Funnel Analysis and User Journey Mapping with Suitable Examples.</h4>
+<p><b>Funnel Analysis</b><b><br></b>Funnel analysis tracks user progression through a series of steps.</p>
+<h4>Example:</h4>
+<p>Website Visit<br>      ↓<br>Product View<br>      ↓<br>Add to Cart<br>      ↓<br>Checkout<br>      ↓<br>Purchase</p>
+<h4>Sample Data</h4>
+<div class="table-wrap"><table><tr><th><b>Stage</b></th><th><b>Users</b></th></tr><tr><td>Visit</td><td>1000</td></tr></table></div>
+<div class="table-wrap"><table><tr><th>Google Search Console is ideal for monitoring, while Ahrefs and SEMrush provide advanced SEO and competitor analysis.<br><br><b>5. Explain Demographic, Geographic and Behavioural User Segmentation.</b> Product View</th><th>700</th></tr><tr><td>Add to Cart</td><td>300</td></tr><tr><td>Checkout</td><td>200</td></tr><tr><td>Purchase</td><td>150</td></tr></table></div>
+<h4>Observation:</h4>
+<p>Most users drop off between Product View and Add to Cart.</p>
+<hr>
+<p><b>User Journey Mapping</b><br>User journey mapping shows the complete path a user follows.</p>
+<h4>Example:</h4>
+<p>Google Search<br>      ↓<br>Homepage<br>      ↓<br>Product Page<br>      ↓<br>Cart<br>      ↓<br>Checkout<br>      ↓<br>Purchase</p>
+<h4>Benefits:</h4>
+<ul><li>Identifies pain points.
+</li><li>Improves user experience.
+</li><li>Optimizes conversion paths.
+</li></ul>
+<p><b>Conclusion</b><b><br></b>Both techniques help organizations understand user behavior and improve website performance.</p>
+<hr>
+<h4>7. Discuss the Applications of SEO in Website Visibility and Engagement Optimization.</h4>
+<p><b>A) Website Visibility</b><b><br></b>SEO improves a website&#x27;s presence in search engine results.</p>
+<h4>Benefits:</h4>
+<ul><li>Higher search rankings
+</li><li>Increased organic traffic
+</li><li>Improved brand awareness
+</li><li>Better online presence
+</li></ul>
+<p><b>Example:</b><br>A website ranking on the first page of Google receives significantly more visitors than one on the second page.</p>
+<hr>
+<p><b>B) Engagement Optimization</b><br>SEO improves user interaction and satisfaction.</p>
+<h4>Methods:</h4>
+<ul><li>Fast loading pages
+</li><li>Mobile-friendly design
+</li><li>Relevant content
+</li><li>Internal linking
+</li><li>Personalized recommendations
+</li></ul>
+<h4>Benefits:</h4>
+<ul><li>Reduced bounce rate
+</li><li>Increased dwell time
+</li><li>More page views
+</li><li>Higher conversion rates
+</li></ul>
+<p><b>Example:</b><br>Adding related articles and improving page speed increases user engagement and session duration.</p>
+<p><b>Conclusion</b><b><br></b>SEO not only improves visibility in search results but also enhances user engagement, resulting in better website performance and business growth.</p></article>
+</main>
+<footer class="foot">
+  <p>Shared by Harsh, IT Batch 2027, so juniors have last year's papers the night before. Not an official TCET site. <a href="https://harver.in">harver.in</a></p>
+  <p data-contact hidden>Wrong label, broken page or a paper to add? <a href="#" data-email>Email Harsh</a>.</p>
+  <p data-cookie-row hidden><button class="linklike" type="button" data-cookie-settings>Cookie settings</button></p>
+</footer>
+</div>
+</div>
+<div class="cookie" data-cookie-banner hidden role="region" aria-label="Cookie preferences">
+  <p><b>Cookies.</b> Night Before can use Google Analytics cookies to see which subjects people open. Accept all to allow them, or Essential only to browse without them. Change this any time under Cookie settings.</p>
+  <div class="cookie-btns"><button class="btn-main" type="button" data-cookie-accept>Accept all</button><button class="btn" type="button" data-cookie-essential>Essential only</button></div>
+</div>
+</body>
+</html>

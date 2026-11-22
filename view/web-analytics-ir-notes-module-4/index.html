@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Analytics and Information Retrieval Module 4 notes | Night Before</title>
+<meta name="description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 4 notes. readable page or the Word file · 1.5 MB.">
+<link rel="canonical" href="https://pyq.harver.in/view/web-analytics-ir-notes-module-4/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Night Before">
+<meta property="og:title" content="Web Analytics and Information Retrieval Module 4 notes | Night Before">
+<meta property="og:description" content="Web Analytics and Information Retrieval, TCET IT semester VII: Module 4 notes. readable page or the Word file · 1.5 MB.">
+<meta property="og:url" content="https://pyq.harver.in/view/web-analytics-ir-notes-module-4/">
+<meta property="og:image" content="https://pyq.harver.in/og-image.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem("nb-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css?v=4">
+<script src="/assets/site.js?v=1" defer></script>
+
+</head>
+<body class="s7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/">Night Before</a>
+  <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  <form class="jump" data-jump hidden>
+    <label for="jump">Jump to subject</label>
+    <div class="jump-row"><select id="jump" name="to"><optgroup label="Semester III"><option value="/sem-3/uhv-ii/">Universal Human Values II</option><option value="/sem-3/maths-iii/">Mathematics III</option><option value="/sem-3/digital-circuit-design/">Digital Circuit Design</option><option value="/sem-3/dsa/">Data Structures and Algorithms</option><option value="/sem-3/dbms/">Database Management Systems</option></optgroup><optgroup label="Semester IV"><option value="/sem-4/maths-iv/">Mathematics IV</option><option value="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</option><option value="/sem-4/nosql/">NoSQL</option><option value="/sem-4/computer-networks/">Computer Networks</option></optgroup><optgroup label="Semester V"><option value="/sem-5/operating-system/">Operating System</option><option value="/sem-5/automata-theory/">Automata Theory</option><option value="/sem-5/web-programming/">Web Programming</option><option value="/sem-5/cns/">Cryptography and Network Security</option><option value="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</option><option value="/sem-5/full-stack-development-i/">Full Stack Development I</option><option value="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering</option><option value="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch</option><option value="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch</option></optgroup><optgroup label="Semester VI"><option value="/sem-6/wpmh/">Work Place Mental Health</option><option value="/sem-6/dmbi/">Data Mining and Business Intelligence</option><option value="/sem-6/software-engineering/">Software Engineering</option><option value="/sem-6/artificial-intelligence/">Artificial Intelligence</option><option value="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</option><option value="/sem-6/analysis-of-algorithms/">Analysis of Algorithms</option><option value="/sem-6/english-competitive-exams/">English for Competitive Exams</option></optgroup><optgroup label="Semester VII"><option value="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</option><option value="/sem-7/big-data-analytics/">Big Data Analytics</option><option value="/sem-7/devops/">DevOps</option><option value="/sem-7/web-analytics-ir/" selected>Web Analytics and Information Retrieval</option><option value="/sem-7/japanese-i/">Japanese Language I</option><option value="/sem-7/user-interaction-design/">User Interaction Design</option><option value="/sem-7/management-information-system/">Management Information System</option><option value="/sem-7/design-thinking/">Design Thinking and Problem Solving</option><option value="/sem-7/disaster-management/">Disaster Management and Mitigation Methods</option></optgroup></select><button type="submit">Go</button></div>
+  </form>
+</header>
+<div class="shell">
+<aside class="side" aria-label="Semesters and subjects">
+  <div class="side-top">
+    <a class="brand" href="/">Night Before</a>
+    <p>TCET IT papers, question banks and notes</p>
+    <button class="theme-btn" type="button" data-theme-toggle>Light mode</button>
+  </div>
+  <nav aria-label="Subjects"><div class="side-sem s3"><h2><a href="/#sem-3">Semester III</a></h2><ul><li><a href="/sem-3/uhv-ii/">Universal Human Values II</a></li><li><a href="/sem-3/maths-iii/">Mathematics III</a></li><li><a href="/sem-3/digital-circuit-design/">Digital Circuit Design</a></li><li><a href="/sem-3/dsa/">Data Structures and Algorithms</a></li><li><a href="/sem-3/dbms/">Database Management Systems</a></li></ul></div><div class="side-sem s4"><h2><a href="/#sem-4">Semester IV</a></h2><ul><li><a href="/sem-4/maths-iv/">Mathematics IV</a></li><li><a href="/sem-4/coa/">Computer Organization, Architecture and Microprocessors</a></li><li><a href="/sem-4/nosql/">NoSQL</a></li><li><a href="/sem-4/computer-networks/">Computer Networks</a></li></ul></div><div class="side-sem s5"><h2><a href="/#sem-5">Semester V</a></h2><ul><li><a href="/sem-5/operating-system/">Operating System</a></li><li><a href="/sem-5/automata-theory/">Automata Theory</a></li><li><a href="/sem-5/web-programming/">Web Programming</a></li><li><a href="/sem-5/cns/">Cryptography and Network Security</a></li><li><a href="/sem-5/soft-skills/">Soft Skill and Interpersonal Communication</a></li><li><a href="/sem-5/full-stack-development-i/">Full Stack Development I <span class="side-note">other option</span></a></li><li><a href="/sem-5/machine-learning-comp/">Machine Learning, Computer Engineering <span class="side-note">other branch</span></a></li><li><a href="/sem-5/fundamentals-of-ml-aiml/">Fundamentals of Machine Learning, AIML branch <span class="side-note">older syllabus</span></a></li><li><a href="/sem-5/machine-learning-aids/">Machine Learning, AI and DS branch <span class="side-note">older syllabus</span></a></li></ul></div><div class="side-sem s6"><h2><a href="/#sem-6">Semester VI</a></h2><ul><li><a href="/sem-6/wpmh/">Work Place Mental Health</a></li><li><a href="/sem-6/dmbi/">Data Mining and Business Intelligence</a></li><li><a href="/sem-6/software-engineering/">Software Engineering</a></li><li><a href="/sem-6/artificial-intelligence/">Artificial Intelligence</a></li><li><a href="/sem-6/intro-ai-ds/">Introduction to Artificial Intelligence and Data Science</a></li><li><a href="/sem-6/analysis-of-algorithms/">Analysis of Algorithms <span class="side-note">other option</span></a></li><li><a href="/sem-6/english-competitive-exams/">English for Competitive Exams <span class="side-note">other option</span></a></li></ul></div><div class="side-sem s7"><h2><a href="/#sem-7">Semester VII</a></h2><ul><li><a href="/sem-7/ml-it-app-dev/">Machine Learning for IT Application Development</a></li><li><a href="/sem-7/big-data-analytics/">Big Data Analytics</a></li><li><a href="/sem-7/devops/">DevOps</a></li><li><a href="/sem-7/web-analytics-ir/" aria-current="page">Web Analytics and Information Retrieval</a></li><li><a href="/sem-7/japanese-i/">Japanese Language I</a></li><li><a href="/sem-7/user-interaction-design/">User Interaction Design <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/management-information-system/">Management Information System <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/design-thinking/">Design Thinking and Problem Solving <span class="side-note">older syllabus</span></a></li><li><a href="/sem-7/disaster-management/">Disaster Management and Mitigation Methods <span class="side-note">older syllabus</span></a></li></ul></div></nav>
+</aside>
+<div class="col">
+<main id="main" tabindex="-1">
+
+<nav class="crumb" aria-label="Breadcrumb"><a href="/#sem-7">Semester VII</a> <span aria-hidden="true">/</span> <a href="/sem-7/web-analytics-ir/">Web Analytics and Information Retrieval</a></nav>
+<h1>Web Analytics and Information Retrieval: Module 4 notes</h1>
+<p class="sub"><span class="ft docx">DOCX</span> readable page or the Word file · 1.5 MB</p>
+<div class="actions">
+  <a class="btn-main" href="/files/web-analytics-ir-notes-module-4.docx" download="Web Analytics and Information Retrieval - Module 4 notes.docx">Download DOCX</a>
+  <button class="btn" type="button" data-print>Print or save as PDF</button>
+  <a class="btn" href="/sem-7/web-analytics-ir/">All files for this subject</a>
+</div>
+<p class="fine">Converted from the Word file so it reads on a phone. The download is the original.</p><article class="prose"><h4>Module 4: Information Retrieval and Search Engine Analytics</h4>
+<hr>
+<h4>1. Introduction to Information Retrieval (IR) Systems</h4>
+<p>Information Retrieval (IR) is the process of obtaining relevant information or documents from a large collection based on a user&#x27;s query.</p>
+<h4>Objectives of Information Retrieval</h4>
+<ul><li>Retrieve relevant documents efficiently.
+</li><li>Minimize irrelevant results.
+</li><li>Improve search accuracy.
+</li><li>Support user information needs.
+</li></ul>
+<h4>Examples of IR Systems</h4>
+<ul><li>Google Search
+</li><li>Bing Search
+</li><li>Digital Libraries
+</li><li>E-commerce Product Search
+</li><li>Academic Search Engines
+</li></ul>
+<h4>Example</h4>
+<p>When a user searches <b>&quot;Machine Learning Notes&quot;</b>, the IR system retrieves the most relevant documents from millions of webpages.</p>
+<hr>
+<h4>2. Information Retrieval Process</h4>
+<p>Document Collection<br>        ↓<br>Document Preprocessing<br>        ↓<br>Index Creation<br>        ↓<br>User Query<br>        ↓<br>Query Processing<br>        ↓<br>Document Matching<br>        ↓<br>Ranking<br>        ↓<br>Search Results</p>
+<hr>
+<h4>3. Document Representation and Preprocessing</h4>
+<p>Before searching, documents must be converted into a machine-readable format.</p>
+<hr>
+<p><b>3.1 Tokenization</b><b><br></b>Breaking text into individual words or terms called tokens.</p>
+<h4>Example</h4>
+<p>Text:<br>Web Analytics improves website performance.</p>
+<p>Tokens:<br>Web, Analytics, improves, website, performance</p>
+<hr>
+<p><b>3.2 Stop Word Removal</b><b><br></b>Removing common words that carry little meaning.</p>
+<h4>Examples</h4>
+<ul><li>is
+</li><li>am
+</li><li>are
+</li><li>the
+</li><li>and
+</li></ul>
+<h4>Example</h4>
+<p>Original Sentence:<br>The web analytics system is useful.</p>
+<p>After Stop Word Removal:<br>web analytics system useful</p>
+<hr>
+<p><b>3.3 Stemming</b><b><br></b>Reducing words to their root form.</p>
+<h4>Example</h4>
+<div class="table-wrap"><table><tr><th><b>Word</b></th><th><b>Stem</b></th></tr><tr><td>Computing</td><td>Comput</td></tr><tr><td>Computed</td><td>Comput</td></tr><tr><td>Computer</td><td>Comput</td></tr></table></div>
+<hr>
+<p><b>3.4 Lemmatization</b><b><br></b>Converting words to their meaningful base form.</p>
+<h4>Example</h4>
+<div class="table-wrap"><table><tr><th><b>Word</b></th><th><b>Lemma</b></th></tr><tr><td>Running</td><td>Run</td></tr><tr><td>Better</td><td>Good</td></tr><tr><td>Studies</td><td>Study</td></tr></table></div>
+<hr>
+<p><b>4. Vector Space Model (VSM)</b><b><br></b>Vector Space Model represents documents and queries as vectors in a multidimensional space.<b><br></b>Each unique term becomes a dimension.</p>
+<hr>
+<h4>Example</h4>
+<p>Documents:<b><br></b>D1 = &quot;Information Retrieval&quot;<b><br></b>D2 = &quot;Information Retrieval System&quot;</p>
+<p>Vocabulary:<br>Information, Retrieval, System</p>
+<p>Vectors:</p>
+<div class="table-wrap"><table><tr><th><b>Term</b></th><th><b>D1</b></th><th><b>D2</b></th></tr><tr><td>Information</td><td>1</td><td>1</td></tr><tr><td>Retrieval</td><td>1</td><td>1</td></tr><tr><td>System</td><td>0</td><td>1</td></tr></table></div>
+<hr>
+<h4>Advantages</h4>
+<ul><li>Simple implementation
+</li><li>Supports ranking
+</li><li>Measures similarity between documents
+</li></ul>
+<hr>
+<h4>Applications</h4>
+<ul><li>Search engines
+</li><li>Document retrieval systems
+</li><li>Recommendation systems
+</li></ul>
+<hr>
+<h4>5. Term Frequency – Inverse Document Frequency (TF-IDF)</h4>
+<p>TF-IDF measures the importance of a term within a document relative to a collection of documents.</p>
+<hr>
+<h4>A) Term Frequency (TF)</h4>
+<p>Measures how often a term appears in a document.</p>
+<h4>Formula:</h4>
+<p>TF = Number of times term appears / Total terms in document</p>
+<h4>Example:</h4>
+<p>Document:<br>SEO SEO Analytics</p>
+<p>TF(SEO):</p>
+<p>TF = 2/3</p>
+<hr>
+<h4>B) Inverse Document Frequency (IDF)</h4>
+<p>Measures how unique or rare a term is across all documents.</p>
+<h4>Formula:</h4>
+<p>IDF = log(N / DF)</p>
+<p>Where:</p>
+<ul><li><b>N</b> = Total number of documents
+</li><li><b>DF</b> = Number of documents containing the term
+</li></ul>
+<hr>
+<h4>TF-IDF Formula</h4>
+<p>TF-IDF = TF × IDF</p>
+<h4>Importance</h4>
+<ul><li>Highlights important keywords
+</li><li>Improves document ranking
+</li><li>Widely used in search engines
+</li></ul>
+<hr>
+<h4>6. Introduction to Link Analysis</h4>
+<p>Link analysis evaluates relationships among webpages using hyperlinks.</p>
+<h4>Purpose</h4>
+<ul><li>Determine webpage importance.
+</li><li>Improve search result ranking.
+</li></ul>
+<p><b>Example<br></b>If many websites link to a webpage, search engines consider it more authoritative.</p>
+<hr>
+<h4>7. PageRank Algorithm (Conceptual Understanding)</h4>
+<p>PageRank is Google&#x27;s link analysis algorithm that ranks webpages based on the quantity and quality of incoming links.</p>
+<hr>
+<h4>Working Principle</h4>
+<p>A page receives higher rank when:</p>
+<ul><li>More pages link to it.
+</li><li>High-quality pages link to it.
+</li></ul>
+<hr>
+<h4>Example</h4>
+<p>Page A → Page B<br>Page C → Page B<br>Page D → Page B</p>
+<p>Since Page B receives multiple links, its PageRank increases.</p>
+<hr>
+<h4>Advantages</h4>
+<ul><li>Measures authority.
+</li><li>Improves result quality.
+</li><li>Reduces manipulation.
+</li></ul>
+<hr>
+<h4>8. HITS Algorithm (Conceptual Overview)</h4>
+<p>HITS (Hyperlink-Induced Topic Search) identifies two types of webpages:</p>
+<h4>Hub Pages</h4>
+<p>Pages containing links to many useful resources.</p>
+<h4>Authority Pages</h4>
+<p>Pages containing valuable content.</p>
+<hr>
+<h4>Example</h4>
+<p>University Website:</p>
+<ul><li>Homepage → Hub
+</li><li>Research Article → Authority
+</li></ul>
+<hr>
+<h4>Working Principle</h4>
+<p>Good hubs point to good authorities, and good authorities are pointed to by good hubs.</p>
+<hr>
+<h4>Comparison: PageRank vs HITS</h4>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>PageRank</b></th><th><b>HITS</b></th></tr><tr><td>Focus</td><td>Importance of Pages</td><td>Hubs and Authorities</td></tr><tr><td>Computation</td><td>Entire Web</td><td>Query Specific</td></tr><tr><td>Output</td><td>Single Score</td><td>Hub and Authority Scores</td></tr><tr><td>Used By</td><td>Google</td><td>Academic IR Systems</td></tr></table></div>
+<hr>
+<h4>9. Search Intent Analysis</h4>
+<p>Search intent refers to the purpose behind a user&#x27;s search query.</p>
+<hr>
+<h4>Types of Search Intent</h4>
+<h4>A) Informational Intent</h4>
+<p>User wants information.</p>
+<h4>Examples</h4>
+<ul><li>What is SEO?
+</li><li>How does Google work?
+</li></ul>
+<hr>
+<h4>B) Navigational Intent</h4>
+<p>User wants a specific website.</p>
+<h4>Examples</h4>
+<ul><li>YouTube Login
+</li><li>Facebook Homepage
+</li></ul>
+<hr>
+<h4>C) Transactional Intent</h4>
+<p>User intends to perform an action or purchase.</p>
+<h4>Examples</h4>
+<ul><li>Buy Laptop Online
+</li><li>Book Flight Tickets
+</li></ul>
+<hr>
+<h4>Importance</h4>
+<p>Understanding search intent helps search engines provide relevant results.</p>
+<hr>
+<p><b>10. Ranking Signals in Modern Search Engines</b><b><br></b>Ranking signals are factors used by search engines to determine webpage ranking.</p>
+<hr>
+<h4>Important Signals</h4>
+<p><b>Content Relevance<br></b>Matching user query.</p>
+<p><b>Backlinks<br></b>Links from other websites.</p>
+<p><b>Page Speed<br></b>Fast-loading pages rank better.</p>
+<p><b>Mobile Friendliness<br></b>Optimized mobile experience.</p>
+<p><b>User Engagement<br></b>CTR, dwell time, bounce rate.</p>
+<p><b>HTTPS Security<br></b>Secure websites receive preference.</p>
+<hr>
+<p><b>11. Query Expansion Techniques</b><b><br></b>Query expansion improves search results by adding related terms to user queries.</p>
+<hr>
+<h4>Example</h4>
+<p>User Query:<br>Car<br><br>Expanded Query:<br>Car OR Automobile OR Vehicle</p>
+<hr>
+<h4>Techniques</h4>
+<p><b>Synonym Expansion<br></b>Car → Automobile</p>
+<p><b>Related Terms<br></b>AI → Machine Learning, Deep Learning</p>
+<p><b>User History Based Expansion<br></b>Uses previous searches.</p>
+<hr>
+<h4>Benefits</h4>
+<ul><li>Improves recall.
+</li><li>Retrieves more relevant documents.
+</li><li>Handles vocabulary differences.
+</li></ul>
+<hr>
+<p><b>12. BM25 Ranking Model (Conceptual Overview)</b><b><br></b>BM25 (Best Matching 25) is an advanced ranking function used in modern search engines to estimate document relevance.</p>
+<hr>
+<h4>Features</h4>
+<ul><li>Considers term frequency.
+</li><li>Considers document length.
+</li><li>Handles keyword saturation.
+</li><li>Improves ranking accuracy.
+</li></ul>
+<hr>
+<h4>Example</h4>
+<p>Query:<br>Information Retrieval</p>
+<p>BM25 ranks documents higher if:</p>
+<ul><li>Query terms appear frequently.
+</li><li>Document is relevant.
+</li><li>Document length is appropriate.
+</li></ul>
+<hr>
+<h4>Applications</h4>
+<ul><li>Search engines
+</li><li>Digital libraries
+</li><li>Enterprise search systems
+</li></ul>
+<hr>
+<p><b>13. Role of SEO in Information Retrieval</b><b><br></b>SEO helps search engines understand, index, and rank webpages effectively.</p>
+<hr>
+<h4>Contributions of SEO</h4>
+<p><b>Improves Crawlability<br></b>Search engines can discover pages easily.</p>
+<p><b>Enhances Content Relevance<br></b>Keywords match user queries.</p>
+<p><b>Improves User Experience<br></b>Faster and mobile-friendly websites.</p>
+<p><b>Supports Ranking<br></b>Better optimized pages receive higher rankings.</p>
+<hr>
+<h4>Example</h4>
+<p>A website optimized with:</p>
+<ul><li>Proper keywords
+</li><li>Fast loading speed
+</li><li>Quality backlinks
+</li></ul>
+<p>is more likely to appear in top search results.</p>
+<hr>
+<h4>Applications of Information Retrieval and Search Engine Analytics</h4>
+<p><b>Search Engines<br></b>Google, Bing, Yahoo</p>
+<p><b>E-Commerce<br></b>Amazon product search</p>
+<p><b>Digital Libraries<br></b>IEEE Xplore, ACM Digital Library</p>
+<p><b>Recommendation Systems<br></b>Netflix, YouTube</p>
+<p><b>Enterprise Search<br></b>Searching organizational documents</p>
+<hr>
+<h4>Important University Examination Questions<br>Short Questions (2–3 Marks)</h4>
+<ol><li>Define Information Retrieval System.
+</li><li>What is document preprocessing?
+</li><li>What is tokenization?
+</li><li>Define TF-IDF.
+</li><li>What is the Vector Space Model?
+</li><li>What is link analysis?
+</li><li>Define PageRank.
+</li><li>What is the HITS algorithm?
+</li><li>What are the types of search intent?
+</li><li>What is query expansion?
+</li><li>Define BM25.
+</li><li>State the role of SEO in Information Retrieval.
+</li></ol>
+<hr>
+<h4>Long Questions (5–10 Marks)</h4>
+<ol><li>Explain the architecture and working of an Information Retrieval system.
+</li><li>Discuss document preprocessing techniques with examples.
+</li><li>Explain the Vector Space Model with a suitable example.
+</li><li>Describe TF-IDF and its significance in Information Retrieval.
+</li><li>Explain the PageRank algorithm and its working principle.
+</li><li>Compare PageRank and HITS algorithms.
+</li><li>Explain different types of search intent with examples.
+</li><li>Discuss ranking signals used by modern search engines.
+</li><li>Explain query expansion techniques and their benefits.
+</li><li>Describe the BM25 ranking model and its applications.
+</li><li>Discuss the role of SEO in Information Retrieval and search engine ranking.
+</li></ol>
+<hr>
+<h4>Key Takeaways</h4>
+<ul><li><b>Information Retrieval (IR)</b> focuses on finding relevant information from large document collections.
+</li><li><b>Document preprocessing</b> includes tokenization, stop-word removal, stemming, and lemmatization.
+</li><li><b>Vector Space Model (VSM)</b> represents documents and queries as vectors.
+</li><li><b>TF-IDF</b> measures term importance for ranking documents.
+</li><li><b>PageRank</b> and <b>HITS</b> are important link analysis algorithms.
+</li><li><b>Search intent</b> can be informational, navigational, or transactional.
+</li><li><b>Ranking signals</b> include relevance, backlinks, page speed, and user engagement.
+</li><li><b>Query expansion</b> improves search accuracy using related terms.
+</li><li><b>BM25</b> is a modern ranking model used in advanced search engines.
+</li><li><b>SEO</b> enhances crawlability, relevance, and ranking of webpages.
+</li></ul>
+<h2>Answers to Short Questions (2–3 Marks)</h2>
+<h3>1. Define Information Retrieval System.</h3>
+<p>An Information Retrieval (IR) System is a system that searches, retrieves, and presents relevant documents or information from a large collection based on a user&#x27;s query.</p>
+<hr>
+<h3>2. What is Document Preprocessing?</h3>
+<p>Document preprocessing is the process of cleaning and transforming raw text into a structured format suitable for indexing and retrieval. It includes tokenization, stop-word removal, stemming, and lemmatization.</p>
+<hr>
+<h3>3. What is Tokenization?</h3>
+<p>Tokenization is the process of breaking text into smaller units called tokens, usually words or terms.</p>
+<p><b>Example:</b><br>Sentence: &quot;Information Retrieval System&quot;<br>Tokens: Information, Retrieval, System</p>
+<hr>
+<h3>4. Define TF-IDF.</h3>
+<p>TF-IDF (Term Frequency-Inverse Document Frequency) is a statistical measure used to determine the importance of a term in a document relative to a collection of documents.</p>
+<p><b>Formula: </b>TF−IDF=TF×IDF</p>
+<hr>
+<h3>5. What is the Vector Space Model?</h3>
+<p>The Vector Space Model (VSM) is a mathematical model that represents documents and queries as vectors in a multidimensional space and measures their similarity for retrieval.</p>
+<hr>
+<h3>6. What is Link Analysis?</h3>
+<p>Link analysis is a technique used to evaluate relationships among webpages through hyperlinks to determine their importance and authority.</p>
+<hr>
+<h3>7. Define PageRank.</h3>
+<p>PageRank is a link analysis algorithm developed by Google that ranks webpages based on the number and quality of incoming links.</p>
+<hr>
+<h3>8. What is the HITS Algorithm?</h3>
+<p>HITS (Hyperlink-Induced Topic Search) is a link analysis algorithm that identifies webpages as hubs and authorities based on hyperlink structures.</p>
+<hr>
+<h3>9. What are the Types of Search Intent?</h3>
+<p>The three main types of search intent are:</p>
+<ol><li>Informational Intent – seeking information.
+</li><li>Navigational Intent – searching for a specific website.
+</li><li>Transactional Intent – intending to perform an action or purchase.
+</li></ol>
+<hr>
+<h3>10. What is Query Expansion?</h3>
+<p>Query expansion is the process of enhancing a user&#x27;s search query by adding related words, synonyms, or phrases to improve search results.</p>
+<hr>
+<h3>11. Define BM25.</h3>
+<p>BM25 (Best Matching 25) is a probabilistic ranking model used by search engines to estimate the relevance of documents to a search query.</p>
+<hr>
+<h3>12. State the Role of SEO in Information Retrieval.</h3>
+<p>SEO helps search engines crawl, index, and rank webpages effectively, thereby improving the retrieval of relevant information for users.</p>
+<hr>
+<h2>Answers to Long Questions (5–10 Marks)</h2>
+<h2>1. Explain the Architecture and Working of an Information Retrieval System.</h2>
+<p>An Information Retrieval (IR) system retrieves relevant documents based on user queries.</p>
+<h4>Architecture</h4>
+<p>Document Collection<br>       ↓<br>Document Preprocessing<br>       ↓<br>Indexing<br>       ↓<br>Query Processing<br>       ↓<br>Matching &amp; Ranking<br>       ↓<br>Result Retrieval</p>
+<h4>Working Steps</h4>
+<h4>1. Document Collection</h4>
+<p>Documents are gathered from various sources.</p>
+<h4>2. Preprocessing</h4>
+<p>Documents are cleaned using tokenization, stop-word removal, and stemming.</p>
+<h4>3. Indexing</h4>
+<p>An index is created for efficient searching.</p>
+<h4>4. Query Processing</h4>
+<p>The user&#x27;s query is processed similarly to documents.</p>
+<h4>5. Matching and Ranking</h4>
+<p>Relevant documents are identified and ranked.</p>
+<h4>6. Result Retrieval</h4>
+<p>Top-ranked documents are displayed.</p>
+<h4>Example</h4>
+<p>Google retrieves webpages relevant to the query &quot;Machine Learning Notes.&quot;</p>
+<h4>Conclusion</h4>
+<p>An IR system efficiently stores, processes, and retrieves relevant information from large document collections.</p>
+<hr>
+<h2>2. Discuss Document Preprocessing Techniques with Examples.</h2>
+<p>Document preprocessing improves the quality and efficiency of information retrieval.</p>
+<hr>
+<h4>A) Tokenization</h4>
+<p>Breaks text into words.</p>
+<p><b>Example:</b> &quot;Web Analytics System&quot;</p>
+<p>Tokens: Web, Analytics, System</p>
+<hr>
+<h4>B) Stop Word Removal</h4>
+<p>Removes common words.</p>
+<p><b>Example:</b><br>&quot;The web analytics system is useful.&quot;<br>After removal:<br>web analytics system useful</p>
+<hr>
+<h4>C) Stemming</h4>
+<p>Reduces words to root forms.</p>
+<div class="table-wrap"><table><tr><th><b>Word</b></th><th><b>Stem</b></th></tr><tr><td>Playing</td><td>Play</td></tr><tr><td>Played</td><td>Play</td></tr><tr><td>Player</td><td>Play</td></tr></table></div>
+<hr>
+<h4>D) Lemmatization</h4>
+<p>Converts words to meaningful base forms.</p>
+<div class="table-wrap"><table><tr><th><b>Word</b></th><th><b>Lemma</b></th></tr><tr><td>Running</td><td>Run</td></tr><tr><td>Better</td><td>Good</td></tr></table></div>
+<h4>Benefits</h4>
+<ul><li>Reduces storage requirements.
+</li><li>Improves retrieval efficiency.
+</li><li>Enhances search accuracy.
+</li></ul>
+<h4>Conclusion</h4>
+<p>Preprocessing converts raw text into a structured format suitable for indexing and searching.</p>
+<hr>
+<h2>3. Explain the Vector Space Model with a Suitable Example.</h2>
+<p>The Vector Space Model (VSM) represents documents and queries as vectors in multidimensional space.</p>
+<h4>Example</h4>
+<p>Documents:<br>D1 = &quot;Information Retrieval&quot;<br>D2 = &quot;Information Retrieval System&quot;</p>
+<p>Vocabulary:<br>Information, Retrieval, System</p>
+<div class="table-wrap"><table><tr><th><b>Term</b></th><th><b>D1</b></th><th><b>D2</b></th></tr><tr><td>Information</td><td>1</td><td>1</td></tr><tr><td>Retrieval</td><td>1</td><td>1</td></tr><tr><td>System</td><td>0</td><td>1</td></tr></table></div>
+<p>Each document is represented as a vector.<br>D1 = (1,1,0)<br>D2 = (1,1,1)</p>
+<h4>Advantages</h4>
+<ul><li>Supports document ranking.
+</li><li>Measures similarity.
+</li><li>Easy to implement.
+</li></ul>
+<h4>Applications</h4>
+<ul><li>Search engines
+</li><li>Recommendation systems
+</li><li>Digital libraries
+</li></ul>
+<h4>Conclusion</h4>
+<p>VSM enables efficient comparison between documents and user queries.</p>
+<hr>
+<h2>4. Describe TF-IDF and its Significance in Information Retrieval.</h2>
+<p>TF-IDF measures the importance of a term in a document relative to all documents.</p>
+<h4>A) Term Frequency (TF)</h4>
+<p>Measures term occurrence in a document.<br>Formula: TF = Number of times term appears / Total terms in document</p>
+<h4>Example</h4>
+<p>Document:<br>SEO SEO Analytics</p>
+<p>TF(SEO)= 2/3</p>
+<hr>
+<h4>B) Inverse Document Frequency (IDF)</h4>
+<p>Measures rarity of a term.</p>
+<p>IDF=log(N/DF)</p>
+<p>Where:</p>
+<ul><li>N = Total documents
+</li><li>DF = Documents containing term
+</li></ul>
+<hr>
+<p><b>TF-IDF Formula</b>:  TF-IDF = TF x IDF</p>
+<h4>Significance</h4>
+<ul><li>Identifies important keywords.
+</li><li>Improves search rankings.
+</li><li>Filters common terms.
+</li></ul>
+<h4>Conclusion</h4>
+<p>TF-IDF is widely used in search engines and text mining applications.</p>
+<hr>
+<h2>5. Explain the PageRank Algorithm and its Working Principle.</h2>
+<p>PageRank is a link analysis algorithm developed by Google.</p>
+<h4>Working Principle</h4>
+<p>A webpage receives a higher rank when:</p>
+<ul><li>Many pages link to it.
+</li><li>High-quality pages link to it.
+</li></ul>
+<h4>Example</h4>
+<p>Page A → Page B<br>Page C → Page B<br>Page D → Page B</p>
+<p>Page B receives more links and obtains a higher PageRank.</p>
+<h4>Advantages</h4>
+<ul><li>Measures webpage authority.
+</li><li>Improves search result quality.
+</li><li>Considers link quality.
+</li></ul>
+<h4>Conclusion<br>PageRank evaluates webpage importance using hyperlinks between pages.</h4>
+<hr>
+<h2>6. Compare PageRank and HITS Algorithms.</h2>
+<div class="table-wrap"><table><tr><th><b>Feature</b></th><th><b>PageRank</b></th><th><b>HITS</b></th></tr><tr><td><b>Developed By</b></td><td>Google</td><td>Jon Kleinberg</td></tr><tr><td><b>Focus</b></td><td>Importance of pages</td><td>Hubs and Authorities</td></tr><tr><td><b>Computation</b></td><td>Entire web graph</td><td>Query-dependent</td></tr><tr><td><b>Output</b></td><td>Single rank score</td><td>Hub &amp; Authority scores</td></tr><tr><td><b>Usage</b></td><td>Search engines</td><td>Academic IR systems</td></tr></table></div>
+<h4>PageRank</h4>
+<p>Ranks pages using incoming links.</p>
+<h4>HITS</h4>
+<p>Classifies pages into:</p>
+<ul><li>Hub Pages
+</li><li>Authority Pages
+</li></ul>
+<h4>Conclusion</h4>
+<p>Both algorithms use hyperlink analysis but differ in ranking methodology.</p>
+<hr>
+<h2>7. Explain Different Types of Search Intent with Examples.</h2>
+<p>Search intent is the purpose behind a search query.</p>
+<hr>
+<h4>A) Informational Intent</h4>
+<p>User seeks information.</p>
+<h4>Examples:</h4>
+<ul><li>What is SEO?
+</li><li>How does PageRank work?
+</li></ul>
+<hr>
+<h4>B) Navigational Intent</h4>
+<p>User seeks a specific website.</p>
+<h4>Examples:</h4>
+<ul><li>YouTube Login
+</li><li>Facebook Homepage
+</li></ul>
+<hr>
+<h4>C) Transactional Intent</h4>
+<p>User intends to complete an action.</p>
+<h4>Examples:</h4>
+<ul><li>Buy Laptop Online
+</li><li>Book Hotel Room
+</li></ul>
+<h4>Importance</h4>
+<p>Helps search engines provide relevant results.</p>
+<h4>Conclusion</h4>
+<p>Understanding intent improves search accuracy and user satisfaction.</p>
+<hr>
+<h2>8. Discuss Ranking Signals Used by Modern Search Engines.</h2>
+<p>Ranking signals determine webpage positions in search results.</p>
+<h4>Important Signals</h4>
+<p>1. Content Relevance</p>
+<p>Matches user queries.</p>
+<p>2. Backlinks</p>
+<p>Links from authoritative websites.</p>
+<p>3. Page Speed</p>
+<p>Fast websites rank better.</p>
+<p>4. Mobile Friendliness</p>
+<p>Optimized mobile experience.</p>
+<p>5. User Engagement</p>
+<p>CTR, dwell time, bounce rate.</p>
+<p>6. HTTPS Security</p>
+<p>Secure websites receive preference.</p>
+<h4>Conclusion<br>Search engines use multiple signals to deliver relevant and high-quality results.</h4>
+<hr>
+<h2>9. Explain Query Expansion Techniques and Their Benefits.</h2>
+<p>Query expansion improves search results by adding related terms.</p>
+<h4>Techniques</h4>
+<h4>A) Synonym Expansion</h4>
+<p>Car → Automobile</p>
+<h4>B) Related Terms Expansion</h4>
+<p>AI → Machine Learning, Deep Learning</p>
+<h4>C) User History-Based Expansion</h4>
+<p>Uses previous searches to improve relevance.</p>
+<h4>Example</h4>
+<p>Query:</p>
+<p>&quot;Car&quot;</p>
+<p>Expanded Query:</p>
+<p>&quot;Car OR Automobile OR Vehicle&quot;</p>
+<h4>Benefits</h4>
+<ul><li>Improves recall.
+</li><li>Retrieves more relevant documents.
+</li><li>Handles vocabulary variations.
+</li></ul>
+<h4>Conclusion</h4>
+<p>Query expansion enhances search quality and retrieval effectiveness.</p>
+<hr>
+<h2>10. Describe the BM25 Ranking Model and its Applications.</h2>
+<p>BM25 (Best Matching 25) is a probabilistic ranking model used to rank documents based on relevance.</p>
+<h4>Features</h4>
+<ul><li>Uses term frequency.
+</li><li>Considers document length.
+</li><li>Handles keyword saturation.
+</li><li>Produces accurate rankings.
+</li></ul>
+<h4>Example</h4>
+<p>Query:<br>&quot;Information Retrieval&quot;<br>Documents containing the query terms more frequently receive higher scores.</p>
+<h4>Applications</h4>
+<ul><li>Search engines
+</li><li>Digital libraries
+</li><li>Enterprise search systems
+</li><li>E-commerce search
+</li></ul>
+<h4>Conclusion<br>BM25 is one of the most effective ranking models in modern information retrieval systems</h4>
+<hr>
+<h2>11. Discuss the Role of SEO in Information Retrieval and Search Engine Ranking.</h2>
+<p>SEO improves the visibility and retrieval of webpages in search engines.</p>
+<h4>Roles of SEO</h4>
+<h4>1. Improves Crawlability</h4>
+<p>Helps search engines discover webpages.</p>
+<h4>2. Enhances Content Relevance</h4>
+<p>Optimized keywords improve matching with queries.</p>
+<h4>3. Supports Better Ranking</h4>
+<p>Quality content and backlinks improve rankings.</p>
+<h4>4. Improves User Experience</h4>
+<p>Fast and mobile-friendly websites increase engagement.</p>
+<h4>Example</h4>
+<p>A website optimized with:</p>
+<ul><li>Relevant keywords
+</li><li>Fast loading speed
+</li><li>Quality backlinks
+</li><li>Mobile responsiveness
+</li></ul>
+<p>is more likely to rank higher in search results.</p>
+<h4>Conclusion</h4>
+<p>SEO bridges the gap between information retrieval systems and users by making content more accessible, discoverable, and relevant.</p></article>
+</main>
+<footer class="foot">
+  <p>Shared by Harsh, IT Batch 2027, so juniors have last year's papers the night before. Not an official TCET site. <a href="https://harver.in">harver.in</a></p>
+  <p data-contact hidden>Wrong label, broken page or a paper to add? <a href="#" data-email>Email Harsh</a>.</p>
+  <p data-cookie-row hidden><button class="linklike" type="button" data-cookie-settings>Cookie settings</button></p>
+</footer>
+</div>
+</div>
+<div class="cookie" data-cookie-banner hidden role="region" aria-label="Cookie preferences">
+  <p><b>Cookies.</b> Night Before can use Google Analytics cookies to see which subjects people open. Accept all to allow them, or Essential only to browse without them. Change this any time under Cookie settings.</p>
+  <div class="cookie-btns"><button class="btn-main" type="button" data-cookie-accept>Accept all</button><button class="btn" type="button" data-cookie-essential>Essential only</button></div>
+</div>
+</body>
+</html>
