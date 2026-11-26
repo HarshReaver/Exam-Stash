@@ -118,6 +118,33 @@ def scrub_office(src, out):
             zout.writestr(info, data)
 
 
+def docx_images(src, outdir):
+    """Pictures placed in a Word document, keyed by their relationship id."""
+    z = zipfile.ZipFile(src)
+    names = z.namelist()
+    if "word/_rels/document.xml.rels" not in names:
+        return {}
+    rels = dict(re.findall(r'Id="([^"]+)"[^>]*Target="(media/[^"]+)"', z.read("word/_rels/document.xml.rels").decode("utf-8")))
+    rels.update({b: a for a, b in re.findall(r'Target="(media/[^"]+)"[^>]*Id="([^"]+)"', z.read("word/_rels/document.xml.rels").decode("utf-8"))})
+    doc = z.read("word/document.xml").decode("utf-8")
+    used = set(re.findall(r'r:embed="([^"]+)"', doc)) | set(re.findall(r'<v:imagedata [^>]*r:id="([^"]+)"', doc))
+    out = {}
+    for rid in sorted(used):
+        if rid not in rels or "word/" + rels[rid] not in names:
+            continue
+        try:
+            im = Image.open(io.BytesIO(z.read("word/" + rels[rid]))).convert("RGB")
+        except Exception:
+            continue  # not a picture Pillow can read (for example an embedded EMF)
+        if im.width > 1000:
+            im = im.resize((1000, int(im.height * 1000 / im.width)))
+        os.makedirs(outdir, exist_ok=True)
+        name = f"doc-{len(out) + 1}.webp"
+        im.save(os.path.join(outdir, name), "WEBP", quality=80)
+        out[rid] = dict(file=name, w=im.width, h=im.height)
+    return out
+
+
 def xlsx_drawings(src, outdir):
     """Extract images placed on sheets, with the cell they are anchored to."""
     z = zipfile.ZipFile(src)
@@ -187,6 +214,8 @@ def main():
             scrub_office(src, out)
             if ext == "xlsx":
                 entry["figs"] = xlsx_drawings(src, os.path.join(PAGES, iid))
+            else:
+                entry["docimgs"] = docx_images(src, os.path.join(PAGES, iid))
         else:
             raise SystemExit(f"Unexpected file type: {src}")
         entry["size"] = os.path.getsize(out)
@@ -196,6 +225,7 @@ def main():
     for iid in list(manifest):
         if iid not in keep:
             manifest.pop(iid)
+    json.dump(manifest, open(MANIFEST, "w", encoding="utf-8"), indent=1, sort_keys=True)
     for f in os.listdir(FILES):
         if os.path.splitext(f)[0] not in keep:
             os.remove(os.path.join(FILES, f))
@@ -203,8 +233,10 @@ def main():
         if d not in keep:
             for f in os.listdir(os.path.join(PAGES, d)):
                 os.remove(os.path.join(PAGES, d, f))
-            os.rmdir(os.path.join(PAGES, d))
-    json.dump(manifest, open(MANIFEST, "w", encoding="utf-8"), indent=1, sort_keys=True)
+            try:
+                os.rmdir(os.path.join(PAGES, d))
+            except OSError as e:  # Windows sometimes holds an empty folder for a moment; the next run removes it
+                print(f"could not remove pages/{d} yet: {e.strerror}")
     total = sum(os.path.getsize(os.path.join(dp, f)) for base in (FILES, PAGES) for dp, _, fs in os.walk(base) for f in fs)
     print(f"{len(manifest)} items, files + page images = {total / 1e6:.1f} MB")
 

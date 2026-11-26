@@ -284,6 +284,7 @@ def xlsx_to_html(path, figs=(), img_base=""):
         first_q = next((i for i, (_, c) in enumerate(rows) if numcol and numcol in c and re.fullmatch(r"\d+", c[numcol]["text"].strip())), 0)
         info_end = header_idx if header_idx is not None else first_q
         info, side, items = [], [], []
+        used, used_fill = {}, {}
         fig_rows = {}
         for f in figs:
             if f["sheet"] == sname:
@@ -310,47 +311,137 @@ def xlsx_to_html(path, figs=(), img_base=""):
             q = cells.get(qcol)
             meta = [cell_html(cells[k]) for k in sorted(cells)
                     if k not in (qcol, numcol) and k not in marks_cols and not MODULE.match(cells[k]["text"])]
+            num = cells[numcol]["text"].strip() if numcol and numcol in cells else ""
             if q is None:
-                if meta:
+                if num and rnum in fig_rows:
+                    # The question is a picture on the sheet (an equation, a table, a figure).
+                    count += 1
+                    body = '<p class="qb-meta">' + " · ".join(meta) + "</p>" if meta else ""
+                    items.append(("q", (num, body, ""), rnum))
+                elif meta:
                     items.append(("div", f'<h4 class="qb-marks">{" ".join(meta)}</h4>', rnum))
                 continue
-            num = cells[numcol]["text"].strip() if numcol and numcol in cells else ""
             count += 1
+            for _t, rgb, _b in q["runs"]:
+                fam = family(rgb if rgb is not None else q["rgb"])
+                if fam and not is_plain_text(rgb if rgb is not None else q["rgb"]):
+                    used.setdefault(fam, rgb if rgb is not None else q["rgb"])
+            if not is_plain_fill(q["fill"]) and family(q["fill"]):
+                used_fill.setdefault(family(q["fill"]), q["fill"])
             body = f'<p class="qb-q">{cell_html(q)}</p>'
             if meta:
                 body += '<p class="qb-meta">' + " <span aria-hidden=\"true\">·</span> ".join(meta) + "</p>"
             items.append(("q", (num, body, cell_classes(q)), rnum))
-        # attach pictures to the nearest question at or above their row
         qrows = [r for kind, _, r in items if kind == "q"]
+
+        def nearest_q(row):
+            above = [r for r in qrows if r <= row]
+            return max(above) if above else (min(qrows) if qrows else row)
+
+        # attach pictures to the nearest question at or above their row
         attach = {}
         for frow, fl in fig_rows.items():
-            target = max([r for r in qrows if r <= frow] or [min(qrows)] if qrows else [frow])
-            attach.setdefault(target, []).extend(fl)
-        colours_used = colours_used or 'class="xc"' in "".join(str(x[1]) for x in items) or any(
-            'xf' in x[1][2] for x in items if x[0] == "q")
+            attach.setdefault(nearest_q(frow), []).extend(fl)
+        # Cells typed beside the table: count tables, colour legends, or notes about one question.
+        legend, notes, table_rows = [], {}, []
+        for rnum, sc in side:
+            texts = [c["text"].strip() for c in sc.values()]
+            if len(sc) >= 2 and all(len(t) <= 14 for t in texts):
+                table_rows.append((rnum, sc))
+                continue
+            for k in sorted(sc):
+                c = sc[k]
+                if LEGEND.search(c["text"]):
+                    legend.append(c)
+                else:
+                    notes.setdefault(nearest_q(rnum), []).append(cell_html(c))
+        colours_used = colours_used or bool(used or used_fill)
         if len(sheets) > 1:
             out.append(f'<h2 class="qb-sheet">{esc(sname.strip())}</h2>')
         if info:
             out.append('<div class="qb-info">' + "".join(f"<p>{x}</p>" for x in info) + "</div>")
-        if side:
-            ncols = sorted({k for _, c in side for k in c})
-            trs = "".join("<tr>" + "".join(f"<td{cell_classes(c[k]) if k in c else ''}>{cell_html(c[k]) if k in c else ''}</td>" for k in ncols) + "</tr>" for _, c in side)
-            out.append('<details class="qb-side"><summary>Notes kept beside the questions in this sheet</summary>'
-                       f'<div class="table-wrap"><table>{trs}</table></div></details>')
+        out.append(colour_key(legend, used, used_fill))
         out.append('<ol class="qb-list">')
         for kind, val, rnum in items:
             if kind == "div":
                 out.append(f'</ol>{val}<ol class="qb-list">')
                 continue
             num, body, cls = val
+            for n in notes.get(rnum, []):
+                body += f'<p class="qb-note"><span>Note from Harsh:</span> {n}</p>'
             figs_html = ""
             for f in attach.get(rnum, []):
                 figs_html += (f'<img class="qb-fig" src="{img_base}{f["file"]}" width="{f["w"]}" height="{f["h"]}" '
                               f'loading="lazy" alt="Picture from the sheet for question {esc(num) or "above"}">')
             out.append(f'<li{cls}><span class="qb-n">{esc(num)}</span><div>{body}{figs_html}</div></li>')
         out.append("</ol>")
+        if table_rows:
+            ncols = sorted({k for _, c in table_rows for k in c})
+            trs = "".join("<tr>" + "".join(f"<td{cell_classes(c[k]) if k in c else ''}>{cell_html(c[k]) if k in c else ''}</td>" for k in ncols) + "</tr>"
+                          for _, c in table_rows)
+            out.append('<details class="qb-side"><summary>Counts kept beside the questions in this sheet</summary>'
+                       f'<div class="table-wrap"><table>{trs}</table></div></details>')
     html_out = "\n".join(out).replace('<ol class="qb-list"></ol>', "")
     return html_out, count, colours_used
+
+
+LEGEND = re.compile(r"(?i)\b(means?|is the repetition|stands for|indicates?)\b")
+COLOUR_WORDS = {"blue": "blue", "red": "red", "green": "green", "yellow": "yellow", "orange": "orange",
+                "purple": "purple", "violet": "purple", "pink": "red"}
+STANDARD = {"blue": (0, 112, 192), "red": (255, 0, 0), "green": (0, 176, 80), "yellow": (255, 255, 0),
+            "orange": (255, 192, 0), "purple": (112, 48, 160)}
+USUAL = {"blue": "Asked in a previous-year paper (PYQ)", "red": "Repeated in this question bank",
+         "green": "The repeated copy of a red question"}
+
+
+def family(rgb):
+    if rgb is None:
+        return None
+    h, l, s = colorsys.rgb_to_hls(*(c / 255 for c in rgb))
+    if s < 0.25 or l > 0.93 or l < 0.08:
+        return None
+    deg = h * 360
+    if deg < 15 or deg >= 330:
+        return "red"
+    if deg < 42:
+        return "orange"
+    if deg < 70:
+        return "yellow"
+    if deg < 170:
+        return "green"
+    if deg < 260:
+        return "blue"
+    return "purple"
+
+
+def swatch(rgb, fill=False):
+    style = fill_style(rgb).replace(".26)", ".55)") if fill else color_style(rgb)
+    return f'<span class="sw{" fill" if fill else ""}" style="{style}" aria-hidden="true"></span>'
+
+
+def colour_key(legend, used, used_fill):
+    """The sheet's own legend if it has one, otherwise Harsh's usual colour pattern."""
+    if legend:
+        lis = []
+        for c in legend:
+            word = next((COLOUR_WORDS[w] for w in re.findall(r"[a-z]+", c["text"].lower()) if w in COLOUR_WORDS), None)
+            sw = swatch(used.get(word) or STANDARD[word]) if word else ""
+            lis.append(f"<li>{sw}{cell_html(c)}</li>")
+        return ('<div class="qb-key"><p class="qb-key-h">Colour key, as written in this sheet</p>'
+                f'<ul>{"".join(lis)}</ul></div>')
+    if not (used or used_fill):
+        return ""
+    lis = []
+    for fam in ("blue", "red", "green"):
+        if fam in used:
+            lis.append(f"<li>{swatch(used[fam])}{fam.capitalize()}: {esc(USUAL[fam])}</li>")
+    others = [f for f in used if f not in USUAL]
+    for fam in others:
+        lis.append(f"<li>{swatch(used[fam])}{fam.capitalize()} text: Harsh's own mark</li>")
+    for fam, rgb in used_fill.items():
+        lis.append(f"<li>{swatch(rgb, fill=True)}{fam.capitalize()} highlight: Harsh's own mark</li>")
+    return ('<div class="qb-key"><p class="qb-key-h">Colour key, Harsh\'s usual pattern</p>'
+            f'<ul>{"".join(lis)}</ul></div>')
 
 
 # ---------------------------------------------------------------- docx
@@ -379,6 +470,10 @@ def _para_runs(p):
         bold = bool(re.search(r'<w:b(?: w:val="(?:1|true|on)")?/>', rp))
         ital = bool(re.search(r'<w:i(?: w:val="(?:1|true|on)")?/>', rp))
         body = re.sub(r"<w:rPr>.*?</w:rPr>", "", r, flags=re.S)
+        for rid in re.findall(r'<a:blip [^>]*r:embed="([^"]+)"|<v:imagedata [^>]*r:id="([^"]+)"', body):
+            rid = rid[0] or rid[1]
+            if rid in _DOC_IMGS:
+                out.append(("\x00IMG:" + rid, False, False))
         text = ""
         for m in re.finditer(r"<w:t(?:\s[^>]*)?>(.*?)</w:t>|<w:(br|cr)\b[^>]*/>|<w:tab/>", body, re.S):
             if m.group(1) is not None:
@@ -393,9 +488,17 @@ def _para_runs(p):
     return out
 
 
+_DOC_IMGS, _DOC_IMG_BASE = {}, ""
+
+
 def _runs_html(runs):
     h = ""
     for text, bold, ital in runs:
+        if text.startswith("\x00IMG:"):
+            im = _DOC_IMGS[text[5:]]
+            h += (f'<img class="doc-fig" src="{_DOC_IMG_BASE}{im["file"]}" width="{im["w"]}" height="{im["h"]}" '
+                  f'loading="lazy" alt="Picture from the document">')
+            continue
         t = esc(text).replace("\n", "<br>")
         if bold:
             t = f"<b>{t}</b>"
@@ -405,7 +508,10 @@ def _runs_html(runs):
     return h.strip()
 
 
-def docx_to_html(path):
+def docx_to_html(path, imgs=None, img_base=""):
+    """imgs: {relationship id: {file, w, h}} from prepare.py, for pictures in the document."""
+    global _DOC_IMGS, _DOC_IMG_BASE
+    _DOC_IMGS, _DOC_IMG_BASE = imgs or {}, img_base
     z = zipfile.ZipFile(path)
     fmts = _num_formats(z)
     x = z.read("word/document.xml").decode("utf-8")

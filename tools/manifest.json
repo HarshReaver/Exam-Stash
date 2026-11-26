@@ -179,6 +179,39 @@
   "size": 56728,
   "source": "Automata Theory or TOC Mod 1 to 6.xlsx"
  },
+ "basic-electrical-engineering-2023-papers": {
+  "ext": "pdf",
+  "hash": "4b5712be5252",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 6,
+  "size": 816669,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
  "big-data-analytics-2026-papers": {
   "ext": "pdf",
   "hash": "66ee9f02850a",
@@ -491,6 +524,39 @@
   "size": 157854,
   "source": "BigDataAnalytics Mod 1 to 6.pdf"
  },
+ "chemistry-2023-papers": {
+  "ext": "pdf",
+  "hash": "9464953e8083",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 6,
+  "size": 949489,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
  "cns-2024-papers": {
   "ext": "pdf",
   "hash": "0761d102c643",
@@ -610,6 +676,22 @@
   "hash": "ed77cae0f005",
   "size": 8933,
   "source": "Computer Networks Question Bank (Modules 4, 5, and 6) \ud83c\udfaf\ud83d\udcd8\ud83d\udda5\ufe0f.docx"
+ },
+ "computer-networks-qb-modules-4-to-6-with-pyq-tags": {
+  "ext": "xlsx",
+  "figs": [
+   {
+    "col": 2,
+    "file": "fig-1.webp",
+    "h": 342,
+    "row": 17,
+    "sheet": "Sheet1",
+    "w": 855
+   }
+  ],
+  "hash": "e1db1ea88f92",
+  "size": 174562,
+  "source": "CN mod 4,5,6 question bank.xlsx"
  },
  "dbms-2024-papers": {
   "ext": "pdf",
@@ -1021,6 +1103,68 @@
   "size": 1656553,
   "source": "DSA Sem-III 2024.pdf"
  },
+ "engineering-graphics-2023-papers": {
+  "ext": "pdf",
+  "hash": "ca21aefb35d7",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 7,
+  "size": 1144023,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
+ "engineering-mechanics-2023-papers": {
+  "ext": "pdf",
+  "hash": "1419f129fb74",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 4,
+  "size": 614935,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
  "english-competitive-exams-2025-papers": {
   "ext": "pdf",
   "hash": "5d8929b9c9ee",
@@ -1050,6 +1194,35 @@
   "size": 1017453,
   "source": "6th Sem PYQ.pdf"
  },
+ "english-professional-communication-2023-papers": {
+  "ext": "pdf",
+  "hash": "e037dc5fa6ad",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 5,
+  "size": 828317,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
  "full-stack-development-i-2024-papers": {
   "ext": "pdf",
   "hash": "88a591498e53",
@@ -1062,23 +1235,6 @@
   "pages": 1,
   "size": 165734,
   "source": "5th Sem PYQ.pdf"
- },
- "fundamentals-of-ml-aiml-2022-papers": {
-  "ext": "pdf",
-  "hash": "905169f6a1ba",
-  "img": [
-   [
-    1100,
-    1555
-   ],
-   [
-    1100,
-    1555
-   ]
-  ],
-  "pages": 2,
-  "size": 311853,
-  "source": "7th Sem PYQ.pdf"
  },
  "intro-ai-ds-2026-papers": {
   "ext": "pdf",
@@ -1152,7 +1308,31 @@
   "size": 2837311,
   "source": "OE-2(Japanese-1) Sem VII 2026.pdf"
  },
- "machine-learning-aids-2022-papers": {
+ "japanese-i-qb-modules-1-to-3": {
+  "docimgs": {
+   "rId6": {
+    "file": "doc-1.webp",
+    "h": 775,
+    "w": 1000
+   },
+   "rId7": {
+    "file": "doc-2.webp",
+    "h": 952,
+    "w": 735
+   }
+  },
+  "ext": "docx",
+  "hash": "16fb10248812",
+  "size": 1450674,
+  "source": "Japanese mod 1 to 3.docx"
+ },
+ "japanese-i-qb-modules-3-to-6": {
+  "ext": "docx",
+  "hash": "a547a8091ca4",
+  "size": 20468,
+  "source": "Japanese Mod 3 to 6.docx"
+ },
+ "machine-learning-other-branches-2022-papers-aids": {
   "ext": "pdf",
   "hash": "e096cb7d2fda",
   "img": [
@@ -1165,7 +1345,24 @@
   "size": 204129,
   "source": "7th Sem PYQ.pdf"
  },
- "machine-learning-comp-2024-papers": {
+ "machine-learning-other-branches-2022-papers-aiml": {
+  "ext": "pdf",
+  "hash": "905169f6a1ba",
+  "img": [
+   [
+    1100,
+    1555
+   ],
+   [
+    1100,
+    1555
+   ]
+  ],
+  "pages": 2,
+  "size": 311853,
+  "source": "7th Sem PYQ.pdf"
+ },
+ "machine-learning-other-branches-2024-papers-comp": {
   "ext": "pdf",
   "hash": "d2357d223481",
   "img": [
@@ -1194,6 +1391,68 @@
   "pages": 1,
   "size": 206377,
   "source": "7th Sem PYQ.pdf"
+ },
+ "mathematics-i-2023-papers": {
+  "ext": "pdf",
+  "hash": "5308fa30cb4d",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 7,
+  "size": 1043715,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
+ "mathematics-ii-2023-papers": {
+  "ext": "pdf",
+  "hash": "609d531aa73f",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 4,
+  "size": 604538,
+  "source": "First Year Question Paper 2022 - 23.pdf"
  },
  "maths-iii-2024-papers": {
   "ext": "pdf",
@@ -1252,6 +1511,406 @@
   "pages": 5,
   "size": 2178193,
   "source": "Maths IV Sem IV 2025.pdf"
+ },
+ "maths-iv-qb-all-modules": {
+  "ext": "xlsx",
+  "figs": [
+   {
+    "col": 2,
+    "file": "fig-1.webp",
+    "h": 57,
+    "row": 98,
+    "sheet": "MAIN_SHEET",
+    "w": 482
+   },
+   {
+    "col": 1,
+    "file": "fig-2.webp",
+    "h": 50,
+    "row": 99,
+    "sheet": "MAIN_SHEET",
+    "w": 432
+   },
+   {
+    "col": 2,
+    "file": "fig-3.webp",
+    "h": 52,
+    "row": 100,
+    "sheet": "MAIN_SHEET",
+    "w": 430
+   },
+   {
+    "col": 2,
+    "file": "fig-4.webp",
+    "h": 77,
+    "row": 101,
+    "sheet": "MAIN_SHEET",
+    "w": 756
+   },
+   {
+    "col": 2,
+    "file": "fig-5.webp",
+    "h": 52,
+    "row": 102,
+    "sheet": "MAIN_SHEET",
+    "w": 510
+   },
+   {
+    "col": 2,
+    "file": "fig-6.webp",
+    "h": 81,
+    "row": 103,
+    "sheet": "MAIN_SHEET",
+    "w": 576
+   },
+   {
+    "col": 2,
+    "file": "fig-7.webp",
+    "h": 80,
+    "row": 104,
+    "sheet": "MAIN_SHEET",
+    "w": 741
+   },
+   {
+    "col": 2,
+    "file": "fig-8.webp",
+    "h": 77,
+    "row": 105,
+    "sheet": "MAIN_SHEET",
+    "w": 735
+   },
+   {
+    "col": 2,
+    "file": "fig-9.webp",
+    "h": 52,
+    "row": 106,
+    "sheet": "MAIN_SHEET",
+    "w": 757
+   },
+   {
+    "col": 2,
+    "file": "fig-10.webp",
+    "h": 55,
+    "row": 107,
+    "sheet": "MAIN_SHEET",
+    "w": 761
+   },
+   {
+    "col": 2,
+    "file": "fig-11.webp",
+    "h": 56,
+    "row": 108,
+    "sheet": "MAIN_SHEET",
+    "w": 761
+   },
+   {
+    "col": 2,
+    "file": "fig-12.webp",
+    "h": 97,
+    "row": 109,
+    "sheet": "MAIN_SHEET",
+    "w": 442
+   },
+   {
+    "col": 2,
+    "file": "fig-13.webp",
+    "h": 55,
+    "row": 110,
+    "sheet": "MAIN_SHEET",
+    "w": 763
+   },
+   {
+    "col": 2,
+    "file": "fig-14.webp",
+    "h": 61,
+    "row": 18,
+    "sheet": "MAIN_SHEET",
+    "w": 528
+   },
+   {
+    "col": 2,
+    "file": "fig-15.webp",
+    "h": 62,
+    "row": 25,
+    "sheet": "MAIN_SHEET",
+    "w": 583
+   },
+   {
+    "col": 2,
+    "file": "fig-16.webp",
+    "h": 92,
+    "row": 35,
+    "sheet": "MAIN_SHEET",
+    "w": 670
+   },
+   {
+    "col": 2,
+    "file": "fig-17.webp",
+    "h": 32,
+    "row": 48,
+    "sheet": "MAIN_SHEET",
+    "w": 315
+   },
+   {
+    "col": 2,
+    "file": "fig-18.webp",
+    "h": 29,
+    "row": 49,
+    "sheet": "MAIN_SHEET",
+    "w": 236
+   },
+   {
+    "col": 2,
+    "file": "fig-19.webp",
+    "h": 27,
+    "row": 50,
+    "sheet": "MAIN_SHEET",
+    "w": 234
+   },
+   {
+    "col": 2,
+    "file": "fig-20.webp",
+    "h": 32,
+    "row": 51,
+    "sheet": "MAIN_SHEET",
+    "w": 208
+   },
+   {
+    "col": 2,
+    "file": "fig-21.webp",
+    "h": 27,
+    "row": 52,
+    "sheet": "MAIN_SHEET",
+    "w": 211
+   },
+   {
+    "col": 2,
+    "file": "fig-22.webp",
+    "h": 28,
+    "row": 53,
+    "sheet": "MAIN_SHEET",
+    "w": 219
+   },
+   {
+    "col": 2,
+    "file": "fig-23.webp",
+    "h": 27,
+    "row": 54,
+    "sheet": "MAIN_SHEET",
+    "w": 214
+   },
+   {
+    "col": 2,
+    "file": "fig-24.webp",
+    "h": 75,
+    "row": 55,
+    "sheet": "MAIN_SHEET",
+    "w": 389
+   },
+   {
+    "col": 2,
+    "file": "fig-25.webp",
+    "h": 70,
+    "row": 56,
+    "sheet": "MAIN_SHEET",
+    "w": 384
+   },
+   {
+    "col": 2,
+    "file": "fig-26.webp",
+    "h": 100,
+    "row": 57,
+    "sheet": "MAIN_SHEET",
+    "w": 388
+   },
+   {
+    "col": 2,
+    "file": "fig-27.webp",
+    "h": 52,
+    "row": 60,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-28.webp",
+    "h": 52,
+    "row": 61,
+    "sheet": "MAIN_SHEET",
+    "w": 382
+   },
+   {
+    "col": 2,
+    "file": "fig-29.webp",
+    "h": 99,
+    "row": 62,
+    "sheet": "MAIN_SHEET",
+    "w": 383
+   },
+   {
+    "col": 2,
+    "file": "fig-30.webp",
+    "h": 98,
+    "row": 63,
+    "sheet": "MAIN_SHEET",
+    "w": 388
+   },
+   {
+    "col": 2,
+    "file": "fig-31.webp",
+    "h": 27,
+    "row": 69,
+    "sheet": "MAIN_SHEET",
+    "w": 280
+   },
+   {
+    "col": 2,
+    "file": "fig-32.webp",
+    "h": 26,
+    "row": 70,
+    "sheet": "MAIN_SHEET",
+    "w": 279
+   },
+   {
+    "col": 2,
+    "file": "fig-33.webp",
+    "h": 24,
+    "row": 71,
+    "sheet": "MAIN_SHEET",
+    "w": 284
+   },
+   {
+    "col": 2,
+    "file": "fig-34.webp",
+    "h": 29,
+    "row": 75,
+    "sheet": "MAIN_SHEET",
+    "w": 251
+   },
+   {
+    "col": 2,
+    "file": "fig-35.webp",
+    "h": 99,
+    "row": 76,
+    "sheet": "MAIN_SHEET",
+    "w": 383
+   },
+   {
+    "col": 2,
+    "file": "fig-36.webp",
+    "h": 54,
+    "row": 77,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-37.webp",
+    "h": 24,
+    "row": 78,
+    "sheet": "MAIN_SHEET",
+    "w": 28
+   },
+   {
+    "col": 2,
+    "file": "fig-38.webp",
+    "h": 20,
+    "row": 79,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-39.webp",
+    "h": 83,
+    "row": 80,
+    "sheet": "MAIN_SHEET",
+    "w": 388
+   },
+   {
+    "col": 2,
+    "file": "fig-40.webp",
+    "h": 24,
+    "row": 80,
+    "sheet": "MAIN_SHEET",
+    "w": 28
+   },
+   {
+    "col": 2,
+    "file": "fig-41.webp",
+    "h": 17,
+    "row": 81,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-42.webp",
+    "h": 17,
+    "row": 82,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-43.webp",
+    "h": 159,
+    "row": 83,
+    "sheet": "MAIN_SHEET",
+    "w": 384
+   },
+   {
+    "col": 2,
+    "file": "fig-44.webp",
+    "h": 17,
+    "row": 84,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-45.webp",
+    "h": 24,
+    "row": 85,
+    "sheet": "MAIN_SHEET",
+    "w": 386
+   },
+   {
+    "col": 2,
+    "file": "fig-46.webp",
+    "h": 93,
+    "row": 86,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-47.webp",
+    "h": 93,
+    "row": 87,
+    "sheet": "MAIN_SHEET",
+    "w": 385
+   },
+   {
+    "col": 2,
+    "file": "fig-48.webp",
+    "h": 81,
+    "row": 88,
+    "sheet": "MAIN_SHEET",
+    "w": 386
+   },
+   {
+    "col": 2,
+    "file": "fig-49.webp",
+    "h": 71,
+    "row": 89,
+    "sheet": "MAIN_SHEET",
+    "w": 386
+   }
+  ],
+  "hash": "055a3ad5cb3b",
+  "size": 159368,
+  "source": "Maths SE question bank.xlsx"
  },
  "ml-it-app-dev-2022-papers": {
   "ext": "pdf",
@@ -1558,6 +2217,56 @@
   "hash": "e28534e9ca94",
   "size": 10377,
   "source": "Operating System Mod 1 to 3.xlsx"
+ },
+ "physics-2023-papers": {
+  "ext": "pdf",
+  "hash": "1a717d8e43f9",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 4,
+  "size": 750682,
+  "source": "First Year Question Paper 2022 - 23.pdf"
+ },
+ "programming-problem-solving-2023-papers": {
+  "ext": "pdf",
+  "hash": "0381c5b42e24",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 4,
+  "size": 631947,
+  "source": "First Year Question Paper 2022 - 23.pdf"
  },
  "soft-skills-2024-papers": {
   "ext": "pdf",
@@ -2203,6 +2912,27 @@
   "hash": "12436a2f09a5",
   "size": 23472,
   "source": "Web Programming mod 1-6 Formatted.xlsx"
+ },
+ "workshop-practice-i-2023-papers": {
+  "ext": "pdf",
+  "hash": "f80772c67979",
+  "img": [
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ],
+   [
+    1100,
+    1471
+   ]
+  ],
+  "pages": 3,
+  "size": 512350,
+  "source": "First Year Question Paper 2022 - 23.pdf"
  },
  "wpmh-2025-papers": {
   "ext": "pdf",

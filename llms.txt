@@ -1,47 +1,61 @@
-# Night Before
+# Exam Stash
 
-> Previous-year exam papers (ISE and ESE), question banks and notes for TCET IT (University of Mumbai), semesters III to VII, shared by Harsh Verma from IT Batch 2027. Not an official TCET site. The syllabus may have changed since.
+> Previous-year exam papers (ISE and ESE), question banks and notes for TCET IT (University of Mumbai), first year to semester VII, shared by Harsh Verma from IT Batch 2027. Not an official TCET site. The syllabus may have changed since.
+
+## Semester I
+- [Mathematics I](https://stash.harver.in/sem-1/mathematics-i/)
+- [Physics](https://stash.harver.in/sem-1/physics/)
+- [Basic Electrical Engineering](https://stash.harver.in/sem-1/basic-electrical-engineering/)
+- [Engineering Graphics and Design](https://stash.harver.in/sem-1/engineering-graphics/)
+- [Workshop and Manufacturing Practice I](https://stash.harver.in/sem-1/workshop-practice-i/)
+
+## Semester II
+- [Mathematics II](https://stash.harver.in/sem-2/mathematics-ii/)
+- [Chemistry](https://stash.harver.in/sem-2/chemistry/)
+- [Programming for Problem Solving](https://stash.harver.in/sem-2/programming-problem-solving/)
+- [English for Professional Communication](https://stash.harver.in/sem-2/english-professional-communication/)
+- [Engineering Mechanics](https://stash.harver.in/sem-2/engineering-mechanics/)
 
 ## Semester III
-- [Universal Human Values II](https://pyq.harver.in/sem-3/uhv-ii/)
-- [Mathematics III](https://pyq.harver.in/sem-3/maths-iii/)
-- [Digital Circuit Design](https://pyq.harver.in/sem-3/digital-circuit-design/)
-- [Data Structures and Algorithms](https://pyq.harver.in/sem-3/dsa/)
-- [Database Management Systems](https://pyq.harver.in/sem-3/dbms/)
+- [Universal Human Values II](https://stash.harver.in/sem-3/uhv-ii/)
+- [Mathematics III](https://stash.harver.in/sem-3/maths-iii/)
+- [Digital Circuit Design](https://stash.harver.in/sem-3/digital-circuit-design/)
+- [Data Structures and Algorithms](https://stash.harver.in/sem-3/dsa/)
+- [Database Management Systems](https://stash.harver.in/sem-3/dbms/)
 
 ## Semester IV
-- [Mathematics IV](https://pyq.harver.in/sem-4/maths-iv/)
-- [Computer Organization, Architecture and Microprocessors](https://pyq.harver.in/sem-4/coa/)
-- [NoSQL](https://pyq.harver.in/sem-4/nosql/)
-- [Computer Networks](https://pyq.harver.in/sem-4/computer-networks/)
+- [Mathematics IV](https://stash.harver.in/sem-4/maths-iv/)
+- [Computer Organization, Architecture and Microprocessors](https://stash.harver.in/sem-4/coa/)
+- [NoSQL](https://stash.harver.in/sem-4/nosql/)
+- [Computer Networks](https://stash.harver.in/sem-4/computer-networks/)
 
 ## Semester V
-- [Operating System](https://pyq.harver.in/sem-5/operating-system/)
-- [Automata Theory](https://pyq.harver.in/sem-5/automata-theory/)
-- [Web Programming](https://pyq.harver.in/sem-5/web-programming/)
-- [Cryptography and Network Security](https://pyq.harver.in/sem-5/cns/)
-- [Soft Skill and Interpersonal Communication](https://pyq.harver.in/sem-5/soft-skills/)
-- [Full Stack Development I](https://pyq.harver.in/sem-5/full-stack-development-i/): Professional skills (HME) track
-- [Machine Learning, Computer Engineering](https://pyq.harver.in/sem-5/machine-learning-comp/): Computer Engineering, AI and DS specialisation, 2024
-- [Fundamentals of Machine Learning, AIML branch](https://pyq.harver.in/sem-5/fundamentals-of-ml-aiml/): AI and ML branch, older syllabus (2022)
-- [Machine Learning, AI and DS branch](https://pyq.harver.in/sem-5/machine-learning-aids/): AI and Data Science branch, older syllabus (2022)
+- [Operating System](https://stash.harver.in/sem-5/operating-system/)
+- [Automata Theory](https://stash.harver.in/sem-5/automata-theory/)
+- [Web Programming](https://stash.harver.in/sem-5/web-programming/)
+- [Cryptography and Network Security](https://stash.harver.in/sem-5/cns/)
+- [Soft Skill and Interpersonal Communication](https://stash.harver.in/sem-5/soft-skills/)
+- [Full Stack Development I](https://stash.harver.in/sem-5/full-stack-development-i/): Professional skills (HME) track
 
 ## Semester VI
-- [Work Place Mental Health](https://pyq.harver.in/sem-6/wpmh/)
-- [Data Mining and Business Intelligence](https://pyq.harver.in/sem-6/dmbi/)
-- [Software Engineering](https://pyq.harver.in/sem-6/software-engineering/)
-- [Artificial Intelligence](https://pyq.harver.in/sem-6/artificial-intelligence/): Professional Elective I
-- [Introduction to Artificial Intelligence and Data Science](https://pyq.harver.in/sem-6/intro-ai-ds/): Open Elective I
-- [Analysis of Algorithms](https://pyq.harver.in/sem-6/analysis-of-algorithms/): Professional Elective I, another option
-- [English for Competitive Exams](https://pyq.harver.in/sem-6/english-competitive-exams/): Open Elective I, another option
+- [Work Place Mental Health](https://stash.harver.in/sem-6/wpmh/)
+- [Data Mining and Business Intelligence](https://stash.harver.in/sem-6/dmbi/)
+- [Software Engineering](https://stash.harver.in/sem-6/software-engineering/)
+- [Artificial Intelligence](https://stash.harver.in/sem-6/artificial-intelligence/): Professional Elective I
+- [Introduction to Artificial Intelligence and Data Science](https://stash.harver.in/sem-6/intro-ai-ds/): Open Elective I
+- [Analysis of Algorithms](https://stash.harver.in/sem-6/analysis-of-algorithms/): Professional Elective I, another option
+- [English for Competitive Exams](https://stash.harver.in/sem-6/english-competitive-exams/): Open Elective I, another option
 
 ## Semester VII
-- [Machine Learning for IT Application Development](https://pyq.harver.in/sem-7/ml-it-app-dev/)
-- [Big Data Analytics](https://pyq.harver.in/sem-7/big-data-analytics/)
-- [DevOps](https://pyq.harver.in/sem-7/devops/): Professional Elective II
-- [Web Analytics and Information Retrieval](https://pyq.harver.in/sem-7/web-analytics-ir/): Professional Elective III
-- [Japanese Language I](https://pyq.harver.in/sem-7/japanese-i/): Open Elective II
-- [User Interaction Design](https://pyq.harver.in/sem-7/user-interaction-design/): Professional Elective IV, older syllabus (2022)
-- [Management Information System](https://pyq.harver.in/sem-7/management-information-system/): Open elective, older syllabus (2022)
-- [Design Thinking and Problem Solving](https://pyq.harver.in/sem-7/design-thinking/): Open Elective II, older syllabus (2022)
-- [Disaster Management and Mitigation Methods](https://pyq.harver.in/sem-7/disaster-management/): Open elective, older syllabus (2022)
+- [Machine Learning for IT Application Development](https://stash.harver.in/sem-7/ml-it-app-dev/)
+- [Big Data Analytics](https://stash.harver.in/sem-7/big-data-analytics/)
+- [DevOps](https://stash.harver.in/sem-7/devops/): Professional Elective II
+- [Web Analytics and Information Retrieval](https://stash.harver.in/sem-7/web-analytics-ir/): Professional Elective III
+- [Japanese Language I](https://stash.harver.in/sem-7/japanese-i/): Open Elective II
+- [User Interaction Design](https://stash.harver.in/sem-7/user-interaction-design/): Professional Elective IV, older syllabus (2022)
+- [Management Information System](https://stash.harver.in/sem-7/management-information-system/): Open elective, older syllabus (2022)
+- [Design Thinking and Problem Solving](https://stash.harver.in/sem-7/design-thinking/): Open Elective II, older syllabus (2022)
+- [Disaster Management and Mitigation Methods](https://stash.harver.in/sem-7/disaster-management/): Open elective, older syllabus (2022)
+
+## Other branches
+- [Machine Learning, other branches](https://stash.harver.in/other-branches/machine-learning-other-branches/): Computer Engineering, AIML and AI and DS papers
